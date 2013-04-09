@@ -1,0 +1,74 @@
+.nav-bar-btn-light {
+	width: 24%;
+	background-color: #82fbc3; 
+	margin: 0; 
+	text-align: center; 
+	height: 50px; 
+	vertical-align: middle;
+}
+
+.nav-bar-btn-dark {
+	width: 23%; 
+	background-color: #68aa76; 
+	margin: 0; 
+	text-align: center; 
+	height: 50px; 
+	vertical-align: middle;
+}
+
+.nav-bar-btn-text {
+	font-size: 20px; 
+	color: #6f1c4d; 
+	font-weight: bold;
+	position: relative;
+	display: block;
+	width: 100%;
+	height: 100%;
+}
+
+.nav-bar-btn-text:hover {
+	font-size: 20px; 
+	color: #6f1c4d; 
+	font-weight: bold;
+	text-decoration: none;
+}
+
+.nav-bar-row {
+	float: right;
+	width: 85%;
+}
+
+.nav-text {
+	position: relative; 
+	top: 25%;
+}
+
+.title-text {
+	font-family: 'Lato', sans-serif;
+}
+
+.body-text {
+	font-family: 'Noto Sans', sans-serif;
+}
+
+.title {
+	color: #6f1c4d;
+	font-size: 50px;
+	margin-top: 25px;
+}
+
+.site-map {
+	background-color: #68aa76;
+	width: 100%;
+	height: 300px;
+	margin-top: 25px; 
+	margin-left: 0px;
+	margin-right: 0px;
+}
+
+.page-body {
+	width: 100%; 
+	margin: 0; 
+	position: absolute; 
+	top: 160px;
+}

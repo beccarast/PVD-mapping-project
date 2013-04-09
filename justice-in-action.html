@@ -16,8 +16,11 @@
     <link rel="stylesheet" href="css/map-styles.css" />
 
     <link href='http://api.tiles.mapbox.com/mapbox.js/v0.6.6/mapbox.css' rel='stylesheet' />
+    <link rel="stylesheet" href="css/pvd-mapping.css" />
     <style>
-    
+      body {
+        background-color: #f3f3f3;
+      }
     </style>
 
     <!-- Le HTML5 shim, for IE6-8 support of HTML5 elements -->
@@ -31,39 +34,26 @@
 
     <!-- Navbar
     ================================================== -->
-    <div class="navbar navbar-inverse">
-      <div class="navbar-inner">
-        <div class="container">
-          <button type="button" class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-          </button>
-          <div class="nav-collapse collapse">
-            <ul class="nav" style="margin-left: 10%;">
-              <li class="">
-                <a href="./access.html">Access</a>
-              </li>
-              <li class="">
-                <a href="./sources.html">Sources</a>
-              </li>
-            </ul>
-            <a class="brand" href="./index.html" style="margin-left: 15%;"><img src="img/dummy_logo.png" style="height: 30px;"></a>
-            <ul class="nav pull-right" style="margin-right: 10%;">
-              <li class="">
-                <a href="./industry.html">Industry</a>
-              </li>
-              <li class="active">
-                <a href="./justice-in-action.html">Justice in Action</a>
-              </li>
-              <li class="">
-                <a href="./about.html">About Us</a>
-              </li>
-            </ul>
-          </div>
-        </div>
-      </div>
+  <div class="span1" style="width: 14%; margin: 0; text-align: center; ">
+    <a href="./about-us.html"><img src="img/dummy_logo.png" style="height: 150px; width: auto; margin-top: 5px;"/></a>
+  </div>
+  <div class="row nav-bar-row">
+    <div class="span1 nav-bar-btn-light">
+      <a href="./about-us.html" class="nav-bar-btn-text">Who?</a>
     </div>
+    <div class="span1 nav-bar-btn-dark">
+      <a href="./access.html"  class="nav-bar-btn-text">What?</a>
+    </div>
+    <div class="span1 nav-bar-btn-light">
+      <a href="./sources.html"  class="nav-bar-btn-text">Where?</a>
+    </div>
+    <div class="span1 nav-bar-btn-dark">
+      <a href="./industry.html"  class="nav-bar-btn-text">How?</a>
+    </div>
+  </div>
+  <div class="row nav-bar-row">
+    <h1 class="title">Providence Mapping Project</h1>
+  </div>
 
 <!-- Breadcrumbs bar
 ================================================== -->
@@ -74,37 +64,39 @@
 
 <!-- Page body
 ================================================== -->
-
-<div style="margin-left: 5px; margin-right: 5px;">
-  <div style="border-style: solid; border-width: 5px; border-color: #12CC5A; height: 50px;">
-     <p>Title</p>
-  </div>
-  <br/>
-  <div class="row-fluid">
-    <div class="span8" style="border-width: 7px; border-color: #38B4D6; border-style: solid; height: 400px;">
-      <p>Description</p>
+<div class="page-body">
+  <div style="margin-left: 5px; margin-right: 5px;">
+    <div style="border-style: solid; border-width: 5px; border-color: #12CC5A; height: 50px;">
+       <p>Title</p>
     </div>
-    <div class="span4" style="border-width: 7px; border-color: #38B4D6; border-style: solid; height: 400px;">
-      <img src="img/dummy_img.jpg" style="height: 386px; width: auto;"/>
+    <br/>
+    <div class="row-fluid">
+      <div class="span8" style="border-width: 7px; border-color: #38B4D6; border-style: solid; height: 400px;">
+        <p>Description</p>
+      </div>
+      <div class="span4" style="border-width: 7px; border-color: #38B4D6; border-style: solid; height: 400px;">
+        <img src="img/dummy_img.jpg" style="height: 386px; width: auto;"/>
+      </div>
     </div>
-  </div>
-  <br/><br/>
-  <div class="row-fluid">
-    <div class="span4" style="background-color: #75F0C7; height: 200px;">
-      <p>Detail hook</p>
-    </div>
-    <div class="span4" style="background-color: #75F0C7; height: 200px;">
-      <p>Detail hook</p>
-    </div>
-    <div class="span4" style="background-color: #75F0C7; height: 200px;">
-      <p>Detail hook</p>
+    <br/><br/>
+    <div class="row-fluid">
+      <div class="span4" style="background-color: #75F0C7; height: 200px;">
+        <p>Detail hook</p>
+      </div>
+      <div class="span4" style="background-color: #75F0C7; height: 200px;">
+        <p>Detail hook</p>
+      </div>
+      <div class="span4" style="background-color: #75F0C7; height: 200px;">
+        <p>Detail hook</p>
+      </div>
     </div>
   </div>
   <br/><br/><br/><br/>
-  <div style="background-color: #75F0C7; height: 300px; margin-left: 15px; margin-right: 15px; margin-top: 15px; margin-bottom: 15px;">
+  <div class="site-map">
     <p>Site map</p>
   </div>
 </div>
+  
 
 
     <!-- Le javascript
