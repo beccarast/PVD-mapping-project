@@ -15,7 +15,7 @@
     <link rel="stylesheet" href="css/jquery-ui.css" />
     <link rel="stylesheet" href="css/map-styles.css" />
 
-    <link href='http://fonts.googleapis.com/css?family=Noto+Sans|Lato|PT+Sans+Caption|Raleway:900,800,700,500' rel='stylesheet' type='text/css'>
+   <link href='http://fonts.googleapis.com/css?family=Noto+Sans|Lato|PT+Sans+Caption|Raleway:900,800,700,500' rel='stylesheet' type='text/css'>
 
     <link href='http://api.tiles.mapbox.com/mapbox.js/v0.6.6/mapbox.css' rel='stylesheet' />
     <link rel="stylesheet" href="css/pvd-mapping.css" />
@@ -56,17 +56,19 @@
     <a href="./culture.html"  class="nav-bar-btn-text" title="WHO IS COOKING?"><p class="body-text nav-text">CULTURE</p></a>
   </div>
 </div>
-<a href="./about-us.html"><img src="img/Logo.png" class="logo"/></a>
+<a href="./about-us.html"><img src="img/Logo.png" style="height: 150px; width: auto; position: absolute; left: 5px; top: 5px; z-index: 10000"/></a>
 <ul class="breadcrumb my-breadcrumb">
   <li><a href="./index.html" class="body-text breadcrumb-text">Home</a><span class="divider">/</span></li>
-  <li class="body-text breadcrumb-text" style="font-weight: bold;">Access</li>
+  <li class="body-text breadcrumb-text" style="font-weight: bold;">Production</li>
 </ul>
-<h1 class="title title-text">FOOD ACCESS</h1>
+<h1 class="title title-text">FOOD PRODUCTION</h1>
 
 <!-- Page body
 ================================================== -->
 <div class="page-body" href="#">
-  <div class="carousel slide myCarousel" style="margin-top: 35px;">
+  <div class="row-fluid">
+    <div class="span7">
+      <div id="myCarousel" class="carousel slide">
         <!-- Carousel items -->
         <div class="carousel-inner">
           <div class="active item"><img src="img/dummy_img.jpg" style="width: 100%; height: auto;"/></div>
@@ -77,11 +79,27 @@
         <a class="carousel-control left" href="#myCarousel" data-slide="prev">&lsaquo;</a>
         <a class="carousel-control right" href="#myCarousel" data-slide="next">&rsaquo;</a>
       </div>
-        <p class="body-text description-text" style="margin-left: 5%; margin-right: 5%; margin-top: 5px;">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam libero mauris, mattis at ornare at, feugiat eu velit. Suspendisse vulputate, nibh in egestas interd%;um, tellus magna sagittis quam, in interdum magna justo at massa. Curabitur tincidunt imperdiet dolor quis interdum.</p>
-
+    </div>
+    <div class="span5" style="margin-top: 15px;">
+      <p class="body-text description-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam libero mauris, mattis at ornare at, feugiat eu velit. Suspendisse vulputate, nibh in egestas interdum, tellus magna sagittis quam, in interdum magna justo at massa. Curabitur tincidunt imperdiet dolor quis interdum.</p>
+    </div>
+   </div>
+  <br/><br/>
   <div class="block-grey">
-    <img src="img/food-access.jpg" style="width: 80%; height:auto; margin-left: 10%; margin-right: 10%;"/>
-    <img src="img/farmers-markets.png" style="width: 50%; height:auto; margin-left: 25%; margin-right: 25%;"/>
+    <a name="foodchain">
+      <div class="row-fluid">
+        <div class="span4">
+          <p class="body-text home-block-title">STUFF GOES HERE</p>
+          <p class="body-text home-block-text">YEAHHHH</p>
+        </div>
+        <div class="span4">
+          <img src="img/dummy_img.jpg" style="width: 100%; height: auto;"/>
+        </div>
+        <div class="span4">
+          <p class="body-text index-btn-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam libero mauris, mattis at ornare at, feugiat eu velit. Suspendisse vulputate, nibh in egestas interdum, tellus magna sagittis quam, in interdum magna justo at massa. Curabitur tincidunt imperdiet dolor quis interdum. Maecenas lacinia ipsum sed quam ornare hendrerit. Fusce laoreet, quam quis molestie venenatis, urna tellus vulputate lectus, vel tincidunt odio quam ac sem. Sed neque justo, posuere eget dictum non, blandit vitae eros. Nam eu gravida tortor. Proin at tellus vitae tellus accumsan pharetra.</p>
+        </div>
+      </div>
+    </a>
   </div>
   <div class="site-map">
     <p>Site map</p>

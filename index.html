@@ -2,7 +2,7 @@
 <html lang="en">
   <head>
     <meta charset="utf-8">
-    <title>PVD Food Mapping</title>
+    <title>PVD Food Justice</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="">
     <meta name="author" content="">
@@ -15,13 +15,12 @@
     <link rel="stylesheet" href="css/jquery-ui.css" />
     <link rel="stylesheet" href="css/map-styles.css" />
 
-    <link href='http://fonts.googleapis.com/css?family=Noto+Sans|Lato' rel='stylesheet' type='text/css'>
-
+    <link href='http://fonts.googleapis.com/css?family=Noto+Sans|Lato|PT+Sans+Caption|Raleway:900,800,700,500' rel='stylesheet' type='text/css'>
     <link href='http://api.tiles.mapbox.com/mapbox.js/v0.6.6/mapbox.css' rel='stylesheet' />
     <link rel="stylesheet" href="css/pvd-mapping.css" />
     <style>
       body {
-        background-color: #ffffff;
+        background-color: #f3f3f3;
       }
     </style>
 
@@ -41,33 +40,32 @@
     <a href="./about-us.html" class="nav-bar-btn-text"><p class="body-text nav-text">ABOUT</p></a>
   </div>
   <div class="span1 nav-bar-btn">
-    <a href="./industry.html"  class="nav-bar-btn-text"><p class="body-text nav-text">JUSTICE</p></a>
+    <a href="./action.html"  class="nav-bar-btn-text" title="How does PVD act?"><p class="body-text nav-text">ACTION</p></a>
   </div>
   <div class="span1 nav-bar-btn">
-    <a href="./industry.html"  class="nav-bar-btn-text"><p class="body-text nav-text">FOOD CHAIN</p></a>
+    <a href="./food-chain.html"  class="nav-bar-btn-text" title="Where does PVD work?"><p class="body-text nav-text">FOOD CHAIN</p></a>
   </div>
   <div class="span1 nav-bar-btn">
-    <a href="./sources.html"  class="nav-bar-btn-text"><p class="body-text nav-text">PRODUCTION</p></a>
+    <a href="./production.html"  class="nav-bar-btn-text" title="Where does RI farm?"><p class="body-text nav-text">PRODUCTION</p></a>
   </div>
   <div class="span1 nav-bar-btn">
-    <a href="./access.html"  class="nav-bar-btn-text"><p class="body-text nav-text">ACCESS</p></a>
+    <a href="./access.html"  class="nav-bar-btn-text" title="Where does PVD eat?"><p class="body-text nav-text">ACCESS</p></a>
   </div>
   <div class="span1 nav-bar-btn">
-    <a href="./access.html"  class="nav-bar-btn-text"><p class="body-text nav-text">CULTURE</p></a>
+    <a href="./culture.html"  class="nav-bar-btn-text" title="Who is cooking?"><p class="body-text nav-text">CULTURE</p></a>
   </div>
 </div>
-<a href="./about-us.html"><img src="img/Logo.png" style="height: 150px; width: auto; position: absolute; left: 5px; top: 5px; z-index: 10000"/></a>
+<a href="./about-us.html"><img src="img/Logo.png" class="logo"/></a>
 <h1 class="title title-text">PVD FOOD JUSTICE</h1>
 
 <!-- Page body
 ================================================== -->
-<div class="page-body">
-  <div class="row-fluid">
-    <div class="span5">
-      <p class="body-text tagline-text">Exploring opportunities <br> for and obstacles to food <br> justice in Providence, RI.</p>
-    </div>
-    <div class="span7">
-      <div id="myCarousel" class="carousel slide">
+<div class="page-body" href="#">
+  <p class="body-text tagline-text">Exploring opportunities for and obstacles to food justice in Providence, RI.</p>
+  <div class="about-link">
+    <a class="about-text" href="./about-us.html"><p class="body-text" style="text-align: center; margin-bottom: 0px;">About this student-driven intiative.</p></a>
+  </div>
+  <div id="myCarousel" class="carousel slide myCarousel">
         <!-- Carousel items -->
         <div class="carousel-inner">
           <div class="active item"><img src="img/dummy_img.jpg" style="width: 100%; height: auto;"/></div>
@@ -78,50 +76,153 @@
         <a class="carousel-control left" href="#myCarousel" data-slide="prev">&lsaquo;</a>
         <a class="carousel-control right" href="#myCarousel" data-slide="next">&rsaquo;</a>
       </div>
+  <!-- <div class="row-fluid">
+    <div class="span5" style="margin-top: 35px;">
+      <p class="body-text tagline-text">Exploring opportunities <br> for and obstacles to food <br> justice in Providence, RI.</p>
+      <div class="about-link">
+        <a class="about-text" href="./about-us.html"><p class="body-text" style="text-align: center;">About this student-driven intiative.</p></a>
+      </div>
     </div>
-  </div>
+    <div class="span7">
+      <div id="myCarousel" class="carousel slide">
+        <!-- Carousel items 
+        <div class="carousel-inner">
+          <div class="active item"><img src="img/dummy_img.jpg" style="width: 100%; height: auto;"/></div>
+          <div class="item"><img src="img/dummy_img.jpg" style="width: 100%; height: auto;"/></div>
+          <div class="item"><img src="img/dummy_img.jpg" style="width: 100%; height: auto;"/></div>
+        </div>
+        <!-- Carousel nav 
+        <a class="carousel-control left" href="#myCarousel" data-slide="prev">&lsaquo;</a>
+        <a class="carousel-control right" href="#myCarousel" data-slide="next">&rsaquo;</a>
+      </div>
+    </div>
+  </div> -->
   <br/>
-  <div class="row-fluid" style="margin-left: 8.54700855%; margin-right: 8.54700855%;">
-    <div class="span2 index-btn" style="background-image: url(img/Access.png);">
-      <a href="#access">
+  <div class="row" style="display: block; margin-left: auto; margin-right: auto; width: 90%;">
+    <a href="#access">
+      <div class="span index-btn" style="background-image: url(img/Access.png);">
         <p class="body-text index-btn-title">ACCESS</p>
         <p class="body-text index-btn-text">WHERE DOES PVD EAT?</p>
-      </a>
-    </div>
-    <div class="span2 index-btn" style="background-image: url(img/Production.png);">
-      <a href="#production">
+      </div>
+    </a>
+    <a href="#production">
+      <div class="span index-btn" style="background-image: url(img/Production.png);">
         <p class="body-text index-btn-title">PRODUCTION</p>
         <p class="body-text index-btn-text">WHERE DOES RI FARM?</p>
-      </a>
-    </div>
-    <div class="span2 index-btn" style="background-image: url(img/FoodChain.png);">
-      <a href="#foodchain">
+      </div>
+    </a>
+    <a href="#foodchain">
+      <div class="span index-btn" style="background-image: url(img/FoodChain.png);">
         <p class="body-text index-btn-title">FOOD CHAIN</p>
         <p class="body-text index-btn-text">WHERE DOES PVD WORK?</p>
-      </a>
-    </div>
-    <div class="span2 index-btn" style="background-image: url(img/Justice.png);">
-      <a href="#justice">
-        <p class="body-text index-btn-title">JUSTICE IN ACTION</p>
-        <p class="body-text index-btn-text">WHERE DOES PVD ACT?</p>
-      </a>
-    </div>
-    <div class="span2 index-btn" style="background-image: url(img/Culture.png);">
-      <a href="#culture">
+      </div>
+    </a>
+    <a href="#action">
+      <div class="span index-btn" style="background-image: url(img/Justice.png);">
+        <p class="body-text index-btn-title">ACTION</p>
+        <p class="body-text index-btn-text">HOW DOES PVD ACT?</p>
+      </div>
+    </a>
+    <a href="#culture">
+      <div class="span index-btn" style="background-image: url(img/Culture.png);">
         <p class="body-text index-btn-title">CULTURE</p>
-        <p class="body-text index-btn-text">WHO'S COOKING?</p>
-      </a>
-    </div>
-  </div>
+        <p class="body-text index-btn-text">WHO IS COOKING?</p>
+      </div>
+    </a>
+  </div> 
   <br/><br/>
-  <div class="row-fluid">
-    <div class="span8" style="border-width: 7px; border-color: #38B4D6; border-style: solid; height: 400px;">
-      <p>About us!</p>
-      <img src="img/Justice.png"/>
-    </div>
-    <div class="span4" style="border-width: 7px; border-color: #38B4D6; border-style: solid; height: 400px;">
-      <img src="img/dummy_img.jpg" style="height: 386px; width: auto;"/>
-    </div>
+  <div class="block-green">
+    <a name="access">
+      <div class="row-fluid">
+        <div class="span4">
+          <p class="body-text home-block-title">FOOD ACCESS</p>
+          <p class="body-text home-block-text">Where does PVD eat?</p>
+        </div>
+        <div class="span4">
+          <img src="img/dummy_img.jpg" style="width: 100%; height: auto;"/>
+        </div>
+        <div class="span4">
+          <p class="body-text justify-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam libero mauris, mattis at ornare at, feugiat eu velit. Suspendisse vulputate, nibh in egestas interdum, tellus magna sagittis quam, in interdum magna justo at massa. Curabitur tincidunt imperdiet dolor quis interdum. Maecenas lacinia ipsum sed quam ornare hendrerit. Fusce laoreet, quam quis molestie venenatis, urna tellus vulputate lectus, vel tincidunt odio quam ac sem. Sed neque justo, posuere eget dictum non, blandit vitae eros. Nam eu gravida tortor. Proin at tellus vitae tellus accumsan pharetra.</p>
+        </div>
+      </div>
+    </a>
+  </div>
+  <div class="block-aqua">
+    <a name="production">
+      <div class="row-fluid">
+        <div class="span4">
+          <img src="img/dummy_img.jpg" style="width: 100%; height: auto;"/>
+        </div>
+        <div class="span4">
+          <p class="body-text justify-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam libero mauris, mattis at ornare at, feugiat eu velit. Suspendisse vulputate, nibh in egestas interdum, tellus magna sagittis quam, in interdum magna justo at massa. Curabitur tincidunt imperdiet dolor quis interdum. Maecenas lacinia ipsum sed quam ornare hendrerit. Fusce laoreet, quam quis molestie venenatis, urna tellus vulputate lectus, vel tincidunt odio quam ac sem. Sed neque justo, posuere eget dictum non, blandit vitae eros. Nam eu gravida tortor. Proin at tellus vitae tellus accumsan pharetra.</p>
+        </div>
+        <div class="span4">
+          <p class="body-text home-block-title">FOOD PRODUCTION</p>
+          <p class="body-text home-block-text">Where does RI farm?</p>
+        </div>
+      </div>
+    </a>
+  </div>
+  <div class="block-grey">
+    <a name="foodchain">
+      <div class="row-fluid">
+        <div class="span4">
+          <p class="body-text home-block-title">FOOD CHAIN</p>
+          <p class="body-text home-block-text">Where does PVD work?</p>
+        </div>
+        <div class="span4">
+          <img src="img/dummy_img.jpg" style="width: 100%; height: auto;"/>
+        </div>
+        <div class="span4">
+          <p class="body-text justify-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam libero mauris, mattis at ornare at, feugiat eu velit. Suspendisse vulputate, nibh in egestas interdum, tellus magna sagittis quam, in interdum magna justo at massa. Curabitur tincidunt imperdiet dolor quis interdum. Maecenas lacinia ipsum sed quam ornare hendrerit. Fusce laoreet, quam quis molestie venenatis, urna tellus vulputate lectus, vel tincidunt odio quam ac sem. Sed neque justo, posuere eget dictum non, blandit vitae eros. Nam eu gravida tortor. Proin at tellus vitae tellus accumsan pharetra.</p>
+        </div>
+      </div>
+    </a>
+  </div>
+  <div class="block-green">
+    <a name="action">
+      <div class="row-fluid">
+        <div class="span4">
+          <img src="img/dummy_img.jpg" style="width: 100%; height: auto;"/>
+        </div>
+        <div class="span4">
+          <p class="body-text justify-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam libero mauris, mattis at ornare at, feugiat eu velit. Suspendisse vulputate, nibh in egestas interdum, tellus magna sagittis quam, in interdum magna justo at massa. Curabitur tincidunt imperdiet dolor quis interdum. Maecenas lacinia ipsum sed quam ornare hendrerit. Fusce laoreet, quam quis molestie venenatis, urna tellus vulputate lectus, vel tincidunt odio quam ac sem. Sed neque justo, posuere eget dictum non, blandit vitae eros. Nam eu gravida tortor. Proin at tellus vitae tellus accumsan pharetra.</p>
+        </div>
+        <div class="span4">
+          <p class="body-text home-block-title">FOOD ACTION</p>
+          <p class="body-text home-block-text">Where does PVD act?</p>
+        </div>
+      </div>
+    </a>
+  </div>
+  <div class="block-grey">
+    <a name="culture">
+      <div class="row-fluid">
+        <div class="span4">
+          <p class="body-text home-block-title">FOOD CULTURE</p>
+          <p class="body-text home-block-text">Who is cooking?</p>
+        </div>
+        <div class="span4">
+          <img src="img/dummy_img.jpg" style="width: 100%; height: auto;"/>
+        </div>
+        <div class="span4">
+          <p class="body-text justify-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam libero mauris, mattis at ornare at, feugiat eu velit. Suspendisse vulputate, nibh in egestas interdum, tellus magna sagittis quam, in interdum magna justo at massa. Curabitur tincidunt imperdiet dolor quis interdum. Maecenas lacinia ipsum sed quam ornare hendrerit. Fusce laoreet, quam quis molestie venenatis, urna tellus vulputate lectus, vel tincidunt odio quam ac sem. Sed neque justo, posuere eget dictum non, blandit vitae eros. Nam eu gravida tortor. Proin at tellus vitae tellus accumsan pharetra.</p>
+        </div>
+      </div>
+    </a>
+  </div>
+  <div class="block-aqua">
+    <div class="row-fluid">
+        <div class="span4">
+          <img src="img/dummy_img.jpg" style="width: 100%; height: auto;"/>
+        </div>
+        <div class="span4">
+          <p class="body-text justify-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam libero mauris, mattis at ornare at, feugiat eu velit. Suspendisse vulputate, nibh in egestas interdum, tellus magna sagittis quam, in interdum magna justo at massa. Curabitur tincidunt imperdiet dolor quis interdum. Maecenas lacinia ipsum sed quam ornare hendrerit. Fusce laoreet, quam quis molestie venenatis, urna tellus vulputate lectus, vel tincidunt odio quam ac sem. Sed neque justo, posuere eget dictum non, blandit vitae eros. Nam eu gravida tortor. Proin at tellus vitae tellus accumsan pharetra.</p>
+        </div>
+        <div class="span4">
+          <p class="body-text home-block-title">ABOUT US</p>
+        </div>
+      </div>
   </div>
   <div class="site-map">
     <p>Site map</p>
