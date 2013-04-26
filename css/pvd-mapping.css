@@ -263,30 +263,30 @@ font-family: 'Raleway', sans-serif;
 }
 
 .my-item {
-	height: 400px; 	
-	background-color: #003700;
+	height: 300px; 	
+	background-color: #07260c;
 }
 
 .carousel-name-text {
 	color: #f3f3f3; 
 	font-size: 26px; 
 	font-weight: 700;
-	margin-left: 50px;
+	margin-left: 60px;
 	position: relative;
-	top: 230px;
+	top: 130px;
 }
 
 .carousel-info-text {
 	color: #f3f3f3; 
 	font-size: 20px; 
 	font-weight: 700;
-	margin-left: 50px;
+	margin-left: 60px;
 	position: relative;
-	top: 230px;
+	top: 130px;
 }
 
 .carousel-player {
 	position: relative;
-	top: 240px;
-	left: 47px;
+	top: 140px;
+	left: 65px;
 }
