@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>PVD Food Justice</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <!-- Le styles -->
+    <link href="../css/bootstrap.css" rel="stylesheet">
+    <link href="../css/bootstrap-responsive.css" rel="stylesheet">
+    <link href="../css/prettify.css" rel="stylesheet">
+
+    <link rel="stylesheet" href="../css/jquery-ui.css" />
+    <link rel="stylesheet" href="../css/map-styles.css" />
+
+    <link href='http://fonts.googleapis.com/css?family=Noto+Sans|Lato|PT+Sans+Caption|Raleway:900,800,700,500' rel='stylesheet' type='text/css'>
+
+    <link href='http://api.tiles.mapbox.com/mapbox.js/v0.6.6/mapbox.css' rel='stylesheet' />
+    <link rel="stylesheet" href="../css/pvd-mapping-mac.css" />
+    <style>
+      body {
+        background-color: #f3f3f3;
+      }
+    </style>
+
+    <!-- Le HTML5 shim, for IE6-8 support of HTML5 elements -->
+    <!--[if lt IE 9]>
+      <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+  </head>
+
+  <body data-spy="scroll" data-target=".bs-docs-sidebar">
+
+<!-- Navbar
+    ================================================== -->
+<div class="row nav-bar-row">
+  <div class="span1 nav-bar-btn">
+    <a href="../about-us.html" class="nav-bar-btn-text"><p class="body-text nav-text">ABOUT</p></a>
+  </div>
+  <div class="span1 nav-bar-btn">
+    <a href="../action.html"  class="nav-bar-btn-text" title="HOW DOES PVD ACT?"><p class="body-text nav-text">ACTION</p></a>
+  </div>
+  <div class="span1 nav-bar-btn">
+    <a href="../food-chain.html"  class="nav-bar-btn-text" title="WHERE DOES PVD WORK?"><p class="body-text nav-text">FOOD CHAIN</p></a>
+  </div>
+  <div class="span1 nav-bar-btn">
+    <a href="../production.html"  class="nav-bar-btn-text" title="WHERE DOES RI FARM?"><p class="body-text nav-text">PRODUCTION</p></a>
+  </div>
+  <div class="span1 nav-bar-btn">
+    <a href="../access.html"  class="nav-bar-btn-text" title="WHERE DOES PVD EAT?"><p class="body-text nav-text">ACCESS</p></a>
+  </div>
+  <div class="span1 nav-bar-btn">
+    <a href="../culture.html"  class="nav-bar-btn-text" title="WHO IS COOKING?"><p class="body-text nav-text">CULTURE</p></a>
+  </div>
+</div>
+<a href="../index.html"><img src="../img/Logo.png" style="height: 150px; width: auto; position: absolute; left: 5px; top: 5px; z-index: 10000"/></a>
+<ul class="breadcrumb my-breadcrumb">
+  <li><a href="../index.html" class="body-text breadcrumb-text">Home</a><span class="divider">/</span></li>
+  <li><a href="../action.html" class="body-text breadcrumb-text">Action</a><span class="divider">/</span></li>
+  <li><a href="#" class="body-text breadcrumb-text" style="font-weight: bold;">Job Training</a></li>
+</ul>
+<h1 class="title title-text action-title" style="padding-top: 50px; height: 130px;">JOB TRAINING</h1>
+
+<!-- Page body
+================================================== -->
+<div class="page-body" href="#">
+  <div class="block-green" style="margin-top: 75px;">
+      <p class="body-text description-text" style="margin: 20px; font-size: 20px; text-align: center; color: #003300; font-weight: 700;">These programs represent the way that a variety of organizations in Providence have approached the food sector as an opportunity to increase economic justice through creating employment training opportunities as well as actual job placement.<br> This is not a comprehensive list of programs; rather, it shows the breadth of communities.
+      </p>
+  </div>
+  <div class="block-grey" style="padding-top: 5px;">
+    <div class="row-fluid" style="margin-left: 10%; margin-right: 10%; width: 80%;" id="row">
+      <a target="_blank" href="http://www.amoshouse.com/Training/AmosCulinaryEducationACE/tabid/162/Default.aspx">
+        <div class="span4" id="Amos">
+          <img src="../img/Amos.png" style="width: 100%; height: auto;"/>
+        </div>
+      </a>
+      <a target="_blank" href="http://www.ccri.edu/oftd/culinary.html">
+        <div class="span4" id="CCRI">
+          <img src="../img/CCRI.png" style="width: 100%; height: auto;"/>
+        </div>
+     </a>
+     <a target="_blank" href="http://www.rifoodbank.org/Programs/CommunityKitchen/tabid/179/Default.aspx">
+      <div class="span4" id="community">
+        <img src="../img/Community.png" style="width: 100%; height: auto;"/>
+      </div>
+     </a>
+   </div>
+   <br/>
+   <div class="row-fluid" style="margin-left: 10%; margin-right: 10%; width: 80%;">
+    <a target="_blank" href="http://www.ccfcenter.org/index.html">
+      <div class="span4" id="connecting">
+        <img src="../img/Connecting.png" style="width: 100%; height: auto;"/>
+      </div>
+    </a>
+    <a target="_blank" href="http://cookieplace.org/">
+      <div class="span4" id="cookie">
+        <img src="../img/Cookie.png" style="width: 100%; height: auto;"/>
+      </div>
+    </a>
+    <a target="_blank" href="http://www.gencenter.org/?p=about-us">
+      <div class="span4" id="genesis">
+        <img src="../img/Genesis.png" style="width: 100%; height: auto;"/>
+      </div>
+    </a>
+   </div>
+   <br/>
+   <div class="row-fluid" style="margin-left: 10%; margin-right: 10%; width: 80%;">
+    <a target="_blank" href="http://www.sesi-schools.com/high_road_school_of_providence/">
+      <div class="span4" id="high-road">
+        <img src="../img/HighRoad.png" style="width: 100%; height: auto;"/>
+      </div>
+    </a>
+    <a target="_blank" href="http://providencegranola.com/">
+      <div class="span4" id="granola">
+        <img src="../img/PVDGranola.png" style="width: 100%; height: auto;"/>
+      </div>
+    </a>
+    <a target="_blank" href="http://www.farmfreshri.org/about/harvestkitchen.php">
+      <div class="span4" id="harvest">
+        <img src="../img/RIHarvest.png" style="width: 100%; height: auto;"/>
+      </div>
+    </a>
+   </div>
+ </div>
+   <br/><br/>
+    <div class="site-map">
+      <p>Site map</p>
+    </div>
+</div>
+
+
+
+    <!-- Le javascript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script type="text/javascript" src="http://platform.twitter.com/widgets.js"></script>
+    <script src="../js/jquery.js"></script>
+    <script src="../js/google-code-prettify/prettify.js"></script>
+    <script src="../js/bootstrap-transition.js"></script>
+    <script src="../js/bootstrap-alert.js"></script>
+    <script src="../js/bootstrap-modal.js"></script>
+    <script src="../js/bootstrap-dropdown.js"></script>
+    <script src="../js/bootstrap-scrollspy.js"></script>
+    <script src="../js/bootstrap-tab.js"></script>
+    <script src="../js/bootstrap-tooltip.js"></script>
+    <script src="../js/bootstrap-popover.js"></script>
+    <script src="../js/bootstrap-button.js"></script>
+    <script src="../js/bootstrap-collapse.js"></script>
+    <script src="../js/bootstrap-carousel.js"></script>
+    <script src="../js/bootstrap-typeahead.js"></script>
+    <script src="../js/bootstrap-affix.js"></script>
+    <script src="../js/application.js"></script>
+    <!-- jquery -->
+    <script src="../js/jquery-1.8.2.js"></script>
+    <script src="../js/jquery-ui.js"></script>
+    <!-- mapbox  -->
+    <script src="../js/mapbox.js"></script>
+    <script type="text/javascript">
+    var amosOver = "<p class='body-text' style='font-size: 24px; color: #003300; font-weight:800;'>Amos Culinary Education (ACE)</p><br/><p class='body-text' style='font-size: 16px; color: #003300; font-weight:800;'>Target population</p><p class='body-text' style='font-size: 16px; color: #003300;'>People who are low-income or at risk of homelessness </p><br/><p class='body-text' style='font-size: 16px; color: #003300; font-weight:800;'>Job Assistance/Placement?</p><p class='body-text' style='font-size: 16px; color: #003300;'>40 internship/externship positions for program graduates</p><br/><p class='body-text' style='font-size: 16px; color: #003300; font-weight:800; text-align: center;'>CLICK TO VISIT THEIR WEBSITE</p>";
+
+    var CCRIOver = "<p class='body-text' style='font-size: 22px; color: #003300; font-weight:800;'>CCRI: Culinary Arts Assistant Certificate</p><p class='body-text' style='font-size: 16px; color: #003300;'>Full-time, 16-credit Culinary Arts Assistant program at the Community College of Rhode Island</p><p class='body-text' style='font-size: 16px; color: #003300; font-weight:800;'>Target population</p><p class='body-text' style='font-size: 16px; color: #003300;'>RI residents with High School Diploma or GED</p><p class='body-text' style='font-size: 16px; color: #003300; font-weight:800;'>Job Assistance/Placement?</p><p class='body-text' style='font-size: 16px; color: #003300;'>RI residents with High School Diploma or GED</p><p class='body-text' style='font-size: 16px; color: #003300; font-weight:800; text-align: center;'>CLICK TO VISIT THEIR WEBSITE</p>";
+
+    var communityOver = "<p class='body-text' style='font-size: 22px; color: #003300; font-weight:800;'>Community Kitchen</p><p class='body-text' style='font-size: 16px; color: #003300;'>Culinary Job-Training Program: Students gain cooking skills and learn about food service as well as work readiness skills to succeed on the job.</p><p class='body-text' style='font-size: 16px; color: #003300; font-weight:800;'>Target population</p><p class='body-text' style='font-size: 16px; color: #003300;'>Adults who are low-income or unemployed</p><p class='body-text' style='font-size: 16px; color: #003300; font-weight:800;'>Job Assistance/Placement?</p><p class='body-text' style='font-size: 16px; color: #003300;'>Local restaurants and professional kitchens offer internships to students enrolled in the program</p><p class='body-text' style='font-size: 16px; color: #003300; font-weight:800; text-align: center;'>CLICK TO VISIT THEIR WEBSITE</p>";
+
+    var connectingOver = "<p class='body-text' style='font-size: 22px; color: #003300; font-weight:800;'>Connecting for children and families</p><p class='body-text' style='font-size: 16px; color: #003300;'>Culinary Arts Collaborative of Northern Rhode Island: Training includes work-readiness preparation, occupational skills, culinary arts, and four industry recognized credentials.</p><p class='body-text' style='font-size: 16px; color: #003300; font-weight:800;'>Target population</p><p class='body-text' style='font-size: 16px; color: #003300;'>Unemployed Adults in the Woonsocket Area</p><p class='body-text' style='font-size: 16px; color: #003300; font-weight:800;'>Job Assistance/Placement?</p><p class='body-text' style='font-size: 16px; color: #003300;'>The program strives to keep all internships local due to transportation issues. The students are required to do 80 hours unpaid work, which is organized two weeks before the end of the program. The program also focuses on helping students connect to a career pathway with individualized job development and placement. </p><p class='body-text' style='font-size: 16px; color: #003300; font-weight:800; text-align: center;'>CLICK TO VISIT THEIR WEBSITE</p>";
+
+    var cookieOver = "<p class='body-text' style='font-size: 22px; color: #003300; font-weight:800;'>The Cookie Place</p><p class='body-text' style='font-size: 16px; color: #003300;'>Comprehensive food service skills training program that provides basic technical and hands-on instruction in a busy, operationally, competitive business.  Students are provided with in-depth industry information so that they can obtain their Serv-Safe Certification. They are also given the opportunity to practicethe skills that they have learned in a real working kitchen environment.</p><p class='body-text' style='font-size: 16px; color: #003300; font-weight:800;'>Target population</p><p class='body-text' style='font-size: 16px; color: #003300;'>Adults with disabilities</p><p class='body-text' style='font-size: 16px; color: #003300; font-weight:800;'>Job Assistance/Placement?</p><p class='body-text' style='font-size: 16px; color: #003300;'>Once training is complete, students are assisted in finding suitable jobs in their chosen areas of interest.</p><p class='body-text' style='font-size: 16px; color: #003300; font-weight:800; text-align: center;'>CLICK TO VISIT THEIR WEBSITE</p>";
+
+    var genesisOver = "<p class='body-text' style='font-size: 24px; color: #003300; font-weight:800;'>The Genesis Center</p><br/><p class='body-text' style='font-size: 16px; color: #003300; font-weight:800;'>Target population</p><p class='body-text' style='font-size: 16px; color: #003300;'>People of diverse cultures who are low-income or need assistance</p><br/><p class='body-text' style='font-size: 16px; color: #003300; font-weight:800;'>Job Assistance/Placement?</p><p class='body-text' style='font-size: 16px; color: #003300; font-style: italic;'>Information not available</p><br/><p class='body-text' style='font-size: 16px; color: #003300; font-weight:800; text-align: center;'>CLICK TO VISIT THEIR WEBSITE</p>";
+
+    var highroadOver = "<p class='body-text' style='font-size: 22px; color: #003300; font-weight:800;'>High Road School of Providence</p><p class='body-text' style='font-size: 16px; color: #003300;'>Hands-on Training in areas such as food preparation, customer service, cash register operation, and bussing services.</p><p class='body-text' style='font-size: 16px; color: #003300; font-weight:800;'>Target population</p><p class='body-text' style='font-size: 16px; color: #003300;'>High School students dealing with emotional and mental health challenges</p><p class='body-text' style='font-size: 16px; color: #003300; font-weight:800;'>Job Assistance/Placement?</p><p class='body-text' style='font-size: 16px; color: #003300;'>Internships and jobs in culinary programs as well as skills development for job interviews, resume writing and career exploration.</p><p class='body-text' style='font-size: 16px; color: #003300; font-weight:800; text-align: center;'>CLICK TO VISIT THEIR WEBSITE</p>";
+
+    var granolaOver = "<p class='body-text' style='font-size: 22px; color: #003300; font-weight:800;'>The Providence Granola Project</p><p class='body-text' style='font-size: 16px; color: #003300;'>The Granola Project typically hires four refugees at time. The goal is to provide a first job in the US for newly arrived refugees.  Employees usually work for the Granola Project for a period of 1 - 6 months until employees find another position elswhere. Employees are typically hired for one shift (about 7 hours) per week while they continue to take English classes at the International Institute of Rhode Island. </p><p class='body-text' style='font-size: 16px; color: #003300; font-weight:800;'>Target population</p><p class='body-text' style='font-size: 16px; color: #003300;'>Refugees</p><p class='body-text' style='font-size: 16px; color: #003300; font-weight:800;'>Job Assistance/Placement?</p><p class='body-text' style='font-size: 16px; color: #003300;'>The Granola Project attempts to keep employees hired until they can find other positions elsewhere.</p><p class='body-text' style='font-size: 16px; color: #003300; font-weight:800; text-align: center;'>CLICK TO VISIT THEIR WEBSITE</p>";
+
+    var harvestOver = "<p class='body-text' style='font-size: 24px; color: #003300; font-weight:800;'>RI Harvest Kitchen</p><br/><p class='body-text' style='font-size: 16px; color: #003300; font-weight:800;'>Target population</p><p class='body-text' style='font-size: 16px; color: #003300;'>Youth in the Division of Juvenile Corrections</p><br/><p class='body-text' style='font-size: 16px; color: #003300; font-weight:800;'>Job Assistance/Placement?</p><p class='body-text' style='font-size: 16px; color: #003300;'>Graduates have gone on to be teaching assistants for subsequent sessions, work in retail, RISD dining, and finish high school/GED equivalent (job skills training not exclusive to food service)</p><br/><p class='body-text' style='font-size: 16px; color: #003300; font-weight:800; text-align: center;'>CLICK TO VISIT THEIR WEBSITE</p>";
+ 
+    $(document).ready(function(){
+        function unHover(imageSource, id) {
+          var div = document.getElementById(id);
+          div.className = "span4";
+          div.innerHTML = "<img src='../img/" + imageSource + "' style='width: 100%; height: auto;'/>";
+        };
+
+        // Amos events
+        $("#Amos").hover(function() {
+            var h = $('#row').height();
+          $('#Amos').css({'height':h+'px'});
+            this.className += " job-training";
+            this.innerHTML = amosOver;
+            
+          }, function() {
+            this.className = "span4";
+            this.innerHTML = "<img src='../img/Amos.png' style='width: 100%; height: auto;'/>";
+          });
+
+        // CCRI events
+        $('#CCRI').hover(function() {
+          var h = $('#row').height();
+          $('#CCRI').css({'height':h+'px'});
+          this.className += " job-training";
+          this.innerHTML = CCRIOver;
+        }, function() {
+          this.className = "span4";
+          this.innerHTML = "<img src='../img/CCRI.png' style='width: 100%; height: auto;'/>";
+        });
+
+        // community events
+        $('#community').hover(function() {
+          var h = $('#row').height();
+          $('#community').css({'height':h+'px'});
+          this.className += " job-training";
+          this.innerHTML = communityOver;
+        }, function() {
+          this.className = "span4";
+          this.innerHTML = "<img src='../img/Community.png' style='width: 100%; height: auto;'/>";
+        });
+
+        // connecting events
+        $('#connecting').hover(function() {
+          var h = $('#row').height();
+          $('#connecting').css({'height':h+'px'});
+          this.className += " job-training";
+          this.innerHTML = connectingOver;
+        }, function() {
+          this.className = "span4";
+          this.innerHTML = "<img src='../img/Connecting.png' style='width: 100%; height: auto;'/>";
+        });
+
+        // cookie events
+        $('#cookie').hover(function() {
+          var h = $('#row').height();
+          $('#cookie').css({'height':h+'px'});
+          this.className += " job-training";
+          this.innerHTML = cookieOver;
+        }, function() {
+          this.className = "span4";
+          this.innerHTML = "<img src='../img/Cookie.png' style='width: 100%; height: auto;'/>";
+        });
+
+        // genesis events
+        $('#genesis').hover(function() {
+          var h = $('#row').height();
+          $('#genesis').css({'height':h+'px'});
+          this.className += " job-training";
+          this.innerHTML = genesisOver;
+        }, function() {
+          this.className = "span4";
+          this.innerHTML = "<img src='../img/Genesis.png' style='width: 100%; height: auto;'/>";
+        });
+
+        // high-road events
+        $('#high-road').hover(function() {
+          var h = $('#row').height();
+          $('#high-road').css({'height':h+'px'});
+          this.className += " job-training";
+          this.innerHTML = highroadOver;
+        }, function() {
+          this.className = "span4";
+          this.innerHTML = "<img src='../img/HighRoad.png' style='width: 100%; height: auto;'/>";
+        });
+
+        // granola events
+        $('#granola').hover(function() {
+          var h = $('#row').height();
+          $('#granola').css({'height':h+'px'});
+          this.className += " job-training";
+          this.innerHTML = granolaOver;
+        }, function() {
+          this.className = "span4";
+          this.innerHTML = "<img src='../img/PVDGranola.png' style='width: 100%; height: auto;'/>";
+        });
+
+        // harvest events
+         $('#harvest').hover(function() {
+          var h = $('#row').height();
+          $('#harvest').css({'height':h+'px'});
+          this.className += " job-training";
+          this.innerHTML = harvestOver;
+        }, function() {
+          this.className = "span4";
+          this.innerHTML = "<img src='../img/RIHarvest.png' style='width: 100%; height: auto;'/>";
+        });
+
+      });
+    </script>
+  </body>
+</html>
