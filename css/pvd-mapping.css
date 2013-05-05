@@ -282,6 +282,17 @@ font-family: 'Raleway', sans-serif;
 	text-shadow: none;
 }
 
+.breadcrumb-nonlink {
+	font-size: 16px; 
+	color: #003300; 
+	text-shadow: none;
+	padding-left: 14px;
+	padding-top: 8px;
+	padding-bottom: 8px;
+	line-height: 20px;
+	background-color: #DEDEDE;
+}
+
 .current-breadcrumb-text {
 	font-size: 16px; 
 	color: #003300; 
@@ -422,7 +433,7 @@ font-family: 'Raleway', sans-serif;
 	margin-top: 0px;
 	margin-bottom: 0px;
 	padding-top: 65px;
-	height: 215px;
+	height: 125px;
 	background-image: url('../img/FoodAction.jpg');
 }
 
@@ -515,13 +526,22 @@ font-family: 'Raleway', sans-serif;
 }
 
 .columns {
--moz-column-count:2; /* Firefox */
--webkit-column-count:2; /* Safari and Chrome */
-column-count:2;
+	-moz-column-count:2; /* Firefox */
+	-webkit-column-count:2; /* Safari and Chrome */
+	column-count:2;
 }
 
 .column-width {
--moz-column-gap:50px; /* Firefox */
--webkit-column-gap:50px; /* Safari and Chrome */
-column-gap:50px;
+	-moz-column-gap:50px; /* Firefox */
+	-webkit-column-gap:50px; /* Safari and Chrome */
+	column-gap:50px;
+}
+
+.logo {
+	height: 150px;
+	width: auto;
+	position: absolute;
+	left: 8px;
+	top: 10px;
+	z-index: 10000;
 }
