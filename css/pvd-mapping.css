@@ -402,9 +402,6 @@ font-family: 'Raleway', sans-serif;
 .action-span {
 	height: 200px;
 	z-index: 10000;
-	border-width: 3px;
-	border-color: #003300;
-	border-style: solid;
 }
 
 .soda-link-text {
