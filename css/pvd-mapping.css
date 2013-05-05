@@ -39,11 +39,74 @@
 	position: relative; 
 	top: 25%;
 }
-
 .myCarousel {
 	margin-left: 5%; 
 	margin-right: 5%; 
 	width: 90%;
+}
+
+.voices-nav-row {
+	background: transparent;
+	width: 100%;
+	margin: 0;
+}
+
+.voices-nav-btn-text {
+	font-size: 14px; 
+	color: #f3f3f3;
+	margin-left: 2px;
+	margin-right: 2px;
+}
+
+.voices-nav-btn-text:hover {
+	font-size: 14px; 
+	color: #FCBD74;
+	text-decoration: none;
+	margin-left: 2px;
+	margin-right: 2px;
+}
+
+.voices-nav-btn-text:active {
+	font-size: 14px; 
+	color: #FCBD74;
+	text-decoration: none;
+	margin-left: 2px;
+	margin-right: 2px;
+}
+
+.voices {
+	height: 300px;
+	background-color: #99cc66;
+}
+
+.voices-row {
+	width: 90%;
+	margin-left: 5%;
+	margin-right: 5%;
+	margin-bottom: 20px;
+}
+
+.voices-name {
+	margin-top: 25px;
+	font-size: 24px; 
+	color: #07260c; 
+	font-weight:700;
+	position: relative;
+	left: 10%;
+}
+
+.voices-title {
+	font-size: 18px;
+	color: #07260c; 
+	font-weight: 700;
+	position: relative;
+	left: 10%;
+}
+
+.voices-player {
+	position: relative;
+	top: 50px;
+	left: 10%;
 }
 
 .about-text {
@@ -72,15 +135,14 @@
 }
 
 .body-text {
-	/*font-family: 'Noto Sans', sans-serif;
-	font-family: 'PT Sans Caption', sans-serif;
-	font-family: 'Helvetica neue', sans-serif; */
-	font-family: 'Raleway', sans-serif;
+	/*font-family: 'Noto Sans', sans-serif;*/
+/*	font-family: 'PT Sans Caption', sans-serif;*/
+font-family: 'Raleway', sans-serif;
 }
 
 .description-text {
 	font-size: 24px; 
-	color: #002200; 
+	color: #003300; 
 	line-height: normal;
 }
 
@@ -96,22 +158,20 @@
 }
 
 .title {
-	color: #002200;
+	color: #003300;
 	font-size: 48px;
 	font-weight: bold;
-	margin-top: 35px;
+	margin-top: 25px;
 	text-align: center;
 }
 
 .site-map {
-	background-color: #07260c;
+	background-color: #99cc66;
 	width: 100%;
 	height: 300px;
 	margin-left: 0px;
 	margin-right: 0px;
-	margin-top: 5px;
 	z-index: 10000;
-	color: white;
 }
 
 .page-body {
@@ -119,7 +179,6 @@
 	margin: 0; 
 	position: absolute; 
 	top: 160px;
-	border-radius: 3px;
 }
 
 .index-btn-img {
@@ -174,13 +233,12 @@
 }
 
 .block-aqua {
-	/*background-color: #ccffff; */
-	background-color: #3399cc;
+	background-color: #ccffff;
 	width: 100%;
 	margin-left: 0px;
 	margin-right: 0px;
-	padding: 0px;
-	padding-bottom: 0px;
+	padding-top: 30px;
+	padding-bottom: 30px;
 }
 
 .block-grey {
@@ -189,6 +247,15 @@
 	margin-right: 0px;
 	padding-top: 30px;
 	padding-bottom: 30px;
+}
+
+.block-dark-green {
+	background-color: #07260c;
+	width: 100%;
+	margin-left: 0px;
+	margin-right: 0px;
+	padding-top: 5px;
+	padding-bottom: 5px;
 }
 
 .home-block-title {
@@ -210,21 +277,41 @@
 }
 
 .breadcrumb-text {
-	font-size: 14px;
-/* font-size: 16px; */ 
-	color: #002200; 
-}
-
-.current-breadcrumb-text {
-	font-size: 14px;
-/* font-size: 16px; */ 
-	color: #002200; 
+	font-size: 16px; 
+	color: #003300; 
+	text-shadow: none;
 }
 
 .breadcrumb-text:hover {
 	font-size: 16px; 
 	font-weight: bold;
 	color: #003300; 
+	text-shadow: 0;
+}
+
+.my-nav-tabs {
+	background: transparent;
+}
+
+.my-nav-tabs > .active {
+	font-size: 16px; 
+	color: #003300;
+	text-shadow: none;
+	background:transparent;
+}
+
+.my-nav-tabs > .active > a {
+	font-size: 16px; 
+	color: #003300;
+	text-shadow: none;
+	background-color: #99cc66;
+}
+
+.my-nav-tabs > .active > a:hover {
+	font-size: 16px; 
+	color: #003300; 
+	text-shadow: none;
+	background-color: #99cc66;
 }
 
 .category-nav {
@@ -263,6 +350,7 @@
 	position: absolute; 
 	left: 165px; 
 	top: 70px;
+	background: transparent;
 }
 
 .logo {
@@ -275,8 +363,8 @@
 }
 
 .my-item {
-	height: 325px; 	
-	background-color: #3399cc;
+	height: 300px; 	
+	background-color: #07260c;
 }
 
 .carousel-name-text {
@@ -285,7 +373,7 @@
 	font-weight: 700;
 	margin-left: 60px;
 	position: relative;
-	top: 200px;
+	top: 130px;
 }
 
 .carousel-info-text {
@@ -294,53 +382,99 @@
 	font-weight: 700;
 	margin-left: 60px;
 	position: relative;
-	top: 200px;
+	top: 130px;
 }
 
 .carousel-player {
 	position: relative;
-	top: 200px;
-	left: 60px;
+	top: 140px;
+	left: 65px;
 }
 
-.page-margins {
-	width: 1120px;
-	margin-top:145px;
-	/*width: 71.4%;
-	margin-left: 22.15%;
-	 if nav-bar is span2:
-	width: 79.6%;
-	margin-left: 13.95%; */
+.action-span {
+	height: 200px;
+	z-index: 10000;
+	border-width: 3px;
+	border-color: #003300;
+	border-style: solid;
 }
 
-.block-padding {
-	padding: 6%;
-	padding-top: 5.5%;
-	padding-bottom: 6.2%;
-	margin-bottom:0px;
-	border-radius: 3px;
+.soda-link-text {
+	margin-top: 25px;
+	margin-bottom: 25px; 
+	font-size: 16px; vertical-align: 
+	middle; color: #003300;
 }
 
-.inner-body {
-	margin-left: -15px;
+.soda-link-text:hover {
+	margin-top: 25px;
+	margin-bottom: 25px; 
+	font-size: 16px; vertical-align: 
+	middle; color: #003300;
 }
 
-.chain-title {
-	margin-top: 16px;
-    margin-bottom: 0px;
-    padding-top: 65px;
-    height: 118.5px;
-    background-image: url('../img/FoodChain_TitleImage.jpg');
+.action-title {
+	margin-top: 0px;
+	margin-bottom: 0px;
+	padding-top: 65px;
+	height: 215px;
+	background-image: url('../img/FoodAction.jpg');
 }
 
-.columns {
--moz-column-count:2; /* Firefox */
--webkit-column-count:2; /* Safari and Chrome */
-column-count:2;
+.culture-title {
+	margin-top: 0px;
+	margin-bottom: 0px;
+	padding-top: 65px;
+	height: 200px;
+	background-image: url('../img/FoodCulture.jpg');
 }
 
-.column-width {
--moz-column-gap:50px; /* Firefox */
--webkit-column-gap:50px; /* Safari and Chrome */
-column-gap:50px;
+.resources-span {
+	height: 70px;
+	border-radius: 10px;
+	background-color: #07260c;
+}
+
+.lesson-plan-link {
+	font-size: 16px; 
+	color: #003300;
+}
+
+.lesson-plan-link:hover {
+	font-size: 16px;
+	color: #003300; 
+	font-weight:bold;
+	text-decoration: underline;
+}
+
+.job-training {
+	background-color: #ccffff; 
+	padding: 10px; 
+	padding-top: 20px;
+	border-width: 3px;
+	border-style: solid;
+	border-color: #003300;
+	overflow: scroll;
+}
+
+.homepage-item {
+	background-color: #07260c;
+	height: 500px;
+}
+
+.voices-link {
+	margin: 10px; 
+	font-size: 28px; 
+	text-align: center; 
+	color: #003300; 
+	font-weight: 700;
+}
+
+.voices-link:hover {
+	margin: 10px; 
+	font-size: 28px; 
+	text-align: center; 
+	color: #003300; 
+	font-weight: 800;
+	text-decoration: none;
 }
