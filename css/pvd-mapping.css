@@ -517,13 +517,22 @@ font-family: 'Raleway', sans-serif;
 }
 
 .columns {
--moz-column-count:2; /* Firefox */
--webkit-column-count:2; /* Safari and Chrome */
-column-count:2;
+	-moz-column-count:2; /* Firefox */
+	-webkit-column-count:2; /* Safari and Chrome */
+	column-count:2;
 }
 
 .column-width {
--moz-column-gap:50px; /* Firefox */
--webkit-column-gap:50px; /* Safari and Chrome */
-column-gap:50px;
+	-moz-column-gap:50px; /* Firefox */
+	-webkit-column-gap:50px; /* Safari and Chrome */
+	column-gap:50px;
+}
+
+.logo {
+	height: 150px;
+	width: auto;
+	position: absolute;
+	left: 8px;
+	top: 10px;
+	z-index: 10000;
 }
