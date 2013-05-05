@@ -56,14 +56,14 @@
     <a href="../culture.html"  class="nav-bar-btn-text" title="WHO IS COOKING?"><p class="body-text nav-text">CULTURE</p></a>
   </div>
 </div>
-<a href="../about-us.html"><img src="../img/Logo.png" style="height: 150px; width: auto; position: absolute; left: 5px; top: 5px; z-index: 10000"/></a>
+<a href="../index.html"><img src="../img/Logo.png" class="logo"/></a>
 
 <!-- Breadcrumbs
 	======================================== -->
 <ul class="breadcrumb my-breadcrumb">
   <li><a href="../index.html" class="body-text breadcrumb-text">Home</a><span class="divider">/</span></li>
   <li><a href="../food-chain.html" class="body-text breadcrumb-text">Food Chain</a><span class="divider">/</span></li>
-  <li class="body-text current-breadcrumb-text" style="font-weight: bold;">Processing</li>
+  <li class="body-text current-breadcrumb-text" style="font-weight: bold;">Food Processing</li>
 </ul>
 <br/>
 <h1 class="title title-text chain-title">FOOD PROCESSING</h1>
@@ -71,31 +71,28 @@
 <!-- Page body
 ================================================== -->
 <div class="page-body" href="#">
-  <div class="row-fluid page-margins" style="background-color:#f3f3f3;">
-    <div id="scroll" class="span3" style="background-color: #f3f3f3;">
+  <div class="row-fluid" style="margin-top:150px; background-color:#f3f3f3;">
+    <div id="scroll" class="span3" style="position:fixed; background-color: #f3f3f3;">
       <ul class="nav nav-tabs nav-stacked" style="margin-bottom: 0px;">
         <li ><a class="active body-text breadcrumb-text" href="./corporatization.html">Corporatization in Food Service</a></li>
-        <li ><a class="body-text breadcrumb-text" href="./job-training.html">Job Training for Food Service</a></li>
-        <li ><a class="body-text breadcrumb-text" href="#">Food Processing</a></li>
+        <li ><a class="body-text breadcrumb-text" href="./job-training.html">Violations in the Food Sector</a></li>
+        <li ><a class="body-text breadcrumb-text" style="font-weight:bold;" href="#">Food Processing</a></li>
         <li ><a class="body-text breadcrumb-text" href="./working-farms.html">Working on Farms</a></li>
         <li ><a class="body-text breadcrumb-text" href="./working-grocery.html">Working in Grocery Stores</a></li>
         <li ><a class="body-text breadcrumb-text" href="./working-restaurants.html">Working in Restaurants</a></li>
       </ul>
-    </div>    
- 	<div class="span9 inner-body" style="margin-left:0px;">
- 	  <div class="row-fluid">
-		<div class="span12 block-padding" style="background-color:#1ec694;">
-      		<p class="body-text description-text" style="font-size: 22px; text-align: center; color: #000000;">Food Processing and Manufacturing represent a part of the food chain that is often forgotten in the field-to-fork narratives that are so popular. However, in Rhode Island there are a large number of these facilities and they employ a significant number of people.</p>
-	  	</div>
-	  </div>
- <!-- Infographic -->
- 	  <div class="row-fluid">
- 	  	<div class="span12" style="margin-top:0px; margin-bottom:5px; background-color: #f3f3f3; text-align: center">
-		<img src="../infographic/food_processing.png" style="width: 100%; height: auto;"> 
-	  	</div>
-	  </div>
+	</div>    
+  </div>
+ 
+  <div class="row-fluid">
+	<div class="span3"> </div>
+ 	<div class="span8" style="margin-left:0px; background-color:#3399cc;">
+      	<img src="../infographic/food_processing.png" style="width: 100%; height: auto;"> 
+
+      	<p class="body-text description-text block-padding block-text"> Food Processing and Manufacturing represent a part of the food chain that is often forgotten in the field-to-fork narratives that are so popular. However, in Rhode Island there are a large number of these facilities and they employ a significant number of people.</p>
 	</div>
   </div>
+
   <div class="site-map">
     <p>Site map</p>
   </div>
@@ -129,12 +126,17 @@
     <!-- mapbox  -->
     <script src="../js/mapbox.js"></script>
     <script type="text/javascript">
-      mapbox.auto('environmental-map', 'dgarfield.map-roo8js9t', function(map) {
-        map.addLayer(mapbox.layer().id('dgarfield.agro_env_total-chemical').named('Total'));
-        map.addLayer(mapbox.layer().id('dgarfield.agro_env_chem-per-op').named('Average'));
-        map.addLayer(mapbox.layer().id('dgarfield.agro_env_1').named('Env_Certified'));
-        map.addLayer(mapbox.layer().id('dgarfield.agro_env_GAP').named('GAP'));
-      });
+      var elem = document.getElementById("scroll");
+
+        window.onscroll = function (oEvent) {
+          if ($(window).scrollTop() < 300) {
+              elem.style.position = "absolute";
+              elem.style.top = "150px";
+          } else {
+              elem.style.position = "fixed";
+              elem.style.top = "0";
+          }
+        }
     </script>
   </body>
 </html>
