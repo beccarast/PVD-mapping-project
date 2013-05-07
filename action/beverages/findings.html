@@ -18,7 +18,7 @@
     <link href='http://fonts.googleapis.com/css?family=Noto+Sans|Lato|PT+Sans+Caption|Raleway:900,800,700,500' rel='stylesheet' type='text/css'>
 
     <link href='http://api.tiles.mapbox.com/mapbox.js/v0.6.6/mapbox.css' rel='stylesheet' />
-    <link rel="stylesheet" href="../../css/pvd-mapping-mac.css" />
+    <link rel="stylesheet" href="../../css/pvd-mapping.css" />
     <style>
       body {
         background-color: #f3f3f3;
@@ -60,40 +60,48 @@
 <ul class="breadcrumb my-breadcrumb">
   <li><a href="../../index.html" class="body-text breadcrumb-text">Home</a><span class="divider">/</span></li>
   <li><a href="../../action.html" class="body-text breadcrumb-text">Action</a><span class="divider">/</span></li>
-  <li><a href="../beverages.html" class="body-text breadcrumb-text">Sugar-Sweetened Beverages</a><span class="divider">/</span></li>
-  <li><a href="#" class="body-text breadcrumb-text" style="font-weight: bold;">Our Findings</a></li>
+  <li class="body-text breadcrumb-text" style="font-weight: bold;">Sugar-Sweetened Beverages: Our Findings</li>
 </ul>
-<h1 class="title title-text action-title">SUGAR-SWEETENED BEVERAGES:<br>OUR FINDINGS</h1>
+<h1 class="title title-text action-title">SUGAR-SWEETENED BEVERAGES</h1>
 
 <!-- Page body
 ================================================== -->
 <div class="page-body" href="#">
   <br/>
-  <div class="row-fluid" style="margin-top: 100px;">
+  <div class="row-fluid" style="margin-top: 130px;">
     <div id="scroll" class="span3" style="background-color: #f3f3f3; position: fixed;">
       <ul class="nav nav-tabs nav-stacked">
-          <li ><a class="body-text breadcrumb-text" href="issue-framing.html">Framing the Issue</a></li>
-          <li ><a class="body-text breadcrumb-text" href="#">Our Findings</a></li>
-          <li ><a class="body-text breadcrumb-text" href="whats-next.html">What's Next?</a></li>
+          <li class="body-text breadcrumb-nonlink" style="padding-left: 14px;">Sugar-Sweetened Beverages</li>
+          <li ><a class="body-text breadcrumb-text" href="#" style="padding-left: 28px; font-weight: 700;">Our Findings</a></li>
+          <li ><a class="body-text breadcrumb-text" href="issue-framing.html" style="padding-left: 28px;">The Issue</a></li>
+          <li ><a class="body-text breadcrumb-text" href="whats-next.html" style="padding-left: 28px;">What's Next?</a></li>
+          <li ><a class="body-text breadcrumb-text" href="../job-training.html" style="background-color: #DEDEDE;">Job Training</a></li>
+          <li class="body-text breadcrumb-nonlink" style="padding-left: 14px;">Community Engagement</li>
+          <li ><a class="body-text breadcrumb-text" href="../community/process.html" style="padding-left: 28px;">Our Process</a></li>
+          <li ><a class="body-text breadcrumb-text" href="../community/project-wheel.html" style="padding-left: 28px;">Our Projects</a></li>
+          <li class="body-text breadcrumb-nonlink" style="padding-left: 28px;">Resources</li>
+          <li ><a class="body-text breadcrumb-text" href="../community/resources/tools.html" style="padding-left: 42px;">Tools for Garden Projects</a></li>
+          <li ><a class="body-text breadcrumb-text" href="../community/resources/recipes.html" style="padding-left: 42px;">Recipes</a></li>
+          <li ><a class="body-text breadcrumb-text" href="../community/resources/lesson-plans.html" style="padding-left: 42px;">Lesson Plans</a></li>
         </ul>
     </div>
   </div>
-  <div class="block-grey" style="padding-top: 0px; padding-bottom: 0px;">
-    <div class="row-fluid" style="background-color: #99cc66;">
-      <div class="span3" style="background-color: #f3f3f3;">
-      </div>
-      <div class="span9">
-        <p class="body-text" style="font-size: 20px; color: #003300; margin-top: 15px; margin-bottom: 15px;">In our first year of research, we found that, on average, stores within 1/4 mile of Providence public elementary schools offered 28 different varieties of sugar-sweetened beverages. Of the hundreds of brands of SSBs, 75% are owned by just 3 companies: Coca-Cola, Pepsi, and Dr. Pepper/Snapple Group. These charts represent our research process and findings (percentages don't quite add up to 100 due to rounding).</p>
-      </div> 
-     </div>
-   </div>
    <div class="block-grey" style="padding-top: 0px; padding-bottom: 0px;">
     <div class="row-fluid">
       <div class="span3"></div>
-      <div class="span9" style="margin-left: 0px;">
+      <div class="span8" style="margin-left: 0px;">
         <img src="../../img/SSB.png" style="width: 100%; height: auto;"/>
       </div>
     </div>
+   </div>
+   <div class="block-grey" style="padding-top: 0px; padding-bottom: 0px;">
+    <div class="row-fluid">
+      <div class="span3">
+      </div>
+      <div class="span8" style="background-color: #00CC99; margin-left: 0px;">
+        <p class="body-text block-padding" style="font-size: 20px; color: #f3f3f3; margin-top: 15px; margin-bottom: 15px;">In our first year of research, we found that, on average, stores within 1/4 mile of Providence public elementary schools offered 28 different varieties of sugar-sweetened beverages. Of the hundreds of brands of SSBs, 75% are owned by just 3 companies: Coca-Cola, Pepsi, and Dr. Pepper/Snapple Group. These charts represent our research process and findings (percentages don't quite add up to 100 due to rounding).</p>
+      </div> 
+    </div> 
    </div>
    <br/><br/>
     <div class="site-map">
@@ -132,9 +140,9 @@
       var elem = document.getElementById("scroll");
 
         window.onscroll = function (oEvent) {
-          if ($(window).scrollTop() < 300) {
+          if ($(window).scrollTop() < 300 || window.scrollY > 1690) {
               elem.style.position = "absolute";
-              elem.style.top = "120px";
+              elem.style.top = "150px";
           } else {
               elem.style.position = "fixed";
               elem.style.top = "0";

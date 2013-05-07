@@ -74,39 +74,46 @@
 	margin-right: 2px;
 }
 
-.voices {
+.voices-turquoise {
 	height: 300px;
-	background-color: #99cc66;
+	background-color: #00CC99;
+}
+
+.voices-blue {
+	height: 300px;
+	background-color: #3399CC;
+}
+
+.voices-orange {
+	height: 300px;
+	background-color: #FF9900;
 }
 
 .voices-row {
-	width: 90%;
-	margin-left: 5%;
-	margin-right: 5%;
 	margin-bottom: 20px;
 }
 
 .voices-name {
 	margin-top: 25px;
 	font-size: 24px; 
-	color: #07260c; 
+	color: #f3f3f3; 
 	font-weight:700;
 	position: relative;
-	left: 10%;
+	margin-left: 20px;
 }
 
 .voices-title {
 	font-size: 18px;
-	color: #07260c; 
+	color: #f3f3f3; 
 	font-weight: 700;
 	position: relative;
-	left: 10%;
+	margin-left: 20px;
 }
 
 .voices-player {
 	position: relative;
 	top: 50px;
-	left: 10%;
+	left: 10px;
 }
 
 .about-text {
@@ -147,12 +154,12 @@ font-family: 'Raleway', sans-serif;
 }
 
 .tagline-text {
-	font-size: 24px; 
+	font-size: 36px; 
 	color: #003300; 
-	font-weight: bold;
-	font-style: italic;
+	font-weight: 800;
+/*	font-style: italic;*/
 	line-height: normal;
-	margin-left: 6%;
+	margin-left: 10%;
 	text-align: left;
 	margin-top: 35px;
 }
@@ -309,28 +316,31 @@ font-family: 'Raleway', sans-serif;
 }
 
 .my-nav-tabs {
+/*	background-color: #DEDEDE;*/
 	background: transparent;
 }
 
-.my-nav-tabs > .active {
+.my-nav-tabs > li {
 	font-size: 16px; 
 	color: #003300;
 	text-shadow: none;
-	background:transparent;
+	background-color: #DEDEDE;
+	border-top-left-radius: 7px;
+	border-top-right-radius: 7px;
 }
 
 .my-nav-tabs > .active > a {
 	font-size: 16px; 
-	color: #003300;
+	color: #f3f3f3;
 	text-shadow: none;
-	background-color: #99cc66;
+	background-color: #3399CC;
 }
 
 .my-nav-tabs > .active > a:hover {
 	font-size: 16px; 
-	color: #003300; 
+	color: #f3f3f3; 
 	text-shadow: none;
-	background-color: #99cc66;
+	background-color: #3399CC;
 }
 
 .category-nav {
@@ -418,19 +428,19 @@ font-family: 'Raleway', sans-serif;
 .soda-link-text {
 	margin-top: 25px;
 	margin-bottom: 25px; 
-	font-size: 16px; vertical-align: 
-	middle; color: #003300;
+	font-size: 18px; vertical-align: 
+	middle; color: #f3f3f3;
 }
 
 .soda-link-text:hover {
 	margin-top: 25px;
 	margin-bottom: 25px; 
-	font-size: 16px; vertical-align: 
-	middle; color: #003300;
+	font-size: 18px; vertical-align: 
+	middle; color: #f3f3f3;
 }
 
 .action-title {
-	margin-top: 0px;
+	margin-top: 30px;
 	margin-bottom: 0px;
 	padding-top: 65px;
 	height: 125px;
@@ -438,10 +448,10 @@ font-family: 'Raleway', sans-serif;
 }
 
 .culture-title {
-	margin-top: 0px;
+	margin-top: 30px;
 	margin-bottom: 0px;
 	padding-top: 65px;
-	height: 200px;
+	height: 125px;
 	background-image: url('../img/FoodCulture.jpg');
 }
 
@@ -453,23 +463,22 @@ font-family: 'Raleway', sans-serif;
 
 .lesson-plan-link {
 	font-size: 16px; 
-	color: #003300;
+	color: #f3f3f3;
 }
 
 .lesson-plan-link:hover {
 	font-size: 16px;
-	color: #003300; 
+	color: #f3f3f3; 
 	font-weight:bold;
 	text-decoration: underline;
 }
 
 .job-training {
-	background-color: #ccffff; 
 	padding: 10px; 
-	padding-top: 20px;
+	padding-top: 20px;/*
 	border-width: 3px;
 	border-style: solid;
-	border-color: #003300;
+	border-color: #003300;*/
 	overflow: scroll;
 }
 
@@ -550,4 +559,45 @@ font-family: 'Raleway', sans-serif;
 	left: 8px;
 	top: 10px;
 	z-index: 10000;
+}
+
+.span-blue {
+	background-color: #3399CC;
+}
+
+.span-orange {
+	background-color: #FF9900;
+}
+
+.span-turquoise {
+	background-color: #00CC99;
+}
+
+.job-title {
+	position: relative; 
+	top: 20%; 
+	color: #f3f3f3; 
+	font-size: 30px; 
+	font-weight: 700; 
+	padding-bottom: 0px; 
+	vertical-align: middle; 
+	line-height: normal; 
+	text-align: center;
+}
+
+.job-text {
+	padding-top: 20px; 
+	font-size: 24px; 
+	vertical-align: middle; 
+	color: #f3f3f3; 
+	text-align: justify; 
+	line-height: normal; 
+	text-align: center; 
+	position: relative; 
+	top: 20%;
+}
+
+.tab-row {
+	background-color: #3399CC; 
+	padding-bottom: 25px;
 }

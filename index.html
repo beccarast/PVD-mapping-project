@@ -17,7 +17,7 @@
 
     <link href='http://fonts.googleapis.com/css?family=Noto+Sans|Lato|PT+Sans+Caption|Raleway:900,800,700,500' rel='stylesheet' type='text/css'>
     <link href='http://api.tiles.mapbox.com/mapbox.js/v0.6.6/mapbox.css' rel='stylesheet' />
-    <link rel="stylesheet" href="css/pvd-mapping-mac.css" />
+    <link rel="stylesheet" href="css/pvd-mapping.css" />
     <style>
       body {
         background-color: #f3f3f3;
@@ -61,61 +61,66 @@
 <!-- Page body
 ================================================== -->
 <div class="page-body" href="#">
-  <p class="body-text tagline-text">Exploring opportunities for and obstacles to food justice in Providence, RI.</p>
-  <div class="about-link">
-    <a class="about-text" href="./about-us.html"><p class="body-text" style="text-align: center; margin-bottom: 0px;">About this student-driven intiative.</p></a>
-  </div>
-  <div id="myCarousel" class="carousel slide myCarousel" style="width: 670px; margin-left: auto; margin-right: auto;">
-        <!-- Carousel items -->
-        <div class="carousel-inner">
-          <div class="active item homepage-item">
-            <a href="./culture.html">
-              <div class="homepage-item">
-                <img src="img/FOOD_CULTURE.jpg" style="margin-left: 150px;"/>
-                <div class="carousel-caption">
-                  <h4 class="body-text">Food Culture</h4>
-                  <p class="body-text">Who is cooking? Click to hear stories from immigrants in RI.</p>
+  <div class="block-grey" style="padding-top: 0px; padding-bottom: 0px;">
+    <div class="row-fluid">
+      <div class="span3">
+        <p class="body-text tagline-text block-padding">Exploring opportunities for and obstacles to food justice in Providence, RI.</p>
+      </div>
+      <div class="span9">
+        <div id="myCarousel" class="carousel slide myCarousel" style="max-width: 670px; margin-left: auto; margin-right: auto;">
+              <!-- Carousel items -->
+              <div class="carousel-inner">
+                <div class="active item homepage-item">
+                  <a href="./culture.html">
+                    <div class="homepage-item">
+                      <img src="img/FOOD_CULTURE.jpg" style="margin-left: 150px;"/>
+                      <div class="carousel-caption">
+                        <h4 class="body-text">Food Culture</h4>
+                        <p class="body-text">Who is cooking? Click to hear stories from immigrants in RI.</p>
+                      </div>
+                    </div>
+                  </a>
+                </div>
+                <div class="item homepage-item">
+                  <a href="./production.html">
+                    <div class="homepage-item">
+                      <img src="img/FOOD_PRODUCTION.jpg" style="margin-left: 2px;"/>
+                      <div class="carousel-caption">
+                        <h4 class="body-text" class="body-text">Food Production</h4>
+                        <p class="body-text">Where does RI farm? Click to learn more about land, local food, and soil in RI.</p>
+                      </div>
+                    </div>
+                  </a>
+                </div>
+                <div class="item homepage-item">
+                  <a href="./food-chain.html">
+                    <div class="homepage-item">
+                      <img src="img/FOOD_CHAIN.jpg" style="margin-left: 75px; position: relative; top: 60px;"/>
+                      <div class="carousel-caption">
+                        <h4 class="body-text">Food Chain</h4>
+                        <p class="body-text">Where does PVD work? Click to learn more about corporatization in food service, food processing, violations and enforcement in the food sector, and working in grocery stores, restaurants, and on farms.</p>
+                      </div>
+                    </div>
+                  </a>
+                </div>
+                <div class="item homepage-item">
+                  <a href="./action.html">
+                    <div class="homepage-item">
+                      <img src="img/FOOD_ACTION.jpg"/>
+                      <div class="carousel-caption">
+                        <h4 class="body-text">Food Action</h4>
+                        <p class="body-text">How does PVD act? Click to learn more about sugar-sweetend beverages and policies, job training programs, and community engagement in Providence.</p>
+                      </div>
+                    </div>
+                  </a>
                 </div>
               </div>
-            </a>
-          </div>
-          <div class="item homepage-item">
-            <a href="./production.html">
-              <div class="homepage-item">
-                <img src="img/FOOD_PRODUCTION.jpg" style="margin-left: 2px;"/>
-                <div class="carousel-caption">
-                  <h4 class="body-text" class="body-text">Food Production</h4>
-                  <p class="body-text">Where does RI farm? Click to learn more about land, local food, and soil in RI.</p>
-                </div>
-              </div>
-            </a>
-          </div>
-          <div class="item homepage-item">
-            <a href="./food-chain.html">
-              <div class="homepage-item">
-                <img src="img/FOOD_CHAIN.jpg" style="margin-left: 75px; position: relative; top: 60px;"/>
-                <div class="carousel-caption">
-                  <h4 class="body-text">Food Chain</h4>
-                  <p class="body-text">Where does PVD work? Click to learn more about corporatization in food service, food processing, violations and enforcement in the food sector, and working in grocery stores, restaurants, and on farms.</p>
-                </div>
-              </div>
-            </a>
-          </div>
-          <div class="item homepage-item">
-            <a href="./action.html">
-              <div class="homepage-item">
-                <img src="img/FOOD_ACTION.jpg"/>
-                <div class="carousel-caption">
-                  <h4 class="body-text">Food Action</h4>
-                  <p class="body-text">How does PVD act? Click to learn more about sugar-sweetend beverages and policies, job training programs, and community engagement in Providence.</p>
-                </div>
-              </div>
-            </a>
+              <!-- Carousel nav -->
+              <a class="carousel-control left" href="#myCarousel" data-slide="prev">&lsaquo;</a>
+              <a class="carousel-control right" href="#myCarousel" data-slide="next">&rsaquo;</a>
+            </div>
           </div>
         </div>
-        <!-- Carousel nav -->
-        <a class="carousel-control left" href="#myCarousel" data-slide="prev">&lsaquo;</a>
-        <a class="carousel-control right" href="#myCarousel" data-slide="next">&rsaquo;</a>
       </div>
     <br/>
   <!-- <div class="row" style="display: block; margin-left: auto; margin-right: auto; width: 90%;">
