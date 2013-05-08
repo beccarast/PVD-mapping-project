@@ -45,6 +45,13 @@
 	width: 90%;
 }
 
+.home-carousel {
+	max-width: 750px;
+	width: 80%;
+	margin-left: 10%;
+	margin-right: 10%;
+}
+
 .voices-nav-row {
 	background: transparent;
 	width: 100%;
@@ -165,11 +172,15 @@ font-family: 'Raleway', sans-serif;
 }
 
 .title {
-	color: #003300;
-	font-size: 48px;
-	font-weight: bold;
-	margin-top: 25px;
+/*	color: #002200;*/
+	color: #f3f3f3;
+	font-size: 72px;
+	font-weight: 900;
+	margin-top: 5px;
 	text-align: center;
+	padding: 20px;
+	background-color: #003300;
+	opacity: .7;
 }
 
 .site-map {
@@ -230,8 +241,8 @@ font-family: 'Raleway', sans-serif;
 	border-radius: 5px;
 }
 
-.block-green {
-	background-color: #99cc66;
+.block-blue {
+	background-color: #3399CC;
 	width: 100%;
 	margin-left: 0px;
 	margin-right: 0px;
@@ -239,8 +250,17 @@ font-family: 'Raleway', sans-serif;
 	padding-bottom: 30px;
 }
 
-.block-aqua {
-	background-color: #ccffff;
+.block-orange {
+	background-color: #FF9900;
+	width: 100%;
+	margin-left: 0px;
+	margin-right: 0px;
+	padding-top: 30px;
+	padding-bottom: 30px;
+}
+
+.block-turquoise {
+	background-color: #00CC99;
 	width: 100%;
 	margin-left: 0px;
 	margin-right: 0px;
@@ -268,7 +288,7 @@ font-family: 'Raleway', sans-serif;
 .home-block-title {
 	font-size: 50px; 
 	font-weight: bold;
-	color: #003300; 
+	color: #f3f3f3; 
 	line-height: normal;
 	text-align: center;
 	vertical-align: middle;
@@ -278,7 +298,7 @@ font-family: 'Raleway', sans-serif;
 .home-block-text {
 	font-size: 25px; 
 	font-weight: bold;
-	color: #003300; 
+	color: #f3f3f3; 
 	line-height: normal;
 	text-align: center;
 }
@@ -370,7 +390,7 @@ font-family: 'Raleway', sans-serif;
 
 .justify-text {
 	font-size: 18px; 
-	color: #003300; 
+	color: #f3f3f3; 
 	line-height: normal;
 	text-align: justify;
 }
@@ -394,6 +414,32 @@ font-family: 'Raleway', sans-serif;
 .my-item {
 	height: 300px; 	
 	background-color: #07260c;
+}
+
+.access-item {
+	height: 300px; 	
+	background-color: #00CC99;
+}
+
+.access-name-text {
+	color: #f3f3f3; 
+	font-size: 26px; 
+	font-weight: 700;
+	margin-left: 50px;
+	margin-right: 50px;
+	padding-top: 20px;
+}
+
+.access-info-text {
+	color: #f3f3f3; 
+	font-size: 20px; 
+	margin-left: 50px;
+	margin-right: 50px;
+}
+
+.access-player {
+	margin-left: 50px;
+	margin-top: 20px;
 }
 
 .carousel-name-text {
@@ -439,6 +485,17 @@ font-family: 'Raleway', sans-serif;
 	middle; color: #f3f3f3;
 }
 
+.home-title {
+	margin-top: 30px;
+	margin-bottom: 0px;
+	padding-top: 65px;
+	height: 125px;
+	background-image: url('../img/Homepage_Title.jpg');
+	margin-left: 0px;
+	margin-right: 0px;
+	width: 100%;
+}
+
 .action-title {
 	margin-top: 30px;
 	margin-bottom: 0px;
@@ -453,6 +510,14 @@ font-family: 'Raleway', sans-serif;
 	padding-top: 65px;
 	height: 125px;
 	background-image: url('../img/FoodCulture.jpg');
+}
+
+.access-title {
+	margin-top: 30px;
+	margin-bottom: 0px;
+	padding-top: 65px;
+	height: 125px;
+	background-image: url('../img/FoodAccess.jpg');
 }
 
 .resources-span {
@@ -483,8 +548,7 @@ font-family: 'Raleway', sans-serif;
 }
 
 .homepage-item {
-	background-color: #07260c;
-	height: 500px;
+	max-height: 500px;
 }
 
 .voices-link {
