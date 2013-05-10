@@ -60,10 +60,9 @@
 <ul class="breadcrumb my-breadcrumb">
   <li><a href="../../../index.html" class="body-text breadcrumb-text">Home</a><span class="divider">/</span></li>
   <li><a href="../../../action.html" class="body-text breadcrumb-text">Action</a><span class="divider">/</span></li>
-  <li><a href="../../community.html" class="body-text breadcrumb-text">Community Engagement</a><span class="divider">/</span></li>
-  <li class="body-text breadcrumb-text" style="font-weight: bold;">Resources: Lesson Plans</li>
+  <li class="body-text breadcrumb-text" style="font-weight: bold;">Community Engagement - Resources: Lesson Plans</li>
 </ul>
-<h1 class="title title-text action-title" style="height: 120px;">RESOURCES</h1>
+<div class="action-title"><p class="title title-text">RESOURCES</p></div>
 
 <!-- Page body
 ================================================== -->
@@ -84,9 +83,9 @@
           <li ><a class="body-text breadcrumb-text" href="recipes.html" style="padding-left: 42px;">Recipes</a></li>
           <li ><a class="body-text breadcrumb-text" href="#" style="padding-left: 42px; font-weight: 700;">Lesson Plans</a></li>
           <li class="body-text breadcrumb-nonlink" style="padding-left: 42px; font-weight: 700; font-style: italic;font-size: 14px;">Additional Resources</li>
-          <li ><a target="_blank" class="body-text breadcrumb-text" href="../docs/LillianMathewsPoster.pdf" style="padding-left: 42px; font-size: 14px;">Lillian Mathews' Thesis Poster</a></li>
-          <li ><a target="_blank" class="body-text breadcrumb-text" href="../docs/JHSHCompostingCurriculum.pdf" style="padding-left: 42px; font-size: 14px;">John Hope Settlement House Composting Curriculum</a></li>
-          <li ><a target="_blank" class="body-text breadcrumb-text" href="../docs/JHSH_BrownNews.pdf" style="padding-left: 42px; font-size: 14px;">Growing Community at the John Hope Settlement House</a></li>
+          <li ><a target="_blank" class="body-text breadcrumb-text" href="../../../docs/LillianMathewsPoster.pdf" style="padding-left: 42px; font-size: 14px;">Lillian Mathews' Thesis Poster</a></li>
+          <li ><a target="_blank" class="body-text breadcrumb-text" href="../../../docs/JHSHCompostingCurriculum.pdf" style="padding-left: 42px; font-size: 14px;">John Hope Settlement House Composting Curriculum</a></li>
+          <li ><a target="_blank" class="body-text breadcrumb-text" href="../../../docs/JHSH_BrownNews.pdf" style="padding-left: 42px; font-size: 14px;">Growing Community at the John Hope Settlement House</a></li>
         </ul>
     </div>
   </div>
@@ -213,18 +212,23 @@
       var elem = document.getElementById("scroll");
 
         window.onscroll = function (oEvent) {
-          if ($(window).scrollTop() > 200 && 
-              ((document.getElementById('2').className == "tab-pane active") || 
-              (document.getElementById('3').className == "tab-pane active"))) {
-              elem.style.position="absolute";
-              elem.style.top = "0px";
-          } else if ($(window).scrollTop() < 350 || 
-              (document.getElementById('1').className == "tab-pane active" && window.scrollY > 470)) {
+          if ($(window).scrollTop() > 280) {
+
+              if (document.getElementById('2').className == "tab-pane active" ||
+                document.getElementById('3').className == "tab-pane active") {
+                $('#scroll').css({"display":"none"});
+              } else {
+                elem.style.position="absolute";
+                elem.style.top = "0px";
+              }
+          } else if ($(window).scrollTop() < 350) {
               elem.style.position = "absolute";
               elem.style.top = "150px";
+              $('#scroll').css({"display":"block"});
           } else {
               elem.style.position = "fixed";
               elem.style.top = "0";
+              $('#scroll').css({"display":"block"});
           }
         }
     </script>
