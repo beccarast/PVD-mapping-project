@@ -180,7 +180,7 @@ font-family: 'Raleway', sans-serif;
     padding: 20px;
     background-color: #003300;
     opacity: .7;
-
+}
 
 .site-map {
 	background-color: #002200;
@@ -567,15 +567,6 @@ font-family: 'Raleway', sans-serif;
 	text-decoration: none;
 }
 
-.page-margins {
-	width: 1120px;
-	margin-top:145px;
-	/*width: 71.4%;
-	margin-left: 22.15%;
-	 if nav-bar is span2:
-	width: 79.6%;
-	margin-left: 13.95%; */
-}
 
 .block-padding {
 	padding: 5.5%;
@@ -588,10 +579,6 @@ font-family: 'Raleway', sans-serif;
 	text-align: left;
 	font-size: 24px;
 	color: #f3f3f3;
-}
-
-.inner-body {
-	margin-left: -15px;
 }
 
 .columns {
@@ -638,7 +625,8 @@ font-family: 'Raleway', sans-serif;
 	padding-top: 65px;
 	height: 125px;
 	background-image: url('../img/FoodProduction_title.jpg');
-=======
+}
+
 .span-blue {
 	background-color: #3399CC;
 }
@@ -678,5 +666,4 @@ font-family: 'Raleway', sans-serif;
 .tab-row {
 	background-color: #3399CC; 
 	padding-bottom: 25px;
->>>>>>> e09e6145f7a1021b6cee1625906309d4ae3a276f
 }
