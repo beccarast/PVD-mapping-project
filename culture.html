@@ -18,7 +18,7 @@
     <link href='http://fonts.googleapis.com/css?family=Noto+Sans|Lato|PT+Sans+Caption|Raleway:900,800,700,500' rel='stylesheet' type='text/css'>
 
     <link href='http://api.tiles.mapbox.com/mapbox.js/v0.6.6/mapbox.css' rel='stylesheet' />
-    <link rel="stylesheet" href="css/pvd-mapping-mac.css" />
+    <link rel="stylesheet" href="css/pvd-mapping.css" />
     <style>
       body {
         background-color: #f3f3f3;
@@ -56,20 +56,35 @@
     <a href="./culture.html"  class="nav-bar-btn-text" title="WHO IS COOKING?"><p class="body-text nav-text">CULTURE</p></a>
   </div>
 </div>
-<a href="./index.html"><img src="img/Logo.png" style="height: 150px; width: auto; position: absolute; left: 5px; top: 5px; z-index: 10000"/></a>
-<h1 class="title title-text culture-title">FOOD CULTURE</h1>
+<a href="./index.html"><img src="img/Logo.png" class="logo"/></a>
+<ul class="breadcrumb my-breadcrumb">
+  <li><a href="./index.html" class="body-text breadcrumb-text">Home</a><span class="divider">/</span></li>
+  <li class="body-text current-breadcrumb-text" style="font-weight: bold;">Food Culture</li>
+</ul>
+<div class="culture-title"><p class="title title-text">FOOD CULTURE</p></div>
 
 <!-- Page body
 ================================================== -->
 <div class="page-body" href="#">
-  <br/><br/>
-  <div class="block-green" style="margin-top: 45px;">
-      <p class="body-text description-text" style="margin: 10px; margin-left: 25px; margin-right: 25px; font-size: 20px; text-align: justify; color: #003300; font-weight: 700;">What do people in Providence love to eat? What joys and struggles do they face getting hold of the foods they love? The answers to these questions, and more, continue to change as people from all over the world have come to make Providence their home, bringing seeds, recipes and memories from their home country. Through food, these immigrants find ways to support each other, connect to their new country, make a living, and remember the places they have come from.
-      </p>
-      <a href="culture/voices.html" class="body-text voices-link"><p style="text-align: center;">Click here for some of their stories.</p></a>
+  <div class="row-fluid" style="margin-top: 150px;">
+    <div id="scroll" class="span3" style="background-color: #f3f3f3; position: absolute;">
+      <ul class="nav nav-tabs nav-stacked">
+          <li ><a class="body-text breadcrumb-text" href="#" style="font-weight: 700; background-color: #dedede;">Food Culture</a></li>
+          <li ><a class="body-text breadcrumb-text" href="culture/voices.html" style="padding-left: 28px;">Voices of Food Culture</a></li>
+        </ul>
+    </div>
   </div>
-  <div class="block-grey" style="padding-top: 0px;">
-    <img src="img/Final_Immigrants.png" style="width: 100%; height: auto;"/>
+  <div class="block-grey" style="padding-top: 0px; padding-bottom: 0px;">
+    <div class="row-fluid">
+      <div class="span3"></div>
+      <div class="span8" style="margin-left: 0px; background-color: #3399CC;">
+        <img src="img/Final_Immigrants.png" style="width: 100%; height: auto;"/>
+        <p class="body-text block-padding" style="font-size: 20px; text-align: justify; color: #f3f3f3; line-height: normal;">What do people in Providence love to eat? What joys and struggles do they face getting hold of the foods they love? The answers to these questions, and more, continue to change as people from all over the world have come to make Providence their home, bringing seeds, recipes and memories from their home country. Through food, these immigrants find ways to support each other, connect to their new country, make a living, and remember the places they have come from.
+        </p>
+      </div>
+    </div>
+  </div>
+  <br/><br/>
   <div class="site-map">
     <p>Site map</p>
   </div>
@@ -103,6 +118,17 @@
     <!-- mapbox  -->
     <script src="js/mapbox.js"></script>
     <script type="text/javascript">
+      var elem = document.getElementById("scroll");
+
+        window.onscroll = function (oEvent) {
+          if ($(window).scrollTop() < 300) {
+              elem.style.position = "absolute";
+              elem.style.top = "150px";
+          } else {
+              elem.style.position = "fixed";
+              elem.style.top = "0";
+          }
+        }
     </script>
   </body>
 </html>
