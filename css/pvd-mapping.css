@@ -628,16 +628,6 @@ font-family: 'Raleway', sans-serif;
 	column-gap:50px;
 }
 
-<<<<<<< HEAD
-.logo {
-	height: 150px;
-	width: auto;
-	position: absolute;
-	left: 8px;
-	top: 10px;
-	z-index: 10000;
-}
-
 .button-text {
 	font-size: 32px;
 	text-align:center;
