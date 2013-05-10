@@ -45,6 +45,13 @@
 	width: 90%;
 }
 
+.home-carousel {
+	max-width: 750px;
+	width: 80%;
+	margin-left: 10%;
+	margin-right: 10%;
+}
+
 .voices-nav-row {
 	background: transparent;
 	width: 100%;
@@ -74,39 +81,46 @@
 	margin-right: 2px;
 }
 
-.voices {
+.voices-turquoise {
 	height: 300px;
-	background-color: #99cc66;
+	background-color: #00CC99;
+}
+
+.voices-blue {
+	height: 300px;
+	background-color: #3399CC;
+}
+
+.voices-orange {
+	height: 300px;
+	background-color: #FF9900;
 }
 
 .voices-row {
-	width: 90%;
-	margin-left: 5%;
-	margin-right: 5%;
 	margin-bottom: 20px;
 }
 
 .voices-name {
 	margin-top: 25px;
 	font-size: 24px; 
-	color: #07260c; 
+	color: #f3f3f3; 
 	font-weight:700;
 	position: relative;
-	left: 10%;
+	margin-left: 20px;
 }
 
 .voices-title {
 	font-size: 18px;
-	color: #07260c; 
+	color: #f3f3f3; 
 	font-weight: 700;
 	position: relative;
-	left: 10%;
+	margin-left: 20px;
 }
 
 .voices-player {
 	position: relative;
 	top: 50px;
-	left: 10%;
+	left: 10px;
 }
 
 .about-text {
@@ -147,26 +161,48 @@ font-family: 'Raleway', sans-serif;
 }
 
 .tagline-text {
-	font-size: 24px; 
+	font-size: 36px; 
 	color: #003300; 
-	font-weight: bold;
-	font-style: italic;
+	font-weight: 800;
+/*	font-style: italic;*/
 	line-height: normal;
-	margin-left: 6%;
+	margin-left: 10%;
 	text-align: left;
 	margin-top: 35px;
 }
 
 .title {
 	color: #f3f3f3;
+    font-size: 72px;
+    font-weight: 900;
+    margin-top: 5px;
+    text-align: center;
+    padding: 20px;
+    background-color: #003300;
+    opacity: .7;
+
+
+/*
+<<<<<<< HEAD
+	color: #f3f3f3;
 	font-size: 62px;
+=======
+	color: #002200;
+	color: #f3f3f3;
+	font-size: 72px;
+>>>>>>> e09e6145f7a1021b6cee1625906309d4ae3a276f
 	font-weight: 900;
 	margin-top: 5px;
 	text-align: center;
 	padding: 20px;
 	background-color: #003300;
+<<<<<<< HEAD
 	opacity: .7
-}
+=======
+	opacity: .7;
+>>>>>>> e09e6145f7a1021b6cee1625906309d4ae3a276f
+} */
+
 
 .site-map {
 	background-color: #002200;
@@ -226,8 +262,8 @@ font-family: 'Raleway', sans-serif;
 	border-radius: 5px;
 }
 
-.block-green {
-	background-color: #99cc66;
+.block-blue {
+	background-color: #3399CC;
 	width: 100%;
 	margin-left: 0px;
 	margin-right: 0px;
@@ -235,8 +271,17 @@ font-family: 'Raleway', sans-serif;
 	padding-bottom: 30px;
 }
 
-.block-aqua {
-	background-color: #ccffff;
+.block-orange {
+	background-color: #FF9900;
+	width: 100%;
+	margin-left: 0px;
+	margin-right: 0px;
+	padding-top: 30px;
+	padding-bottom: 30px;
+}
+
+.block-turquoise {
+	background-color: #00CC99;
 	width: 100%;
 	margin-left: 0px;
 	margin-right: 0px;
@@ -264,7 +309,7 @@ font-family: 'Raleway', sans-serif;
 .home-block-title {
 	font-size: 50px; 
 	font-weight: bold;
-	color: #003300; 
+	color: #f3f3f3; 
 	line-height: normal;
 	text-align: center;
 	vertical-align: middle;
@@ -274,7 +319,7 @@ font-family: 'Raleway', sans-serif;
 .home-block-text {
 	font-size: 30px; 
 	font-weight: bold;
-	color: #003300; 
+	color: #f3f3f3; 
 	line-height: normal;
 	text-align: center;
 }
@@ -283,6 +328,17 @@ font-family: 'Raleway', sans-serif;
 	font-size: 16px; 
 	color: #003300; 
 	text-shadow: none;
+}
+
+.breadcrumb-nonlink {
+	font-size: 16px; 
+	color: #003300; 
+	text-shadow: none;
+	padding-left: 14px;
+	padding-top: 8px;
+	padding-bottom: 8px;
+	line-height: 20px;
+	background-color: #DEDEDE;
 }
 
 .current-breadcrumb-text {
@@ -297,31 +353,35 @@ font-family: 'Raleway', sans-serif;
 	font-weight: bold;
 	color: #003300; 
 	text-shadow: 0;
+	text-decoration: none;
 }
 
 .my-nav-tabs {
+/*	background-color: #DEDEDE;*/
 	background: transparent;
 }
 
-.my-nav-tabs > .active {
+.my-nav-tabs > li {
 	font-size: 16px; 
 	color: #003300;
 	text-shadow: none;
-	background:transparent;
+	background-color: #DEDEDE;
+	border-top-left-radius: 7px;
+	border-top-right-radius: 7px;
 }
 
 .my-nav-tabs > .active > a {
 	font-size: 16px; 
-	color: #003300;
+	color: #f3f3f3;
 	text-shadow: none;
-	background-color: #99cc66;
+	background-color: #3399CC;
 }
 
 .my-nav-tabs > .active > a:hover {
 	font-size: 16px; 
-	color: #003300; 
+	color: #f3f3f3; 
 	text-shadow: none;
-	background-color: #99cc66;
+	background-color: #3399CC;
 }
 
 .category-nav {
@@ -351,7 +411,7 @@ font-family: 'Raleway', sans-serif;
 
 .justify-text {
 	font-size: 18px; 
-	color: #003300; 
+	color: #f3f3f3; 
 	line-height: normal;
 	text-align: justify;
 }
@@ -364,17 +424,43 @@ font-family: 'Raleway', sans-serif;
 }
 
 .logo {
-	height: 150px; 
+	height: 200px; 
 	width: auto; 
 	position: absolute; 
 	left: 45px; 
-	top: 15px; 
+	top: 45px; 
 	z-index: 10000;
 }
 
 .my-item {
 	height: 300px; 	
 	background-color: #07260c;
+}
+
+.access-item {
+	height: 300px; 	
+	background-color: #00CC99;
+}
+
+.access-name-text {
+	color: #f3f3f3; 
+	font-size: 26px; 
+	font-weight: 700;
+	margin-left: 50px;
+	margin-right: 50px;
+	padding-top: 20px;
+}
+
+.access-info-text {
+	color: #f3f3f3; 
+	font-size: 20px; 
+	margin-left: 50px;
+	margin-right: 50px;
+}
+
+.access-player {
+	margin-left: 50px;
+	margin-top: 20px;
 }
 
 .carousel-name-text {
@@ -404,39 +490,55 @@ font-family: 'Raleway', sans-serif;
 .action-span {
 	height: 200px;
 	z-index: 10000;
-	border-width: 3px;
-	border-color: #003300;
-	border-style: solid;
 }
 
 .soda-link-text {
 	margin-top: 25px;
 	margin-bottom: 25px; 
-	font-size: 16px; vertical-align: 
-	middle; color: #003300;
+	font-size: 18px; vertical-align: 
+	middle; color: #f3f3f3;
 }
 
 .soda-link-text:hover {
 	margin-top: 25px;
 	margin-bottom: 25px; 
-	font-size: 16px; vertical-align: 
-	middle; color: #003300;
+	font-size: 18px; vertical-align: 
+	middle; color: #f3f3f3;
+}
+
+.home-title {
+	margin-top: 30px;
+	margin-bottom: 0px;
+	padding-top: 65px;
+	height: 125px;
+	background-image: url('../img/Homepage_Title.jpg');
+	margin-left: 0px;
+	margin-right: 0px;
+	width: 100%;
 }
 
 .action-title {
-	margin-top: 0px;
+	margin-top: 30px;
 	margin-bottom: 0px;
 	padding-top: 65px;
-	height: 215px;
+	height: 125px;
 	background-image: url('../img/FoodAction.jpg');
 }
 
 .culture-title {
-	margin-top: 0px;
+	margin-top: 30px;
 	margin-bottom: 0px;
 	padding-top: 65px;
-	height: 200px;
+	height: 125px;
 	background-image: url('../img/FoodCulture.jpg');
+}
+
+.access-title {
+	margin-top: 30px;
+	margin-bottom: 0px;
+	padding-top: 65px;
+	height: 125px;
+	background-image: url('../img/FoodAccess.jpg');
 }
 
 .resources-span {
@@ -447,29 +549,27 @@ font-family: 'Raleway', sans-serif;
 
 .lesson-plan-link {
 	font-size: 16px; 
-	color: #003300;
+	color: #f3f3f3;
 }
 
 .lesson-plan-link:hover {
 	font-size: 16px;
-	color: #003300; 
+	color: #f3f3f3; 
 	font-weight:bold;
 	text-decoration: underline;
 }
 
 .job-training {
-	background-color: #ccffff; 
 	padding: 10px; 
-	padding-top: 20px;
+	padding-top: 20px;/*
 	border-width: 3px;
 	border-style: solid;
-	border-color: #003300;
+	border-color: #003300;*/
 	overflow: scroll;
 }
 
 .homepage-item {
-	background-color: #07260c;
-	height: 500px;
+	max-height: 500px;
 }
 
 .voices-link {
@@ -528,6 +628,7 @@ font-family: 'Raleway', sans-serif;
 	column-gap:50px;
 }
 
+<<<<<<< HEAD
 .logo {
 	height: 150px;
 	width: auto;
@@ -569,4 +670,45 @@ font-family: 'Raleway', sans-serif;
 	padding-top: 65px;
 	height: 125px;
 	background-image: url('../img/FoodProduction_title.jpg');
+=======
+.span-blue {
+	background-color: #3399CC;
+}
+
+.span-orange {
+	background-color: #FF9900;
+}
+
+.span-turquoise {
+	background-color: #00CC99;
+}
+
+.job-title {
+	position: relative; 
+	top: 20%; 
+	color: #f3f3f3; 
+	font-size: 30px; 
+	font-weight: 700; 
+	padding-bottom: 0px; 
+	vertical-align: middle; 
+	line-height: normal; 
+	text-align: center;
+}
+
+.job-text {
+	padding-top: 20px; 
+	font-size: 24px; 
+	vertical-align: middle; 
+	color: #f3f3f3; 
+	text-align: justify; 
+	line-height: normal; 
+	text-align: center; 
+	position: relative; 
+	top: 20%;
+}
+
+.tab-row {
+	background-color: #3399CC; 
+	padding-bottom: 25px;
+>>>>>>> e09e6145f7a1021b6cee1625906309d4ae3a276f
 }
