@@ -70,17 +70,14 @@
   <div class="row-fluid" style="margin-top: 150px;">
     <div id="scroll" class="span3" style="background-color: #f3f3f3; position: fixed;">
       <ul class="nav nav-tabs nav-stacked">
-          <li class="body-text breadcrumb-nonlink" style="padding-left: 14px;">Sugar-Sweetened Beverages</li>
-          <li ><a class="body-text breadcrumb-text" href="../../beverages/findings.html" style="padding-left: 28px;">Our Findings</a></li>
+          <li ><a class="body-text breadcrumb-text" href="../../beverages/findings.html" style="background-color: #DEDEDE;">Sugar-Sweetened Beverages</a></li>
           <li ><a class="body-text breadcrumb-text" href="../../beverages/issue-framing.html" style="padding-left: 28px;">The Issue</a></li>
           <li ><a class="body-text breadcrumb-text" href="../../beverages/whats-next.html" style="padding-left: 28px;">What's Next?</a></li>
           <li ><a class="body-text breadcrumb-text" href="../../job-training.html" style="background-color: #DEDEDE;">Job Training</a></li>
-          <li class="body-text breadcrumb-nonlink" style="padding-left: 14px;">Community Engagement</li>
-          <li ><a class="body-text breadcrumb-text" href="../process.html" style="padding-left: 28px;">Our Process</a></li>
+          <li ><a class="body-text breadcrumb-text" href="../process.html" style="background-color: #DEDEDE;">Community Engagement</a></li>
           <li ><a class="body-text breadcrumb-text" href="../project-wheel.html" style="padding-left: 28px;">Our Projects</a></li>
           <li class="body-text breadcrumb-nonlink" style="padding-left: 28px;">Resources</li>
           <li ><a class="body-text breadcrumb-text" href="#" style="padding-left: 42px; font-weight: 700;">Tools for Garden Projects</a></li>
-          <li ><a class="body-text breadcrumb-text" href="recipes.html" style="padding-left: 42px;">Recipes</a></li>
           <li ><a class="body-text breadcrumb-text" href="lesson-plans.html" style="padding-left: 42px;">Lesson Plans</a></li>
           <li class="body-text breadcrumb-nonlink" style="padding-left: 42px; font-weight: 700; font-style: italic;font-size: 14px;">Additional Resources</li>
           <li ><a target="_blank" class="body-text breadcrumb-text" href="../../../docs/LillianMathewsPoster.pdf" style="padding-left: 42px; font-size: 14px;">Lillian Mathews' Thesis Poster</a></li>
@@ -89,6 +86,15 @@
         </ul>
     </div>
   </div>
+  <div class="block-grey" style="padding-top: 0px; padding-bottom: 20px;">
+    <div class="row-fluid">
+      <div class="span3">
+      </div>
+      <div class="span8" style="background-color: #FF9900;">
+        <p class="body-text block-padding" style="font-size: 20px; color: #f3f3f3; text-align: justify; line-height: normal;">The John Hope/Brown partnership is a constantly evolving collaboration between a community center and a University in Providence, Rhode Island. The resources available for download on this page were created with the intention of serving the people and communities involved in the partnership. The resources include lesson plans for gardening, crafts, ecology, composting, and cooking, as well as general information about the John Hope project. </p>
+      </div> 
+     </div>
+   </div>
   <div class="block-grey" style="padding-top: 0px; padding-bottom: 0px;">
     <div class="row-fluid">
       <div class="span3"></div>
@@ -273,12 +279,12 @@
       var elem = document.getElementById("scroll");
 
         window.onscroll = function (oEvent) {
-          if ($(window).scrollTop() < 350 || 
-              (document.getElementById('1').className == "tab-pane active" && window.scrollY > 436) ||
-              (document.getElementById('2').className == "tab-pane active" && window.scrollY > 856) || 
-              (document.getElementById('3').className == "tab-pane active" && window.scrollY > 2318)) {
+          if ($(window).scrollTop() < 300 || 
+              (document.getElementById('1').className == "tab-pane active" && window.scrollY > 725) ||
+              (document.getElementById('2').className == "tab-pane active" && window.scrollY > 1140) || 
+              (document.getElementById('3').className == "tab-pane active" && window.scrollY > 2600)) {
               elem.style.position = "absolute";
-              elem.style.top = "165px";
+              elem.style.top = "150px";
           } else {
               elem.style.position = "fixed";
               elem.style.top = "0";

@@ -66,31 +66,23 @@
 <!-- Page body
 ================================================== -->
 <div class="page-body" href="#">
-  <div class="row-fluid" style="margin-top: 150px;">
-    <div id="scroll" class="span3" style="background-color: #f3f3f3; position: absolute;">
-      <ul class="nav nav-tabs nav-stacked">
-          <li class="body-text breadcrumb-nonlink" style="font-weight: 700;">Additional Resources</li>
-          <li ><a target="_blank" class="body-text breadcrumb-text" href="docs/Jess Daniels_Thesis.pdf" style="padding-left: 28px;">Jess Daniels' Thesis</a></li>
-        </ul>
-    </div>
-  </div>
-  <div class="block-grey" style="padding-top: 0px; padding-bottom: 0px;">
+  <div class="block-grey" style="margin-top: 150px; padding-top: 0px; padding-bottom: 0px;">
     <div class="row-fluid" id="top">
-      <div class="span3">
+      <div class="span2">
       </div>
-      <div class="span8" style="background-color: #3399CC; margin-left: 0px;">
+      <div class="span8" style="background-color: #3399CC;">
         <p class="body-text block-padding" style="font-size: 22px; color: #f3f3f3; line-height: normal; text-align: justify;">Food access is the literal and economic ability to meet one’s dietary needs in a manner that is culturally and physically appropriate and allows just and sufficient choice of food groups. This is achieved when a family or individual has economic and transportation means, as well as time and personal safety, and a food provider that serves them, whether as retail, wholesale, community grown, or through a trade economy. How we access our food is as unique as each person who eats, whether we drive to the grocery store, are the owner of a small market, or take the bus to harvest from a community garden -- these maps provide initial explorations of the patterns and possibilities of Providence food access. </p>
       </div> 
      </div>
   </div>
   <div class="block-grey" style="padding-top: 20px; padding-bottom: 0px;">
     <div class="row-fluid" id="top">
-      <div class="span3">
+      <div class="span2">
       </div>
-      <div class="span8" style="background-color: #FF9900; margin-left: 0px;">
+      <div class="span8" style="background-color: #FF9900;">
         <div class="row-fluid">
           <div class="span5">
-            <p class="body-text block-padding" style="font-size: 22px; color: #f3f3f3; padding-top: 20px;">Food access is the literal and economic ability to meet one’s dietary needs in a manner that is culturally and physically appropriate and allows just and sufficient choice of food groups.</p>
+            <p class="body-text block-padding" style="font-size: 22px; color: #f3f3f3; padding-top: 20px;">The audio clips highlighted here illustrate the opportunities and obstacles immigrant communities in Providence face whilst getting hold of the foods they need and love.</p>
           </div>
           <div class="span7">
             <div class="carousel slide" id="myCarousel" style="margin-bottom: 0px;">
@@ -180,15 +172,19 @@
   </div>
   <div class="block-grey" style="padding-top: 20px; padding-bottom: 0px;">
     <div class="row-fluid">
-      <div class="span3">
+      <div class="span2">
       </div>
-      <div class="span8" style="background-color: #3399CC; margin-left: 0px;">
+      <div class="span8" style="background-color: #3399CC;">
         <div class="row-fluid">
           <div class="span9">
-            <img src="img/JessMetrics.jpg"/>
+            <a target="_blank" href="./JessThesis.html">
+              <img src="img/JessMetrics.jpg"/>
+            </a>
           </div>
           <div class="span3">
             <p class="body-text block-padding" style="font-size: 22px; color: #f3f3f3; padding-top: 20px;">Food access is the literal and economic ability to meet one’s dietary needs in a manner that is culturally and physically appropriate and allows just and sufficient choice of food groups.</p>
+            <br/>
+            <a target="_blank" class="body-text breadcrumb-text" style="font-size: 16px; color: #f3f3f3;" href="docs/Jess Daniels_Thesis.pdf">Click here to read the full thesis: Wondering in the Desert: Context, Cartography, and Visions of an Alternative Food Desert</a>
           </div>
         </div>
       </div>
@@ -196,16 +192,18 @@
   </div>
   <div class="block-grey" style="padding-top: 20px; padding-bottom: 0px;">
     <div class="row-fluid">
-      <div class="span3">
+      <div class="span2">
       </div>
-      <div class="span8" style="background-color: #FF9900; margin-left: 0px;">
+      <div class="span8" style="background-color: #FF9900;">
         <div class="row-fluid">
-          <div class="span3">
+          <div class="span4">
             <img src="img/MollysLegend.jpg" style="margin-left: 10px; margin-top: 10px;"/>
             <p class="body-text block-padding" style="font-size: 22px; color: #f3f3f3; padding-top: 20px;">Food access is the literal and economic ability to meet one’s dietary needs in a manner that is culturally and physically appropriate and allows just and sufficient choice of food groups.</p>
           </div>
-          <div class="span9">
-            <img src="img/MollysFarmersMarkets.png"/>
+          <div class="span8">
+            <a target="_blank" href="./MollyThesis.html">
+              <img src="img/MollysFarmersMarkets.png"/>
+            </a>
           </div>
         </div>
       </div>
@@ -213,9 +211,9 @@
   </div>
   <div class="block-grey" style="padding-top: 20px;">
     <div class="row-fluid">
-      <div class="span3">
+      <div class="span2">
       </div>
-      <div class="span8" style="background-color: #3399CC; margin-left: 0px;">
+      <div class="span8" style="background-color: #3399CC;">
         <img src="img/Jess_Food_Sovereignty.jpg" style="width: 90%; margin-left: 5%; margin-right: 5%; height: auto;"/>
       </div>
     </div>
@@ -253,18 +251,6 @@
     <!-- mapbox  -->
     <script src="js/mapbox.js"></script>
     <script type="text/javascript">
-      // moving side nav
-      var elem = document.getElementById("scroll");
-
-        window.onscroll = function (oEvent) {
-          if ($(window).scrollTop() < 350) {
-              elem.style.position = "absolute";
-              elem.style.top = document.getElementById('top').offsetTop + "px";
-          } else {
-              elem.style.position = "fixed";
-              elem.style.top = "0";
-          }
-        }
 
       // carousel 
       $(function() {

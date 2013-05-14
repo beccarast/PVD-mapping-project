@@ -70,17 +70,14 @@
   <div class="row-fluid" style="margin-top: 150px;">
     <div id="scroll" class="span3" style="background-color: #f3f3f3; position: fixed;">
       <ul class="nav nav-tabs nav-stacked">
-          <li class="body-text breadcrumb-nonlink" style="padding-left: 14px;">Sugar-Sweetened Beverages</li>
-          <li ><a class="body-text breadcrumb-text" href="../../beverages/findings.html" style="padding-left: 28px;">Our Findings</a></li>
+          <li ><a class="body-text breadcrumb-text" href="../../beverages/findings.html" style="background-color: #DEDEDE;">Sugar-Sweetened Beverages</a></li>
           <li ><a class="body-text breadcrumb-text" href="../../beverages/issue-framing.html" style="padding-left: 28px;">The Issue</a></li>
           <li ><a class="body-text breadcrumb-text" href="../../beverages/whats-next.html" style="padding-left: 28px;">What's Next?</a></li>
           <li ><a class="body-text breadcrumb-text" href="../../job-training.html" style="background-color: #DEDEDE;">Job Training</a></li>
-          <li class="body-text breadcrumb-nonlink" style="padding-left: 14px;">Community Engagement</li>
-          <li ><a class="body-text breadcrumb-text" href="../process.html" style="padding-left: 28px;">Our Process</a></li>
+          <li ><a class="body-text breadcrumb-text" href="../process.html" style="background-color: #DEDEDE;">Community Engagement</a></li>
           <li ><a class="body-text breadcrumb-text" href="../project-wheel.html" style="padding-left: 28px;">Our Projects</a></li>
           <li class="body-text breadcrumb-nonlink" style="padding-left: 28px;">Resources</li>
           <li ><a class="body-text breadcrumb-text" href="tools.html" style="padding-left: 42px;">Tools for Garden Projects</a></li>
-          <li ><a class="body-text breadcrumb-text" href="recipes.html" style="padding-left: 42px;">Recipes</a></li>
           <li ><a class="body-text breadcrumb-text" href="#" style="padding-left: 42px; font-weight: 700;">Lesson Plans</a></li>
           <li class="body-text breadcrumb-nonlink" style="padding-left: 42px; font-weight: 700; font-style: italic;font-size: 14px;">Additional Resources</li>
           <li ><a target="_blank" class="body-text breadcrumb-text" href="../../../docs/LillianMathewsPoster.pdf" style="padding-left: 42px; font-size: 14px;">Lillian Mathews' Thesis Poster</a></li>
@@ -89,6 +86,15 @@
         </ul>
     </div>
   </div>
+  <div class="block-grey" style="padding-top: 0px; padding-bottom: 20px;">
+    <div class="row-fluid">
+      <div class="span3">
+      </div>
+      <div class="span8" style="background-color: #FF9900">
+        <p class="body-text block-padding" style="font-size: 20px; color: #f3f3f3; text-align: justify; line-height: normal;">The John Hope/Brown partnership is a constantly evolving collaboration between a community center and a University in Providence, Rhode Island. The resources available for download on this page were created with the intention of serving the people and communities involved in the partnership. The resources include lesson plans for gardening, crafts, ecology, composting, and cooking, as well as general information about the John Hope project. </p>
+      </div> 
+     </div>
+   </div>
   <div class="block-grey" style="padding-top: 0px; padding-bottom: 0px;">
     <div class="row-fluid">
       <div class="span3"></div>
@@ -103,6 +109,9 @@
             </li>
             <li>
               <a href="#3" data-toggle="tab" class="body-text breadcrumb-text">Food and Nutrition</a>
+            </li>
+            <li>
+              <a href="#4" data-toggle="tab" class="body-text breadcrumb-text">Recipes</a>
             </li>
           </ul>
           <div class="tab-content">
@@ -170,6 +179,25 @@
                 </div>
               </div>
             </div>
+
+            <div class="tab-pane" id="4">
+              <div class="row-fluid tab-row">
+                <div class="span5" style="padding-top: 25px; padding-left: 25px;">
+                  <p class="body-text" style="font-size: 24px; color: #f3f3f3; font-weight:bold;">Download Lesson Plan PDFs:</p>
+                  <a target="_blank" class="body-text lesson-plan-link" href="../../../docs/SweetPotatoFries.pdf">Sweet Potato Fries</a><br/>
+                  <a target="_blank" class="body-text lesson-plan-link" href="../../../docs/JuiceMixer.pdf">Juice Mixer</a><br/>
+                  <a target="_blank" class="body-text lesson-plan-link" href="../../../docs/HealthySmores.pdf">Healthy S'mores</a><br/>
+                  <a target="_blank" class="body-text lesson-plan-link" href="../../../docs/DressingJar.pdf">Dressing in a Jar</a><br/>
+                  <a target="_blank" class="body-text lesson-plan-link" href="../../../docs/SunflowerButter.pdf">Sunflower Butter</a><br/>
+                  <a target="_blank" class="body-text lesson-plan-link" href="../../../docs/VeggiePizza.pdf">Veggie Pizza</a><br/>
+                  <a target="_blank" class="body-text lesson-plan-link" href="../../../docs/Buttercup.pdf">Stuffed Buttercup Squash</a><br/>
+                  <a target="_blank" class="body-text lesson-plan-link" href="../../../docs/RoastedSeeds.pdf">Roasted Pumpkin or Squash Seeds</a>
+                </div>
+                <div class="span5">
+                  <img src="../../../img/thanksgiving.png" style="width: 100%; height: auto; margin-top: 5%;"/>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
       </div>
@@ -212,25 +240,22 @@
       var elem = document.getElementById("scroll");
 
         window.onscroll = function (oEvent) {
-          if ($(window).scrollTop() > 280) {
-
-              if (document.getElementById('2').className == "tab-pane active" ||
-                document.getElementById('3').className == "tab-pane active") {
-                $('#scroll').css({"display":"none"});
-              } else {
-                elem.style.position="absolute";
-                elem.style.top = "0px";
-              }
-          } else if ($(window).scrollTop() < 350) {
+          if ($(window).scrollTop() < 300 || 
+            (document.getElementById('1').className == 'tab-pane active' && window.scrollY > 641)) {
               elem.style.position = "absolute";
               elem.style.top = "150px";
-              $('#scroll').css({"display":"block"});
           } else {
-              elem.style.position = "fixed";
-              elem.style.top = "0";
-              $('#scroll').css({"display":"block"});
-          }
+              if (document.getElementById('2').className == "tab-pane active" ||
+                document.getElementById('3').className == "tab-pane active" || 
+                document.getElementById('4').className == 'tab-pane active') {
+                elem.style.position = "absolute";
+                elem.style.top = "150px";
+              } else {
+                elem.style.position = "fixed";
+                elem.style.top = "0";
+              }
         }
+      }
     </script>
   </body>
 </html>
