@@ -676,4 +676,19 @@ font-family: 'Raleway', sans-serif;
 
 }
 
+.about-name {
+	color: #f3f3f3;
+	font-size: 20px;
+	font-weight: 700;
+	padding-top: 10px;
+	padding-left: 10px;
+	padding-right: 10px;
+}
 
+.about-title {
+	color: #f3f3f3;
+	font-size: 16px;
+	padding-left: 10px;
+	padding-right: 10px;
+	padding-bottom: 10px;
+}
