@@ -17,7 +17,7 @@
 
     <link href='http://fonts.googleapis.com/css?family=Noto+Sans|Lato|PT+Sans+Caption|Raleway:900,800,700,500' rel='stylesheet' type='text/css'>
 
-    <link href='http://api.tiles.mapbox.com/mapbox.js/v0.6.6/mapbox.css' rel='stylesheet' />
+    
     <link rel="stylesheet" href="../css/pvd-mapping.css" />
     <style>
       body {
@@ -25,12 +25,7 @@
       }
     </style>
     
-  <script src='http://api.tiles.mapbox.com/mapbox.js/v0.6.7/mapbox.js'></script>
-  <link href='http://api.tiles.mapbox.com/mapbox.js/v0.6.7/mapbox.css' rel='stylesheet' />
-  <style>
-    body { margin:0; padding:0; }
-    #map { position:static; width:auto; height:500px; border-style:solid; }
-  </style>
+
 
     <!-- Le HTML5 shim, for IE6-8 support of HTML5 elements -->
     <!--[if lt IE 9]>
@@ -69,7 +64,7 @@
 	======================================== -->
 <ul class="breadcrumb my-breadcrumb">
   <li><a href="../index.html" class="body-text breadcrumb-text">Home</a><span class="divider">/</span></li>
-  <li><a href="../food-chain.html" class="body-text breadcrumb-text">Food Production</a><span class="divider">/</span></li>
+  <li><a href="../production.html" class="body-text breadcrumb-text">Food Production</a><span class="divider">/</span></li>
   <li class="body-text current-breadcrumb-text">Soil</li>
 </ul>
 <div class="production-title"><p class="title title-text">SOIL</p></div>
@@ -79,39 +74,34 @@
 ================================================== -->
 <div class="page-body" href="#">
   <div class="row-fluid" style="margin-top:180px; background-color:#f3f3f3;">
-    <div id = "scroll" class="span3" style="background-color: #f3f3f3;">
+    <div id = "scroll" class="span3" style="position:absolute; background-color: #f3f3f3;">
       <ul class="nav nav-tabs nav-stacked" style="margin-bottom: 0px;">
-        <li ><a class="active body-text breadcrumb-text" href="./land.html">Land Use</a></li>
         <li ><a class="body-text breadcrumb-text" style="font-weight:bold;" href="./soil.html">Soil</a></li>
         <li ><a class="body-text breadcrumb-text" href="./local-food.html">Local Food</a></li>
+        <li ><a class="active body-text breadcrumb-text" href="./land.html">Land Use</a></li>
       </ul>
     </div>
   </div>
-    
-  <div class="row-fluid" class="block-grey">
+  <div class="row-fluid">
   	<div class="span3"> </div>
-    <div class="span8">
-    	<p class="body-text description-text block-padding block-text" style="background-color: #ff9900;"> There's a reason why Rhode Island farmers aren't growing corn and soy on the commodity-crop scale of farmers on the Great Plains; here, the land itself has physical constraints to agricultural development that shape the local food culture and opportunities for profitable farming.
+    <div class="span8" style="margin-left:0px;">
+      <p class="body-text description-text block-padding block-text" style="background-color: #ff9900;"> There's a reason why Rhode Island farmers aren't growing corn and soy on the commodity-crop scale of farmers on the Great Plains; here, the land itself has physical constraints to agricultural development that shape the local food culture and opportunities for profitable farming.
 	<br/><br/>    	
 Rhode Island's hilly landscape is dominated by deciduous woodland, punctuated by wetlands, rocky outcroppings, and towns and cities. The farms that do exist are usually fairly small, with very few over 100 acres. This scale and constraints mean that Rhode Island farms are more profitable for growing produce for New England markets, rather than commodity crops. Examining the extent of existing agriculture and the extent of the good soils that are not currently being farmed helps illuminate the potential for agricultural expansion.</p>
-    </div>
-  </div>
     
-  <div class="row-fluid">
-    <div class="span3"></div>
-    <div class="span5" style="margin-top:70px;">
-	  <p class="body-text description-text" style="text-align:center; font-size:30px; font-weight:700; color:#003300;"> Good Soils and Existing Farmland</p> 
-	  <div id='map'></div>
-	  <script> mapbox.auto('map', 'dgarfield.map-zat63goi');</script>
+	  <div class="row-fluid span-blue" style="margin-left:inherit;">
+		<div class="span7" style="padding:15px;">
+	  	  <p class="body-text description-text" style="text-align:center; font-size:26px; font-weight:700; color:#002200;"> Good Soils and Existing Farmland</p> 
+		  <iframe width='100%' height='450' frameBorder='0' seamless style="border-style:solid; border-width:5px;" src='http://a.tiles.mapbox.com/v3/dgarfield.map-zat63goi.html#9/41.671597105576765/-71.43992356039392'></iframe>
+		</div>
+		<div class="span5" style="margin-left:0;">
+    	  <p class="body-text description-text block-text" style="font-size:18px; padding-left:15px; text-align:justify; padding-top:55px;"> This map shows the USDA-certified good agricultural soils in Rhode Island in green, as well as all existing agricultural land in pink. The USDA-certified soils are 21.4% of agriculture in Rhode Island is conducted on soil that is not classified as ideal for farming They are dealing with constraints that include rocky land, waterlogged or too-dry areas, and steep slopes. There is lots of land – 168,468 acres – that has good soil and proper conditions, but is not being used for farming. This map points towards the conclusion that there is plenty of room for profitable expansion of agriculture in Rhode Island.</p>
+		</div>
+	  </div>
 	</div>
-    <div class="span3" style="margin-left:0px; margin-top:70px;">
-    	<p class="body-text description-text" style="font-size:20px; padding-left:15px; text-align:justify;  padding-top:50px;"> This map shows the USDA-certified good agricultural soils in Rhode Island in green, as well as all existing agricultural land in pink. The USDA-certified soils are 21.4% of agriculture in Rhode Island is conducted on soil that is not classified as ideal for farming They are dealing with constraints that include rocky land, waterlogged or too-dry areas, and steep slopes. There is lots of land – 168,468 acres – that has good soil and proper conditions, but is not being used for farming. This map points towards the conclusion that there is plenty of room for profitable expansion of agriculture in Rhode Island.</p>
-	</div>
-	
   </div>
-  
   <br/>
-  
+
  <div class="site-map">
     <p>Site map</p>
   </div>
@@ -145,7 +135,6 @@ Rhode Island's hilly landscape is dominated by deciduous woodland, punctuated by
     <script src="../js/jquery-1.8.2.js"></script>
     <script src="../js/jquery-ui.js"></script>
     <!-- mapbox  -->
-    <script src="../js/mapbox.js"></script>
     <script type="text/javascript">
     var elem = document.getElementById("scroll");
 
