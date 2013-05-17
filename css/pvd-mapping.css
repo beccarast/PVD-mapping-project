@@ -582,16 +582,17 @@ font-family: 'Raleway', sans-serif;
 
 
 .block-padding {
-	padding: 5.5%;
-	padding-top: 4.5%;
+	padding: 5%;
+	padding-top: 4%;
 	margin-bottom:0px;
 	border-radius: 3px;
 }
 
 .block-text {
 	text-align: left;
-	font-size: 24px;
+	font-size: 20px;
 	color: #f3f3f3;
+	font-weight: 500;
 }
 
 .columns {
@@ -749,4 +750,11 @@ font-family: 'Raleway', sans-serif;
 	color: #f3f3f3; 
 	font-size: 20px; 
 	font-weight: 700;
+}
+
+.source-padding {
+	font-size: 26px;
+	font-weight:700;
+	padding-bottom: 20px;
+	color: #f3f3f3;
 }
