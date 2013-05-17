@@ -98,6 +98,7 @@
 
 .voices-row {
 	margin-bottom: 20px;
+	margin-left: 0px;
 }
 
 .voices-name {
@@ -716,4 +717,8 @@ font-family: 'Raleway', sans-serif;
 	font-size: 12px;
 	padding-left: 5px;
 	padding-right: 5px;
+}
+
+.about-row {
+	margin-bottom: 10px;
 }
