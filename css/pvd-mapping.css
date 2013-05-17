@@ -82,17 +82,17 @@
 }
 
 .voices-turquoise {
-	height: 200px;
+	height: 300px;
 	background-color: #00CC99;
 }
 
 .voices-blue {
-	height: 200px;
+	height: 300px;
 	background-color: #3399CC;
 }
 
 .voices-orange {
-	height: 200px;
+	height: 300px;
 	background-color: #FF9900;
 }
 
@@ -116,7 +116,6 @@
 	font-weight: 700;
 	position: relative;
 	margin-left: 20px;
-	margin-right: 20px;
 }
 
 .voices-player {
@@ -176,7 +175,7 @@ font-family: 'Raleway', sans-serif;
 .title {
 	color: #f3f3f3;
     font-size: 72px;
-    font-weight: 800;
+    font-weight: 900;
     margin-top: 5px;
     text-align: center;
     padding: 20px;
@@ -407,8 +406,8 @@ font-family: 'Raleway', sans-serif;
 	height: 200px; 
 	width: auto; 
 	position: absolute; 
-	left: 25px; 
-	top: 25px; 
+	left: 15px; 
+	top: 15px; 
 	z-index: 10000;
 }
 
@@ -608,25 +607,32 @@ font-family: 'Raleway', sans-serif;
 	padding-left: 10px;
 	padding-right: 10px;
 	margin-top: 10px;
-	margin-right: 10px;
 	margin-bottom:0px;
 }
 
 .chain-title {
 	margin-top: 30px;
 	margin-bottom: 0px;
-	padding-top: 65px;
+	padding-top: 30px;
 	height: 125px;
 	background-image: url('../img/FoodChain_title.jpg');
 }
 
+.about-us-title {
+	margin-top: 30px;
+	margin-bottom: 0px;
+	padding-top: 30px;
+	height: 125px;
+	background-image: url('../img/aboutus_title.jpg');
+}
 
 .production-title {
 	margin-top: 32px;
 	margin-bottom: 0px;
-	padding-top: 65px;
+	padding-top: 30px;
 	height: 125px;
 	background-image: url('../img/FoodProduction_title.jpg');
+	background-size: auto 100%;
 }
 
 .span-blue {
