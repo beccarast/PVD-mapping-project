@@ -213,7 +213,7 @@ font-family: 'Raleway', sans-serif;
 	max-width: 204px;
 	padding: 4px 4px 0 4px;
 	margin-top: 2.127659574468085%;
-	color: #00cc99;
+	background-color: #00cc99;
 }
 
 .index-btn {
@@ -615,6 +615,8 @@ font-family: 'Raleway', sans-serif;
 
 .chain-button {
 	height: 145px;
+	width: 33.33333333333333%;
+
 	padding-top: 30px;
 	padding-left: 10px;
 	padding-right: 10px;
@@ -720,4 +722,31 @@ font-family: 'Raleway', sans-serif;
 
 .about-row {
 	margin-bottom: 10px;
+}
+
+.about-title-link:hover {
+	text-decoration: none;
+}
+
+.production-item {
+	max-height: 400px;
+}
+
+.production-pack {
+	position: absolute;
+	bottom: 10px;
+	left: 20px;
+}
+
+
+.prod-name-text {
+	color: #f3f3f3; 
+	font-size: 26px; 
+	font-weight: 700;
+}
+
+.prod-info-text {
+	color: #f3f3f3; 
+	font-size: 20px; 
+	font-weight: 700;
 }
