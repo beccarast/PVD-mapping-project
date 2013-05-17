@@ -203,6 +203,18 @@ font-family: 'Raleway', sans-serif;
 	width: 100%; 
 }
 
+.about-pic {
+	max-height:200px;
+}
+
+.about-thumb {
+	height: 270px;
+	max-width: 204px;
+	padding: 4px 4px 0 4px;
+	margin-top: 2.127659574468085%;
+	color: #00cc99;
+}
+
 .index-btn {
 	width: 18%; 
 	margin-left: 5px;
@@ -590,7 +602,7 @@ font-family: 'Raleway', sans-serif;
 .column-width {
 	-moz-column-gap:50px; /* Firefox */
 	-webkit-column-gap:50px; /* Safari and Chrome */
-	column-gap:50px;
+	column-gap:40px;
 }
 
 .button-text {
@@ -684,17 +696,24 @@ font-family: 'Raleway', sans-serif;
 
 .about-name {
 	color: #f3f3f3;
-	font-size: 20px;
+	/* font-size: 20px;
 	font-weight: 700;
 	padding-top: 10px;
 	padding-left: 10px;
-	padding-right: 10px;
+	padding-right: 10px; */
+	font-size: 16px;
+	font-weight: 500;
+	padding: 5px 5px 0 5px;
+	margin-bottom: 0px
 }
 
 .about-title {
 	color: #f3f3f3;
-	font-size: 16px;
+	/* font-size: 16px;
 	padding-left: 10px;
 	padding-right: 10px;
-	padding-bottom: 10px;
+	padding-bottom: 10px; */
+	font-size: 12px;
+	padding-left: 5px;
+	padding-right: 5px;
 }
