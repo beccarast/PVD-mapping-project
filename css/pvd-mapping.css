@@ -83,17 +83,25 @@
 
 .voices-turquoise {
 	height: 300px;
+	width: 255px;
 	background-color: #00CC99;
+	margin-left: 8px;
 }
 
 .voices-blue {
 	height: 300px;
+	width: 255px;
 	background-color: #3399CC;
+	margin-left: 8px;
+
 }
 
 .voices-orange {
 	height: 300px;
+	width: 255px;
 	background-color: #FF9900;
+	margin-left: 8px;
+
 }
 
 .voices-row {
@@ -122,6 +130,7 @@
 	position: relative;
 	top: 50px;
 	left: 10px;
+	width: 235px;
 }
 
 .about-text {
@@ -193,10 +202,11 @@ font-family: 'Raleway', sans-serif;
 }
 
 .page-body {
-	width: 100%; 
+	/* width: 100%; 
 	margin: 0; 
 	position: absolute; 
-	top: 160px;
+	top: 160px; */
+	background-color: #EEEEEE;
 }
 
 .index-btn-img {
@@ -758,3 +768,10 @@ font-family: 'Raleway', sans-serif;
 	padding-bottom: 20px;
 	color: #f3f3f3;
 }
+
+.page-inner {
+	width: 1040px;
+	margin: 0 auto 0 0;
+	background-color: #f3f3f3;
+}
+

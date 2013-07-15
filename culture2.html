@@ -65,8 +65,11 @@
 
 <!-- Page body
 ================================================== -->
-<div class="page-body" href="#">
-  <div class="block-dark-green" style="margin-top: 150px; padding-top: 15px; padding-bottom: 10px;">
+<div class="page-body" href="#" style=>
+
+	<div class="page-inner">
+
+  <div class="" style="background-color:#003300; padding: 10px 15px 10px 15px; margin-bottom:10px;">
     <div class="row voices-nav-row" style="text-align: center;">
       <a href="#" id="all" class="body-text voices-nav-btn-text" style="color: #FCBD74;">ALL</a>
       <a class="body-text voices-nav-btn-text"> | </a>
@@ -91,22 +94,18 @@
       <a href="#" id="youngerGen" class="body-text voices-nav-btn-text">YOUNGER GENERATION</a>
     </div>
   </div>
-  <div class="row-fluid" style="margin-top: 10px;">
-    <div id="scroll" class="span3" style="background-color: #f3f3f3; position: absolute;">
+    <div class="row" id="scroll" style="background-color: #f3f3f3; position: absolute; width:259px; margin-left:0px;">
       <ul class="nav nav-tabs nav-stacked">
           <li ><a class="body-text breadcrumb-text" href="#" style="font-weight: 700; background-color: #dedede;">Food Culture</a></li>
           <li ><a class="body-text breadcrumb-text" href="culture/voices.html" style="padding-left: 28px;">Immigrants in RI</a></li>
           <li class="body-text breadcrumb-nonlink" style="padding-left: 42px; font-weight: 700; font-style: italic;font-size: 14px;">Additional Resources</li>
-          <li class="body-text breadcrumb-nonlink" style="padding-left: 42px; font-size: 14px;">Stories of Agriculture, Adaptation, and Perceptions of Farming as a Livelihood from the Hmong Community in Providence, RI by Hannah Ross</li>
+          <li class="body-text breadcrumb-nonlink" style="padding-left: 42px; padding-right:4px; font-size: 14px;">Stories of Agriculture, Adaptation, and Perceptions of Farming as a Livelihood from the Hmong Community in Providence, RI by Hannah Ross</li>
           <li ><a target="_blank" class="body-text breadcrumb-text" href="docs/HannahRossThesisPoster.pdf" style="padding-left: 42px; font-size: 14px;">Thesis Poster</a></li>
           <li ><a target="_blank" class="body-text breadcrumb-text" href="docs/HannahRossThesis.pdf" style="padding-left: 42px; font-size: 14px;">Thesis</a></li>
         </ul>
     </div>
-  </div>
-  <div class="block-grey" id="top" style="padding-top: 0px;">
-    <div class="row-fluid">
-      <div class="span3"></div>
-      <div class="span9" id="content" style="margin-left: 0px;">
+ 
+  <div id="top" style="padding-top: 0px; margin-left:251px; width:789px;">
         <div class='row voices-row'>
           <div class='span4 voices-orange' >
             <p class='body-text voices-name'>Simiola</p>
@@ -375,10 +374,14 @@
                         </audio>
                       </div>
                     </div>
-                  </div>
-        </div>
+
+
       </div>
   <br/><br/>
+  
+  
+  </div>
+  
   <div class="site-map">
     <p>Site map</p>
   </div>
@@ -418,7 +421,7 @@
       var elem = document.getElementById("scroll");
 
         window.onscroll = function (oEvent) {
-          if ($(window).scrollTop() < 400) {
+          if ($(window).scrollTop() < 360) {
               elem.style.position = "absolute";
               elem.style.top = document.getElementById('top').offsetTop + "px";
           } else {
