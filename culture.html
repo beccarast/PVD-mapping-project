@@ -15,7 +15,7 @@
     <link rel="stylesheet" href="css/jquery-ui.css" />
     <link rel="stylesheet" href="css/map-styles.css" />
 
-    <link href='http://fonts.googleapis.com/css?family=Noto+Sans|Lato|PT+Sans+Caption|Raleway:900,800,700,500' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Noto+Sans|Lato|PT+Sans+Caption|Raleway:900,800,700,500,400' rel='stylesheet' type='text/css'>
 
     <link href='http://api.tiles.mapbox.com/mapbox.js/v0.6.6/mapbox.css' rel='stylesheet' />
     <link rel="stylesheet" href="css/pvd-mapping.css" />
@@ -65,8 +65,8 @@
 
 <!-- Page body
 ================================================== -->
-<div class="page-body" href="#">
-  <div class="block-dark-green" style="margin-top: 150px; padding-top: 15px; padding-bottom: 10px;">
+<div class="page-inner" href="#">
+  <div style="background-color:#003300; padding: 10px 15px 10px 15px; margin-bottom:10px;">
     <div class="row voices-nav-row" style="text-align: center;">
       <a href="#" id="all" class="body-text voices-nav-btn-text" style="color: #FCBD74;">ALL</a>
       <a class="body-text voices-nav-btn-text"> | </a>
@@ -91,51 +91,56 @@
       <a href="#" id="youngerGen" class="body-text voices-nav-btn-text">YOUNGER GENERATION</a>
     </div>
   </div>
-  <div class="row-fluid" style="margin-top: 10px;">
-    <div id="scroll" class="span3" style="background-color: #f3f3f3; position: absolute;">
+
+  <div class="row" id="scroll" style="background-color: #f3f3f3; position: absolute; width:259px; margin-left:0px;">
       <ul class="nav nav-tabs nav-stacked">
           <li ><a class="body-text breadcrumb-text" href="#" style="font-weight: 700; background-color: #dedede;">Food Culture</a></li>
           <li ><a class="body-text breadcrumb-text" href="culture/voices.html" style="padding-left: 28px;">Immigrants in RI</a></li>
           <li class="body-text breadcrumb-nonlink" style="padding-left: 42px; font-weight: 700; font-style: italic;font-size: 14px;">Additional Resources</li>
-          <li class="body-text breadcrumb-nonlink" style="padding-left: 42px; font-size: 14px;">Stories of Agriculture, Adaptation, and Perceptions of Farming as a Livelihood from the Hmong Community in Providence, RI by Hannah Ross</li>
+          <li class="body-text breadcrumb-nonlink" style="padding-left: 42px; padding-right:4px; font-size: 14px;">Stories of Agriculture, Adaptation, and Perceptions of Farming as a Livelihood from the Hmong Community in Providence, RI by Hannah Ross</li>
           <li ><a target="_blank" class="body-text breadcrumb-text" href="docs/HannahRossThesisPoster.pdf" style="padding-left: 42px; font-size: 14px;">Thesis Poster</a></li>
           <li ><a target="_blank" class="body-text breadcrumb-text" href="docs/HannahRossThesis.pdf" style="padding-left: 42px; font-size: 14px;">Thesis</a></li>
         </ul>
     </div>
-  </div>
-  <div class="block-grey" id="top" style="padding-top: 0px;">
-    <div class="row-fluid">
-      <div class="span3"></div>
-      <div class="span9" id="content" style="margin-left: 0px;">
-        <div class='row voices-row'>
+
+ 
+  <div id="top" style="padding-top: 0px; margin-left:251px; width:789px;">
+        
+        
+        <div class='row voices-row' id="content">
           <div class='span4 voices-orange' >
             <p class='body-text voices-name'>Simiola</p>
             <p class='body-text voices-title'>What do your children eat?</p>
+            <p class="voices-language"> english </p>
             <audio controls class='voices-player' id='SO_childrenEat'>
               <source src='audio/simeola ogundare_what do your children eat.m4a' type='audio/mpeg'>
                Your browser does not support the audio element.
-             </audio>
+            </audio>
            </div>
           <div class='span4 voices-turquoise'>
-              <p class='body-text voices-name'>Jummy</p>
-              <p class='body-text voices-title'>Americans live to eat</p>
-              <audio controls class='voices-player'>
+            <p class='body-text voices-name'>Jummy</p>
+            <p class='body-text voices-title'>Americans live to eat</p>
+            <p class="voices-language"> english </p>
+            <audio controls class='voices-player'>
                 <source src='audio/jummy_americans live to eat.m4a' type='audio/mpeg'>
                   Your browser does not support the audio element.
-              </audio>
+            </audio>
             </div>
           <div class='span4 voices-blue'>
             <p class='body-text voices-name'>Carmen</p>
             <p class='body-text voices-title'>Children and cooking</p>
+            <p class="voices-language"> english </p>
             <audio controls class='voices-player'>
               <source src='audio/simeola ogundare_children cooking.m4a' type='audio/mpeg'>Your browser does not support the audio element.
             </audio>
           </div>
         </div>
+        
         <div class='row voices-row'>
           <div class='span4 voices-turquoise'>
             <p class='body-text voices-name'>Gloria y Edvin</p>
             <p class='body-text voices-title'>Kids at the Table</p>
+            <p class="voices-language"> english </p>
             <audio controls class='voices-player'>
               <source src='audio/Gloria y Edvin_kids at the table.mp3' type='audio/mpeg'>
                 Your browser does not support the audio element.
@@ -145,6 +150,7 @@
             <p class='body-text voices-name'>Sui</p>
             <p class='body-text voices-title'>Meat is expensive back home</p>
             <audio controls class='voices-player'>
+            <p class="voices-language"> english </p>
             <source src='audio/sui_meat expensive.m4a' type='audio/mpeg'>
               Your browser does not support the audio element.
             </audio>
@@ -152,16 +158,19 @@
           <div class='span4 voices-orange'>
             <p class='body-text voices-name'>Daniel Labang</p>
             <p class='body-text voices-title'>Cooking Special Fry</p>
+            <p class="voices-language"> english </p>
             <audio controls class='voices-player'>
               <source src='audio/Daniel labang_cooking special fry.m4a' type='audio/mpeg'>
                 Your browser does not support the audio element.
             </audio>
           </div>
         </div>
+        
         <div class='row voices-row'>
           <div class='span4 voices-blue'>
             <p class='body-text voices-name'>Gloria y Edvin</p>
             <p class='body-text voices-title'>What to have for breakfast?</p>
+            <p class="voices-language"> english </p>
             <audio controls class='voices-player'>
               <source src='audio/Gloria y Edvin_what to have for breakfast.mp3' type='audio/mpeg'>
                 Your browser does not support the audio element.
@@ -170,6 +179,7 @@
           <div class='span4 voices-orange'>
             <p class='body-text voices-name'>Carmen</p>
             <p class='body-text voices-title'>What do your children eat?</p>
+            <p class="voices-language"> english </p>
             <audio controls class='voices-player'>
               <source src='audio/Carmen_what do your children eat.m4a' type='audio/mpeg'>
                 Your browser does not support the audio element.
@@ -178,43 +188,50 @@
           <div class='span4 voices-turquoise'>
             <p class='body-text voices-name'>Simiola</p>
             <p class='body-text voices-title'>Puff puff at Thanksgiving</p>
+            <p class="voices-language"> english </p>
             <audio controls class='voices-player'>
               <source src='audio/simeola ogundare_puff puff.m4a' type='audio/mpeg'>
                 Your browser does not support the audio element.
             </audio>
           </div>
-          </div>
+        </div>
+          
           <div class='row voices-row'>
             <div class='span4 voices-orange'>
               <p class='body-text voices-name'>Gloria y Edvin</p>
               <p class='body-text voices-title'>Following Tradition in the US</p>
-              <audio controls class='voices-player'>
+              <p class="voices-language"> english </p>
+            <audio controls class='voices-player'>
                 <source src='audio/Gloria y Edvin_following tradition in the US.mp3' type='audio/mpeg'> 
                   Your browser does not support the audio element.
               </audio>
             </div>
-             <div class='span4 voices-turquoise'>
+            <div class='span4 voices-turquoise'>
               <p class='body-text voices-name'>Bijaya</p>
               <p class='body-text voices-title'>Learning from Nepali Cooking Videos</p>
-              <audio controls class='voices-player'>
+              <p class="voices-language"> english </p>
+            <audio controls class='voices-player'>
                 <source src='audio/bijaya_Nepali cooking videos.m4a' type='audio/mpeg'>
                   Your browser does not support the audio element.
               </audio>
             </div>
-              <div class='span4 voices-blue'>
+            <div class='span4 voices-blue'>
                 <p class='body-text voices-name'>Gloria y Edvin</p>
                 <p class='body-text voices-title'>Selling Ceviche</p>
-                <audio controls class='voices-player'>
+                <p class="voices-language"> english </p>
+            <audio controls class='voices-player'>
                   <source src='audio/Gloria y Edvin_Selling Ceviche.mp3' type='audio/mpeg'>
                     Your browser does not support the audio element.
                 </audio>
-              </div>
             </div>
-            <div class='row voices-row'>
+          </div>
+          
+          <div class='row voices-row'>
               <div class='span4 voices-turquoise'>
                 <p class='body-text voices-name'>Sui</p>
                 <p class='body-text voices-title'>Buying Milk and Meat</p>
-                <audio controls class='voices-player'>
+                <p class="voices-language"> english </p>
+            <audio controls class='voices-player'>
                   <source src='audio/sui_Buying milk and meat.m4a' type='audio/mpeg'>
                     Your browser does not support the audio element.
                 </audio>
@@ -222,24 +239,28 @@
               <div class='span4 voices-blue'>
                 <p class='body-text voices-name'>Jummy</p>
                 <p class='body-text voices-title'>Goats for a Nigerian Christmas</p>
-                <audio controls class='voices-player'>
+                <p class="voices-language"> english </p>
+            <audio controls class='voices-player'>
                   <source src='audio/jummy_nigerian goats.m4a' type='audio/mpeg'>Your browser does not support the audio element.
                 </audio>
               </div>
                 <div class='span4 voices-orange'>
                   <p class='body-text voices-name'>Carmen</p>
                   <p class='body-text voices-title'>Pastelitos, son especiales!</p>
-                  <audio controls class='voices-player'>
+                  <p class="voices-language"> english </p>
+            <audio controls class='voices-player'>
                     <source src='audio/Carmen_pastelitos, son especiales.m4a' type='audio/mpeg'> 
                       Your browser does not support the audio element.
                   </audio>
                 </div>
               </div>
+              
               <div class='row voices-row'>
                 <div class='span4 voices-blue'>
                   <p class='body-text voices-name'>Simeola Ogundare</p>
                   <p class='body-text voices-title'>Children and cooking</p>
-                  <audio controls class='voices-player'>
+                  <p class="voices-language"> english </p>
+            <audio controls class='voices-player'>
                     <source src='audio/simeola ogundare_children cooking.m4a' type='audio/mpeg'>
                       Your browser does not support the audio element.
                   </audio>
@@ -247,7 +268,8 @@
                 <div class='span4 voices-orange'>
                   <p class='body-text voices-name'>Gladys Oreana</p>
                   <p class='body-text voices-title'>The hardest part is missing your kids</p>
-                  <audio controls class='voices-player'>
+                  <p class="voices-language"> english </p>
+            <audio controls class='voices-player'>
                     <source src='audio/Gladys Oreana_the hardest part is missing your kids.mp3' type='audio/mpeg'> 
                       Your browser does not support the audio element.
                   </audio>
@@ -255,17 +277,20 @@
                   <div class='span4 voices-turquoise'>
                     <p class='body-text voices-name'>Carmen</p>
                     <p class='body-text voices-title'>How do you make oatmeal?</p>
-                    <audio controls class='voices-player'>
+                    <p class="voices-language"> english </p>
+            <audio controls class='voices-player'>
                       <source src='audio/Carmen_how do you make oatmeal.m4a' type='audio/mpeg'>
                        Your browser does not support the audio element.
                     </audio>
                   </div>
                 </div>
+                
                 <div class='row voices-row'>
                   <div class='span4 voices-turquoise'>
                     <p class='body-text voices-name'>Karissa</p>
                     <p class='body-text voices-title'>A Farm for Grandmother</p>
-                    <audio controls class='voices-player'>
+                    <p class="voices-language"> english </p>
+            <audio controls class='voices-player'>
                       <source src='audio/Karissa_a farm for grandmother.mp3' type='audio/mpeg'> 
                         Your browser does not support the audio element.
                       </audio>
@@ -273,7 +298,8 @@
                     <div class='span4 voices-blue'>
                       <p class='body-text voices-name'>Carmen</p>
                       <p class='body-text voices-title'>Food and Community</p>
-                      <audio controls class='voices-player'>
+                      <p class="voices-language"> english </p>
+            <audio controls class='voices-player'>
                         <source src='audio/Carmen_food and community.m4a' type='audio/mpeg'> 
                           Your browser does not support the audio element.
                       </audio>
@@ -281,7 +307,8 @@
                     <div class='span4 voices-orange'>
                       <p class='body-text voices-name'>Marlone</p>
                       <p class='body-text voices-title'>Chiplin in Providence</p>
-                      <audio controls class='voices-player'>
+                      <p class="voices-language"> espa&ntildeol </p>
+            <audio controls class='voices-player'>
                         <source src='audio/Marlone_Chipilin.mp3' type='audio/mpeg'>
                           Your browser does not support the audio element.
                       </audio>
@@ -291,7 +318,8 @@
                     <div class='span4 voices-orange'>
                       <p class='body-text voices-name'>Sui</p>
                       <p class='body-text voices-title'>Burmese Easter Sunday</p>
-                      <audio controls class='voices-player'>
+                      <p class="voices-language"> english </p>
+            <audio controls class='voices-player'>
                         <source src='audio/Sui_Burmese Easter Sunday.m4a' type='audio/mpeg'>
                           Your browser does not support the audio element.
                         </audio>
@@ -299,7 +327,8 @@
                       <div class='span4 voices-turquoise'>
                         <p class='body-text voices-name'>Destin</p>
                         <p class='body-text voices-title'>Spinach in a can?</p>
-                        <audio controls class='voices-player'>
+                        <p class="voices-language"> english </p>
+            <audio controls class='voices-player'>
                           <source src='audio/Destin_spinach in a can.mp3' type='audio/mpeg'> 
                             Your browser does not support the audio element.
                         </audio>
@@ -307,7 +336,8 @@
                       <div class='span4 voices-blue'>
                         <p class='body-text voices-name'>Mr and Mrs Xiong</p>
                         <p class='body-text voices-title'>Growing sweet potato leaves for the African community</p>
-                        <audio controls class='voices-player'>
+                        <p class="voices-language"> english </p>
+            <audio controls class='voices-player'>
                           <source src='audio/pakexpress_sweet potato leaves.m4a' type='audio/mpeg'> 
                             Your browser does not support the audio element.
                         </audio>
@@ -317,7 +347,8 @@
                       <div class='span4 voices-blue'>
                         <p class='body-text voices-name'>Isaak and Lea</p>
                         <p class='body-text voices-title'>Chemicals in Our Food</p>
-                        <audio controls class='voices-player'>
+                        <p class="voices-language"> english </p>
+            <audio controls class='voices-player'>
                           <source src='audio/Isaak and Lea_chemicals in our food.mp3' type='audio/mpeg'> 
                             Your browser does not support the audio element.
                         </audio>
@@ -325,7 +356,8 @@
                       <div class='span4 voices-orange'>
                         <p class='body-text voices-name'>Julius</p>
                         <p class='body-text voices-title'>The African Alliance community Garden</p>
-                        <audio controls class='voices-player'>
+                        <p class="voices-language"> english </p>
+            <audio controls class='voices-player'>
                           <source src='audio/julius_african community garden.m4a' type='audio/mpeg'> 
                             Your browser does not support the audio element.
                         </audio>
@@ -333,7 +365,8 @@
                       <div class='span4 voices-blue'>
                         <p class='body-text voices-name'>Simiola</p>
                         <p class='body-text voices-title'>Fresh milk, fresh meat</p>
-                        <audio controls class='voices-player'>
+                        <p class="voices-language"> english </p>
+            <audio controls class='voices-player'>
                           <source src='audio/simeola ogundare_fresh milk_meat.m4a' type='audio/mpeg'>
                            Your browser does not support the audio element.
                         </audio>
@@ -343,7 +376,8 @@
                       <div class='span4 voices-orange'>
                         <p class='body-text voices-name'>Jummy</p>
                         <p class='body-text voices-title'>The thinner, the beautiful-er you are</p>
-                        <audio controls class='voices-player'>
+                        <p class="voices-language"> english </p>
+            <audio controls class='voices-player'>
                           <source src='audio/jummy_the thinner the beautifuler you are.m4a' type='audio/mpeg'> 
                             Your browser does not support the audio element.
                         </audio>
@@ -351,7 +385,8 @@
                       <div class='span4 voices-blue'>
                         <p class='body-text voices-name'>Bijaya</p>
                         <p class='body-text voices-title'> Missing Nepali Breakfasts</p>
-                        <audio controls class='voices-player'>
+                        <p class="voices-language"> english </p>
+            <audio controls class='voices-player'>
                           <source src='audio/bijaya_Nepali breakfasts.m4a' type='audio/mpeg'>
                             Your browser does not support the audio element.
                         </audio>
@@ -359,7 +394,8 @@
                       <div class='span4 voices-turquoise'>
                         <p class='body-text voices-name'>Carmen</p>
                         <p class='body-text voices-title'>Working in the food industry</p>
-                        <audio controls class='voices-player'>
+                        <p class="voices-language"> english </p>
+            <audio controls class='voices-player'>
                           <source src='audio/Carmen_working in the food industry.m4a' type='audio/mpeg'> 
                             Your browser does not support the audio element.
                         </audio>
@@ -369,17 +405,19 @@
                       <div class='span4 voices-turquoise'>
                         <p class='body-text voices-name'>Sui</p>
                         <p class='body-text voices-title'>Pizza</p>
-                        <audio controls class='voices-player'>
+                        <p class="voices-language"> english </p>
+            <audio controls class='voices-player'>
                           <source src='audio/sui_pizza.m4a' type='audio/mpeg'>
                             Your browser does not support the audio element.
                         </audio>
                       </div>
                     </div>
-                  </div>
-        </div>
+
+
       </div>
-  <br/><br/>
-  <div class="site-map">
+      </div>  
+  
+  <div class="site-map" id="sitemap">
     <p>Site map</p>
   </div>
 </div>
@@ -416,9 +454,9 @@
 
       // moving side nav
       var elem = document.getElementById("scroll");
-
+	  
         window.onscroll = function (oEvent) {
-          if ($(window).scrollTop() < 400) {
+          if ($(window).scrollTop() < 360) {
               elem.style.position = "absolute";
               elem.style.top = document.getElementById('top').offsetTop + "px";
           } else {

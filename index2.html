@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>PVD Food Justice</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <!-- Le styles -->
+    <link href="css/bootstrap.css" rel="stylesheet">
+    <link href="css/bootstrap-responsive.css" rel="stylesheet">
+    <link href="css/prettify.css" rel="stylesheet">
+
+    <link rel="stylesheet" href="css/jquery-ui.css" />
+    <link rel="stylesheet" href="css/map-styles.css" />
+
+    <link href='http://fonts.googleapis.com/css?family=Noto+Sans|Lato|PT+Sans+Caption|Raleway:900,800,700,500,400' rel='stylesheet' type='text/css'>
+    <link href='http://api.tiles.mapbox.com/mapbox.js/v0.6.6/mapbox.css' rel='stylesheet' />
+    <link rel="stylesheet" href="css/pvd-mapping.css" />
+    <style>
+      body {
+        background-color: #f3f3f3;
+      }
+    </style>
+
+    <!-- Le HTML5 shim, for IE6-8 support of HTML5 elements -->
+    <!--[if lt IE 9]>
+      <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+  </head>
+
+  <body data-spy="scroll" data-target=".bs-docs-sidebar">
+
+<!-- Navbar
+    ================================================== -->
+<div class="row nav-bar-row">
+  <div class="span1 nav-bar-btn">
+    <a href="./about-us.html" class="nav-bar-btn-text"><p class="body-text nav-text">ABOUT</p></a>
+  </div>
+  <div class="span1 nav-bar-btn">
+    <a href="./action.html"  class="nav-bar-btn-text" title="How does PVD act?"><p class="body-text nav-text">ACTION</p></a>
+  </div>
+  <div class="span1 nav-bar-btn" style="margin-left: 25px; margin-right: 25px;">
+    <a href="./food-chain.html"  class="nav-bar-btn-text" title="Where does PVD work?"><p class="body-text nav-text">FOOD CHAIN</p></a>
+  </div>
+  <div class="span1 nav-bar-btn"style="margin-left: 25px; margin-right: 25px;">
+    <a href="./production.html"  class="nav-bar-btn-text" title="Where does RI farm?"><p class="body-text nav-text">PRODUCTION</p></a>
+  </div>
+  <div class="span1 nav-bar-btn">
+    <a href="./access.html"  class="nav-bar-btn-text" title="Where does PVD eat?"><p class="body-text nav-text">ACCESS</p></a>
+  </div>
+  <div class="span1 nav-bar-btn" style="margin-right: 25px;">
+    <a href="./culture.html"  class="nav-bar-btn-text" title="Who is cooking?"><p class="body-text nav-text">CULTURE</p></a>
+  </div>
+</div>
+<a href="#"><img src="img/Logo.png" class="logo"/></a>
+<div class="home-title"><p class="title title-text">PVD FOODSHED JUSTICE</p></div>
+
+<!-- Page body
+================================================== -->
+<div class="" href="#">
+  <div style="margin-top:50px; background-color:#f3f3f3;">
+    <div class="container" style="margin-left: auto; margin-right: auto;">
+      <div class="row-fluid">
+      <div class="span6" style="">
+        <p class="body-text tagline-text block-padding" style="margin-right: 0px; padding-left: 0px;">Providence Foodshed Justice: Obstacles and Opportunities</p>
+        <p class="body-text block-padding" style="padding-right: 8%; padding-left: 0px; font-size: 20px; color: #002200; line-height: normal; text-align: justify;"><b>Foodshed: </b>A graphical imagination of the flow of food into a particular place; a metaphor for the unity of place and people, of nature and society; a place for organizing (Kloppenburg et al., 1996)</p>
+      </div>
+      <div class="span6" style="">
+        <div id="myCarousel" class="carousel slide" style="max-height: 500px; max-width: 750px; float:right;">
+              <!-- Carousel items -->
+              <div class="carousel-inner">
+                <div class="active item homepage-item">
+                  <a href="./culture.html">
+                    <div class="homepage-item">
+                      <img src="img/FOOD_CULTURE.jpg"/>
+                      <div class="carousel-caption">
+                        <h4 class="body-text">Food Culture</h4>
+                        <p class="body-text">How do the people of PVD feel about the food they eat? Listen here as immigrants to Providence tell us about their experiences eating, growing, buying and sharing food.</p>
+                      </div>
+                    </div>
+                  </a>
+                </div>
+                <div class="item homepage-item">
+                  <a href="./access.html">
+                    <div class="homepage-item">
+                      <img src="img/FOOD_ACCESS.jpg"/>
+                      <div class="carousel-caption">
+                        <h4 class="body-text">Food Access</h4>
+                        <p class="body-text">What are the obstacles to just food access in the Providence Foodshed? What are the opportunties for increasing just food access? </p>
+                      </div>
+                    </div>
+                  </a>
+                </div>
+                <div class="item homepage-item">
+                  <a href="./production.html">
+                    <div class="homepage-item">
+                      <img src="img/FOOD_PRODUCTION.jpg"/>
+                      <div class="carousel-caption">
+                        <h4 class="body-text" class="body-text">Food Production</h4>
+                        <p class="body-text">Geographically speaking, what are the barriers to agricultural expansion in Rhode Island?  Where are the prime places for expansion?</p>
+                      </div>
+                    </div>
+                  </a>
+                </div>
+                <div class="item homepage-item">
+                  <a href="./food-chain.html">
+                    <div class="homepage-item">
+                      <img src="img/FOOD_CHAIN.jpg"/>
+                      <div class="carousel-caption">
+                        <h4 class="body-text">Food Chain</h4>
+                        <p class="body-text">The Food Chain includes work and employment in everything from farm work, food service, food processing, grocery stores, and restaurants. What is it like to work in this sector? </p>
+                      </div>
+                    </div>
+                  </a>
+                </div>
+                <div class="item homepage-item">
+                  <a href="./action.html">
+                    <div class="homepage-item">
+                      <img src="img/FOOD_ACTION.jpg"/>
+                      <div class="carousel-caption">
+                        <h4 class="body-text">Food Action</h4>
+                        <p class="body-text">How does PVD act? Learn about sugar-sweetened beverages and policies, job training programs, and community engagement in Providence.</p>
+                      </div>
+                    </div>
+                  </a>
+                </div>
+              </div>
+              <!-- Carousel nav -->
+              <a class="carousel-control left" href="#myCarousel" data-slide="prev">&lsaquo;</a>
+              <a class="carousel-control right" href="#myCarousel" data-slide="next">&rsaquo;</a>
+            </div>
+          </div>
+        </div>
+        </div>
+      </div>
+  <div style="background-color:#3399CC;">
+	<div class="container">
+      <div class="row-fluid" style="margin-top: 30px;">
+        <a href="./access.html" name="access">
+          <div class="span4">
+            <p class="body-text home-block-title">FOOD ACCESS</p>
+            <p class="body-text home-block-text">Where does PVD eat?</p>
+          </div>
+        </a>
+        <div class="span4">
+          <p class="body-text justify-text">Food access is the literal and economic ability to meet one’s dietary needs in a manner that is culturally and physically appropriate and allows just and sufficient choice of food groups. This is achieved when a family or individual has economic and transportation means, as well as time and personal safety, and a food provider that serves them, whether as retail, wholesale, community grown, or through a trade economy. <!-- How we access our food is as unique as each person who eats, whether we drive to the grocery store, are the owner of a small market, or take the bus to harvest from a community garden -- click to view maps providing initial explorations of the patterns and possibilities of Providence food access.</p> -->
+        </div>
+        <div class="span4">
+          <a href="./access.html" name="access">
+            <img src="img/FOOD_ACCESS.jpg" style="width: 100%; height: auto; margin-top: 20px;"/>
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div style="background-color:#FF9900;">
+    <div class="container">
+      <div class="row-fluid" style="margin-top:30px;">
+        <div class="span4">
+          <a href="./production.html" name="production">
+            <img src="img/FOOD_PRODUCTION.jpg" style="width: 100%; height: auto; padding: 10px;"/>
+          </a>
+        </div>
+        <a href="./production.html" name="production">
+          <div class="span4">
+            <p class="body-text home-block-title" style="margin-top: 50px;">FOOD PRODUCTION</p>
+            <p class="body-text home-block-text">Where does RI farm?</p>
+          </div>
+        </a>
+        <div class="span4">
+          <p class="body-text justify-text">These maps help describe potential for the Rhode Island foodshed.  The foodshed is defined by the geography of the flow of food into a particular place; it's also a metaphor for the unity of place and people, of nature and society, and a place for organizing.  These maps show the physical and regulatory obstacles to and opportunities for development of the Rhode Island foodshed.</p>
+        </div>
+      </div>
+  	</div>
+  </div>
+  <div style="background-color:#00CC99;">
+    <div class="container">
+      <div class="row-fluid" style="margin-top:30px;">
+        <div class="span4">
+          <p class="body-text justify-text" style="margin-top: 50px;">Rhode Island is a diverse state that has experienced severe economic hardship in recent years. Click to learn more about corporatization in food service, food processing, violations and enforcement in the food sector, and working in grocery stores, restaurants, and on farms.</p>
+        </div>
+        <div class="span4">
+          <a href="./food-chain.html" name="foodchain">
+            <img src="img/FOOD_CHAIN.jpg" style="width: 100%; height: auto;"/>
+          </a>
+        </div>
+        <a href="./food-chain.html" name="foodchain">
+          <div class="span4">
+            <p class="body-text home-block-title" style="margin-top: 60px;">FOOD CHAIN</p>
+            <p class="body-text home-block-text">Where does PVD work?</p>
+          </div>
+        </a>
+      </div>
+    </div>
+  </div>
+  <div style="background-color:#3399CC;">
+    <div class="container">
+      <div class="row-fluid" style="margin-top:30px;">
+        <a href="./action.html" name="action">
+          <div class="span4">
+            <p class="body-text home-block-title">FOOD ACTION</p>
+            <p class="body-text home-block-text">Where does PVD act?</p>
+          </div>
+        </a>
+        <div class="span4">
+          <p class="body-text justify-text">Across Providence, there are individuals and groups working to make the food system more accessible, affordable and just. In our research, we studied several programs and initiatives across the city that are making the Providence foodshed more equitable. We worked with the John Hope Settlement House to create a garden curriculum for young children; <!-- we measured sugar-sweetened beverage availability in Providence and proposals to tax these drinks in the state; we studied job training programs in the foodservice industry. Some of these actions have attained outcomes; others require further research and practice. Explore this section of the website to see where we took action, what we learned and how we evaluated our work.</p> -->
+        </div>
+        <div class="span4">
+          <a href="./action.html" name="action">
+            <img src="img/FOOD_ACTION.jpg" style="width: 100%; height: auto; margin-top: 20px;"/>
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div style="background-color:#FF9900;">
+    <div class="container">
+      <div class="row-fluid" style="margin-top:30px;">
+        <div class="span4">
+          <a href="./culture.html" name="culture">
+            <img src="img/FOOD_CULTURE.jpg" style="width: 100%; height: auto;"/>
+          </a>
+        </div>
+        <a href="./culture.html" name="culture">
+          <div class="span4">
+            <p class="body-text home-block-title">FOOD CULTURE</p>
+            <p class="body-text home-block-text">Who is cooking?</p>
+          </div>
+        </a>
+        <div class="span4">
+           <p class="body-text justify-text">What do people in Providence love to eat? What joys and struggles do they face getting hold of the foods they love? The answers to these questions, and more, continue to change as people from all over the world have come to make Providence their home, bringing seeds, recipes and memories from their home country. Through food, these immigrants find ways to support each other, connect to their new country, make a living, and remember the places they have come from. </p>
+        </div>
+      </div>
+	</div>
+  </div>
+  <div style="background-color:#00CC99;">
+  	<div class="container">
+      <div class="row-fluid">
+        <div class="span12">
+          <a href="./about-us.html" class="about-title-link" name="about">
+          <p class="body-text home-block-title" style="margin-top:0px;">ABOUT US</p><br/>
+          </a>
+          <p class="body-text justify-text" style="margin-left: 5%; margin-right: 5%;">The Providence Foodshed Justice Mapping project participants include nearly 300 Brown University students and one faculty researcher who have, over the course 3 years, engaged in a course-based foodshed mapping research project in the Providence, Rhode Island region.  We've asked: what does it mean to map a food system?  Is there a landscape of food justice? How can Providence citizens foster a more ecologically, socially, and economically resilient food system, in the face of societal trends that encourage homogenization over diversity; industrialization over environmental health; and concentrated profits over social justice and equity? While we do not answer these questions definitively, we explore them in myriad ways.  And while this site is not a comprehensive representation of all the tremendous work and effort of all 300+ researchers, it is a condensed, distilled version of many of our key findings and cases that embody our work and what we have learned together.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="site-map">
+    <p>Site map</p>
+  </div>
+</div>
+
+
+
+    <!-- Le javascript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script type="text/javascript" src="http://platform.twitter.com/widgets.js"></script>
+    <script src="js/jquery.js"></script>
+    <script src="js/google-code-prettify/prettify.js"></script>
+    <script src="js/bootstrap-transition.js"></script>
+    <script src="js/bootstrap-alert.js"></script>
+    <script src="js/bootstrap-modal.js"></script>
+    <script src="js/bootstrap-dropdown.js"></script>
+    <script src="js/bootstrap-scrollspy.js"></script>
+    <script src="js/bootstrap-tab.js"></script>
+    <script src="js/bootstrap-tooltip.js"></script>
+    <script src="js/bootstrap-popover.js"></script>
+    <script src="js/bootstrap-button.js"></script>
+    <script src="js/bootstrap-collapse.js"></script>
+    <script src="js/bootstrap-carousel.js"></script>
+    <script src="js/bootstrap-typeahead.js"></script>
+    <script src="js/bootstrap-affix.js"></script>
+    <script src="js/bootstrap.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/application.js"></script>
+    <!-- jquery -->
+    <script src="js/jquery-1.8.2.js"></script>
+    <script src="js/jquery-ui.js"></script>
+    <script src="js/jquery-ui.min.js"></script>
+    <!-- mapbox  -->
+    <script src="js/mapbox.js"></script>
+    <script type="text/javascript">
+      $(document).ready(function(){
+        $('.carousel').carousel({
+          interval: false
+        });
+      });
+    </script>
+  </body>
+</html>
