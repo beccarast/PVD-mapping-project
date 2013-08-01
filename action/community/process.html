@@ -67,8 +67,8 @@
 <!-- Page body
 ================================================== -->
 <div class="page-body" href="#">
-  <div class="row-fluid" style="margin-top: 150px;">
-    <div id="scroll" class="span3" style="background-color: #f3f3f3; position: fixed;">
+  <div style="margin-top:50px; background-color: #f3f3f3;">
+    <div id="scroll" style="position:absolute; background-color: #f3f3f3; width:260px;">    
       <ul class="nav nav-tabs nav-stacked">
           <li ><a class="body-text breadcrumb-text" href="../beverages/findings.html" style="background-color: #DEDEDE;">Sugar-Sweetened Beverages</a></li>
           <li ><a class="body-text breadcrumb-text" href="../beverages/issue-framing.html" style="padding-left: 28px;">The Issue</a></li>
@@ -82,22 +82,14 @@
         </ul>
     </div>
   </div>
-  <div class="block-grey" style="padding-top: 0px; padding-bottom: 0px;">
-    <div class="row-fluid">
-      <div class="span3">
-      </div>
-      <div class="span8" style="margin-left: 0px; background-color: #3399CC">
+  
+  <div style="margin-left:260px; width:750px;">
+	<div class="blue">
         <p class="body-text block-padding" style="font-size: 30px; color: #f3f3f3; vertical-align: middle; line-height: normal; padding-bottom: 0px; font-weight: 800;">Cultivating Hope at John Hope Settlement House</p>
         <p class="body-text block-padding" style="font-size: 20px; color: #f3f3f3; text-align: justify; line-height: normal; padding-top: 20px;">Since the spring of 2011, the John Hope/Brown partnership, “Cultivating Hope,” has expanded its network each season. This graphic highlights many of the players who have been key to the growth of the partnership, and visualizes the importance of community-building to a sustainable, inclusive, and resilient project.<br><br>There are many other individuals and groups that have contributed time, energy and resources to the project. We are so grateful to the many teachers, students, and staff at John Hope Settlement House and Federal Hill House Association; the scores of students in three semesters of “Sustenance and Sustainability” and one semester each of “Urban Agriculture,” “Community Engagement,” and “Environmental Justice”; and the many Providence community members who have supported us. Thank you.</p>
-      </div> 
-     </div>
-   </div>
-  <div class="block-grey" style="padding-top: 0px; padding-bottom: 0px;">
-    <div class="row-fluid">
-      <div class="span3">
-      </div>
-      <div class="span8" style="margin-left: 0px;">
-        <div id="myCarousel" class="carousel slide" style="width: 100%; height: 100%;">
+    </div> 
+
+    <div id="myCarousel" class="carousel slide">
         <!-- Carousel items -->
         <div class="carousel-inner">
           <div class="active item ">
@@ -129,14 +121,12 @@
         <a class="carousel-control left" href="#myCarousel" data-slide="prev">&lsaquo;</a>
         <a class="carousel-control right" href="#myCarousel" data-slide="next">&rsaquo;</a>
       </div>
-      </div> 
-     </div>
-   </div>
-   <br/><br/>
+  </div> 
+</div>
+
     <div class="site-map">
       <p>Site map</p>
     </div>
-</div>
 
 
 
@@ -169,9 +159,9 @@
       var elem = document.getElementById("scroll");
 
         window.onscroll = function (oEvent) {
-          if ($(window).scrollTop() < 300 || window.scrollY > 1145) {
+          if ($(window).scrollTop() < 340 || window.scrollY > 1250) {
               elem.style.position = "absolute";
-              elem.style.top = "150px";
+              elem.style.top = "340px";
           } else {
               elem.style.position = "fixed";
               elem.style.top = "0";

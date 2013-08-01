@@ -67,8 +67,8 @@
 <!-- Page body
 ================================================== -->
 <div class="page-body" href="#">
-  <div class="row-fluid" style="margin-top: 150px;">
-    <div id="scroll" class="span3" style="background-color: #f3f3f3; position: absolute;">
+  <div style="margin-top:50px; background-color: #f3f3f3;">
+    <div id="scroll" style="position:absolute; background-color: #f3f3f3; width:260px;">    
       <ul class="nav nav-tabs nav-stacked">
           <li ><a class="body-text breadcrumb-text" href="../culture.html" style="background-color: #dedede;">Food Culture</a></li>
           <li ><a class="body-text breadcrumb-text" href="#" style="padding-left: 28px; font-weight: 700; ">Immigrants in RI</a></li>
@@ -79,21 +79,16 @@
       </ul>
     </div>
   </div>
-  <div class="block-grey" style="padding-top: 0px; padding-bottom: 0px;">
-    <div class="row-fluid">
-      <div class="span3"></div>
-      <div class="span8" style="margin-left: 0px; background-color: #3399CC;">
-        <img src="../img/Final_Immigrants.png" style="width: 100%; height: auto;"/>
-        <p class="body-text block-padding" style="font-size: 20px; text-align: justify; color: #f3f3f3; line-height: normal;">What do people in Providence love to eat? What joys and struggles do they face in obtaining the foods they love? The answers to these questions continue to change as immigrants from across the world have made Providence their homes. These new community members have brought seeds, recipes and memories from their home countries. By growing and cooking food, immigrants find ways to support each other, connect to their new country, make a living, and remember their homes.
-        </p>
-      </div>
-    </div>
+  
+  <div class="blue" style="margin-left:260px; width:780px;">
+	<img src="../img/Final_Immigrants.png" style="width: 100%; height: auto;"/>
+	<p class="body-text block-padding" style="font-size: 20px; text-align: justify; color: #f3f3f3; line-height: normal;">What do people in Providence love to eat? What joys and struggles do they face in obtaining the foods they love? The answers to these questions continue to change as immigrants from across the world have made Providence their homes. These new community members have brought seeds, recipes and memories from their home countries. By growing and cooking food, immigrants find ways to support each other, connect to their new country, make a living, and remember their homes.</p>
   </div>
-  <br/><br/>
+</div>
+
   <div class="site-map">
     <p>Site map</p>
   </div>
-</div>
 
 
 
@@ -126,9 +121,9 @@
       var elem = document.getElementById("scroll");
 
         window.onscroll = function (oEvent) {
-          if ($(window).scrollTop() < 300) {
+          if ($(window).scrollTop() < 340) {
               elem.style.position = "absolute";
-              elem.style.top = "150px";
+              elem.style.top = "340px";
           } else {
               elem.style.position = "fixed";
               elem.style.top = "0";

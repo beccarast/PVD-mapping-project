@@ -67,8 +67,8 @@
 <!-- Page body
 ================================================== -->
 <div class="page-body" href="#">
-  <div class="row-fluid" style="margin-top: 150px;">
-    <div id="scroll" class="span3" style="background-color: #f3f3f3; position: fixed;">
+  <div style="margin-top:50px; background-color: #f3f3f3;">
+    <div id="scroll" style="position:absolute; background-color: #f3f3f3; width:260px;">    
       <ul class="nav nav-tabs nav-stacked">
           <li ><a class="body-text breadcrumb-text" href="../../beverages/findings.html" style="background-color: #DEDEDE;">Sugar-Sweetened Beverages</a></li>
           <li ><a class="body-text breadcrumb-text" href="../../beverages/issue-framing.html" style="padding-left: 28px;">The Issue</a></li>
@@ -86,19 +86,13 @@
         </ul>
     </div>
   </div>
-  <div class="block-grey" style="padding-top: 0px; padding-bottom: 20px;">
-    <div class="row-fluid">
-      <div class="span3">
-      </div>
-      <div class="span8" style="background-color: #FF9900;">
+  
+  <div style="margin-left:260px; width:780px;">
+  	<div class="orange">
         <p class="body-text block-padding" style="font-size: 20px; color: #f3f3f3; text-align: justify; line-height: normal;">The John Hope/Brown partnership is a constantly evolving collaboration between a community center and a University in Providence, Rhode Island. The resources available for download on this page were created with the intention of serving the people and communities involved in the partnership. The resources include lesson plans for gardening, crafts, ecology, composting, and cooking, as well as general information about the John Hope project.  </p>
-      </div> 
-     </div>
-   </div>
-  <div class="block-grey" style="padding-top: 0px; padding-bottom: 0px;">
-    <div class="row-fluid">
-      <div class="span3"></div>
-      <div class="span8">
+    </div> 
+    
+    <div class="blue">
           <div class="tabbable">
             <ul class="nav nav-tabs my-nav-tabs" style="margin-bottom: 0px;">
               <li class="active">
@@ -239,14 +233,12 @@
               </div>
             </div>
           </div>
-        </div>
-      </div>
+    </div>
   </div>
-   <br/><br/>
+</div>
     <div class="site-map">
       <p>Site map</p>
     </div>
-</div>
 
 
 
@@ -279,12 +271,12 @@
       var elem = document.getElementById("scroll");
 
         window.onscroll = function (oEvent) {
-          if ($(window).scrollTop() < 300 || 
-              (document.getElementById('1').className == "tab-pane active" && window.scrollY > 725) ||
+          if ($(window).scrollTop() < 340 || 
+              (document.getElementById('1').className == "tab-pane active" && window.scrollY > 1725) ||
               (document.getElementById('2').className == "tab-pane active" && window.scrollY > 1140) || 
               (document.getElementById('3').className == "tab-pane active" && window.scrollY > 2600)) {
               elem.style.position = "absolute";
-              elem.style.top = "150px";
+              elem.style.top = "340px";
           } else {
               elem.style.position = "fixed";
               elem.style.top = "0";

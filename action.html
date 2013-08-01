@@ -66,8 +66,8 @@
 <!-- Page body
 ================================================== -->
 <div class="page-body" href="#">
-  <div class="row-fluid" style="margin-top: 150px;">
-    <div id="scroll" class="span3" style="background-color: #f3f3f3; position: absolute;">
+  <div style="margin-top:50px; background-color: #f3f3f3;">
+    <div id="scroll" style="position:absolute; background-color: #f3f3f3; width:260px;">    
       <ul class="nav nav-tabs nav-stacked">
           <li ><a class="body-text breadcrumb-text" href="action/beverages/findings.html" style="background-color: #DEDEDE;">Sugar-Sweetened Beverages</a></li>
           <li ><a class="body-text breadcrumb-text" href="action/beverages/issue-framing.html" style="padding-left: 28px;">The Issue</a></li>
@@ -81,15 +81,37 @@
         </ul>
     </div>
   </div>
-  <div class="block-grey" style="padding-top: 0px; padding-bottom: 0px;">
-    <div class="row-fluid" style="background-color: #00CC99; ">
-      <div class="span3" style="background-color: #f3f3f3;">
-      </div>
-      <div class="span9" style="margin-left: 0px;">
-        <p class="body-text description-text" style="margin: 20px; font-size: 32px; text-align: center; color: #f3f3f3; font-weight: 700;">How does PVD work towards food justice?
-        </p>
-      </div> 
-     </div>
+  
+  <div style="margin-left:260px; width:780px;">
+	<div class="turquoise">
+        <p class="body-text description-text" style="margin-bottom:20px; padding:20px; font-size: 32px; text-align: center; color: #f3f3f3; font-weight: 700;">How does PVD work towards food justice?</p>
+    </div> 
+  </div>
+  
+  <div style="margin-left:245px; width:795px; height:175px;">
+  	<a href="action/beverages/findings.html">
+  	  <div class="span4 turquoise action-button">
+  		<p class="body-text description-text button-text">Sugar-Sweetened Beverages</p>
+  	  </div>
+	</a>
+	
+	<a href="action/community/job-training.html">
+  	  <div class="span4 orange action-button">
+  		<p class="body-text description-text button-text">Job Training Programs</p>
+  	  </div>
+	</a>
+	
+	<a href="action/community/process.html">
+  	  <div class="span4 blue action-button">
+  		<p class="body-text description-text button-text">Community Engagement</p>
+  	  </div>
+	</a>
+  </div>
+</div>
+
+<!--
+  
+  
    </div>
    <div class="block-grey" style="padding-top: 0px; padding-bottom: 100px; background-color: #f3f3f3;">
     <div class="row-fluid">
@@ -115,10 +137,12 @@
       </div>
     </div>
    </div>
+-->
+
   <div class="site-map">
     <p>Site map</p>
   </div>
-</div>
+
 
 
 
@@ -148,6 +172,17 @@
     <!-- mapbox  -->
     <script src="js/mapbox.js"></script>
     <script type="text/javascript">
+    var elem = document.getElementById("scroll");
+
+        window.onscroll = function (oEvent) {
+          if ($(window).scrollTop() < 340) {
+              elem.style.position = "absolute";
+              elem.style.top = "340px";
+          } else {
+              elem.style.position = "fixed";
+              elem.style.top = "0";
+          }
+        }
     </script>
   </body>
 </html>

@@ -186,18 +186,17 @@ font-family: 'Raleway', sans-serif;
 }
 
 .tagline-text {
-	font-size: 36px; 
+	font-size: 46px; 
 	color: #003300; 
 	font-weight: 800;
-/*	font-style: italic;*/
 	line-height: normal;
 	text-align: left;
-	margin-top: 35px;
+	margin-top: 20px;
 }
 
 .title {
 	color: #f3f3f3;
-    font-size: 72px;
+    font-size: 54px;
     font-weight: 900;
     margin-top: 5px;
     text-align: center;
@@ -243,10 +242,12 @@ font-family: 'Raleway', sans-serif;
 
 .about-thumb {
 	height: 270px;
-	max-width: 204px;
+	width: 210px;
 	padding: 4px 4px 0 4px;
-	margin-top: 2.127659574468085%;
 	background-color: #00cc99;
+	margin-left: 20px;
+	margin-top: 20px;
+	float:left;
 }
 
 .index-btn {
@@ -346,6 +347,16 @@ font-family: 'Raleway', sans-serif;
 	color: #f3f3f3; 
 	line-height: normal;
 	text-align: center;
+}
+
+.home-definitions {
+	padding: 0 15px 0 15px;
+	margin: 15px;
+	font-size: 16px;
+	color: white;
+	line-height: normal;
+	text-align: justify;
+	width: 276px;
 }
 
 .breadcrumb-text {
@@ -448,7 +459,7 @@ font-family: 'Raleway', sans-serif;
 }
 
 .logo {
-	height: 200px; 
+	height: 170px; 
 	width: auto; 
 	position: absolute; 
 	left: 15px; 
@@ -470,39 +481,33 @@ font-family: 'Raleway', sans-serif;
 	color: #f3f3f3; 
 	font-size: 26px; 
 	font-weight: 700;
-	margin-left: 50px;
-	margin-right: 50px;
+	padding-left: 75px;
+	padding-right: 75px;
 	padding-top: 20px;
 }
 
 .access-info-text {
 	color: #f3f3f3; 
-	font-size: 20px; 
-	margin-left: 50px;
-	margin-right: 50px;
+	font-size: 18px; 
+	padding-left: 75px;
+	padding-right: 75px;
 }
 
 .access-player {
-	margin-left: 50px;
-	margin-top: 20px;
+	margin-left: 74px;
+	margin-top: 10px;
 }
 
 .carousel-name-text {
 	color: #f3f3f3; 
 	font-size: 26px; 
 	font-weight: 700;
-	margin-left: 60px;
-	position: relative;
-	top: 130px;
 }
 
 .carousel-info-text {
 	color: #f3f3f3; 
 	font-size: 20px; 
 	font-weight: 700;
-	margin-left: 60px;
-	position: relative;
-	top: 130px;
 }
 
 .carousel-player {
@@ -543,7 +548,7 @@ font-family: 'Raleway', sans-serif;
 
 .home-container {
 	width: 1040px;
-	height: 300px;
+	height: 310px;
 	padding: 30px 0 0 0;
 }
 
@@ -589,12 +594,19 @@ font-family: 'Raleway', sans-serif;
 	text-decoration: underline;
 }
 
+.training-square {
+	height:235px;
+	width: 250px;
+	margin-left: 15px;
+	margin-bottom: 15px;
+	padding-top: 0px;
+}
+
+.training-on {
+	padding: 15px;
+}
+
 .job-training {
-	padding: 10px; 
-	padding-top: 20px;/*
-	border-width: 3px;
-	border-style: solid;
-	border-color: #003300;*/
 	overflow: scroll;
 }
 
@@ -643,7 +655,13 @@ font-family: 'Raleway', sans-serif;
 .column-width {
 	-moz-column-gap:50px; /* Firefox */
 	-webkit-column-gap:50px; /* Safari and Chrome */
-	column-gap:40px;
+	column-gap:50px;
+}
+
+.issue-column-width {
+	-moz-column-gap:35px; /* Firefox */
+	-webkit-column-gap:35px; /* Safari and Chrome */
+	column-gap:35px;
 }
 
 .button-text {
@@ -663,6 +681,14 @@ font-family: 'Raleway', sans-serif;
 	padding-right: 10px;
 	margin-bottom:0px;
 }
+
+.action-button {
+	height:145px;
+	width: 250px;
+	margin-left: 15px;
+	padding-top: 30px;
+}
+
 
 .chain-title {
 	margin-top: 30px;
@@ -700,28 +726,23 @@ font-family: 'Raleway', sans-serif;
 	background-color: #00CC99;
 }
 
-.job-title {
-	position: relative; 
-	top: 20%; 
+.job-title { 
 	color: #f3f3f3; 
 	font-size: 30px; 
 	font-weight: 700; 
-	padding-bottom: 0px; 
-	vertical-align: middle; 
 	line-height: normal; 
 	text-align: center;
+	margin-top: 15px;
+	padding: 0 10px 0 10px;
 }
 
 .job-text {
-	padding-top: 20px; 
-	font-size: 24px; 
-	vertical-align: middle; 
+	padding: 10px;
+	padding-top: 20px;
+	font-size: 24px;  
 	color: #f3f3f3; 
-	text-align: justify; 
 	line-height: normal; 
 	text-align: center; 
-	position: relative; 
-	top: 20%;
 }
 
 .tab-row {
@@ -778,7 +799,6 @@ font-family: 'Raleway', sans-serif;
 	left: 20px;
 }
 
-
 .prod-name-text {
 	color: #f3f3f3; 
 	font-size: 26px; 
@@ -804,6 +824,23 @@ font-family: 'Raleway', sans-serif;
 	background-color: #f3f3f3;
 }
 
+.home-resources {
+	color: #003300;
+}
+
+.home-resources:hover {
+	text-decoration: none;
+	color: #AAAAAA;
+}
+
 a:hover {
 	text-decoration: none;
 }
+
+.access-link:hover {
+	text-decoration: underline;
+}
+
+.resource:hover {
+	text-decoration: underline;
+	}

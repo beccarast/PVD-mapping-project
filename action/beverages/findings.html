@@ -67,9 +67,8 @@
 <!-- Page body
 ================================================== -->
 <div class="page-body" href="#">
-  <br/>
-  <div class="row-fluid" style="margin-top: 130px;">
-    <div id="scroll" class="span3" style="background-color: #f3f3f3; position: fixed;">
+  <div style="margin-top:50px; background-color: #f3f3f3;">
+    <div id="scroll" style="position:absolute; background-color: #f3f3f3; width:260px;">    
       <ul class="nav nav-tabs nav-stacked">
           <li ><a class="body-text breadcrumb-text" href="#" style="background-color: #DEDEDE; font-weight: 700;">Sugar-Sweetened Beverages</a></li>
           <li ><a class="body-text breadcrumb-text" href="issue-framing.html" style="padding-left: 28px;">The Issue</a></li>
@@ -83,28 +82,16 @@
         </ul>
     </div>
   </div>
-   <div class="block-grey" style="padding-top: 0px; padding-bottom: 0px;">
-    <div class="row-fluid">
-      <div class="span3"></div>
-      <div class="span8" style="margin-left: 0px;">
-        <img src="../../img/SSB.jpg" style="width: 100%; height: auto;"/>
-      </div>
-    </div>
-   </div>
-   <div class="block-grey" style="padding-top: 0px; padding-bottom: 0px;">
-    <div class="row-fluid">
-      <div class="span3">
-      </div>
-      <div class="span8" style="background-color: #00CC99; margin-left: 0px;">
-        <p class="body-text block-padding" style="font-size: 20px; color: #f3f3f3; line-height: normal;">On average, stores within 1/4 mile of Providence public elementary schools offer 28 different varieties of SSBs. Of the hundreds of brands of SSBs, 75% are owned by just 3 companies: Coca-Cola, Pepsi and Dr. Pepper/Snapple Group. These charts represent our research process and findings (percentages don't quite add up to 100 due to rounding).</p>
-      </div> 
-    </div> 
-   </div>
-   <br/><br/>
+	
+  <div style="margin-left:260px; width:780px;">
+    <img src="../../img/SSB.jpg"/> 
+    <p class="body-text block-padding turquoise" style="font-size: 20px; color: #f3f3f3; line-height: normal;">On average, stores within 1/4 mile of Providence public elementary schools offer 28 different varieties of SSBs. Of the hundreds of brands of SSBs, 75% are owned by just 3 companies: Coca-Cola, Pepsi and Dr. Pepper/Snapple Group. These charts represent our research process and findings (percentages don't quite add up to 100 due to rounding).</p>
+  </div> 
+</div> 
+
     <div class="site-map">
       <p>Site map</p>
     </div>
-</div>
 
 
 
@@ -137,9 +124,9 @@
       var elem = document.getElementById("scroll");
 
         window.onscroll = function (oEvent) {
-          if ($(window).scrollTop() < 300 || window.scrollY > 1675) {
+          if ($(window).scrollTop() < 340 || window.scrollY > 1675) {
               elem.style.position = "absolute";
-              elem.style.top = "150px";
+              elem.style.top = "340px";
           } else {
               elem.style.position = "fixed";
               elem.style.top = "0";

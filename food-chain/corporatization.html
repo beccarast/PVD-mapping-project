@@ -69,8 +69,8 @@
 <!-- Page body
 ================================================== -->
 <div class="page-body" href="#">
-  <div class="row-fluid" style="margin-top:180px; background-color: #f3f3f3;">
-    <div id="scroll" class="span3" style="position:fixed; background-color: #f3f3f3;">
+  <div style="margin-top:50px; background-color: #f3f3f3;">
+    <div id="scroll" style="position:absolute; background-color: #f3f3f3; width:260px;">    
       <ul class="nav nav-tabs nav-stacked">
         <li ><a class="active body-text breadcrumb-text" style="font-weight:bold;" href="#">Consolidation in Food Service</a></li>
         <li ><a class="body-text breadcrumb-text" href="./job-training.html">Violations in the Food Sector</a></li>
@@ -82,22 +82,17 @@
     </div>
   </div>
   
-  <div class="row-fluid">
-	<div class="span3"> </div>
-    <div class="span8" style="margin-left:0px;">
-      	<img src="../infographic/consolidation_food.png" style="text-align:center; width:100%; height:auto;"> 
-      	
-      	<p class="body-text description-text block-padding block-text" style="background-color:#00cc99;" >An increasing number of university eateries are being managed by large multinational food service providers. One consequence of this phenomenon is that dining service workers’ wages have decreased. Contracting with a corporate food service provider eliminates universities’ accountability to dining service workers and their working conditions, wages and benefits. This trend of corporate consolidation of food service is seen in a variety of institutions including hospitals and grade schools.
+  <div style="margin-left:260px; width:780px;">
+      <img src="../infographic/consolidation_food.png" style="text-align:center; width:100%; height:auto;"> 
+      <p class="body-text description-text block-padding block-text turquoise" >An increasing number of university eateries are being managed by large multinational food service providers. One consequence of this phenomenon is that dining service workers’ wages have decreased. Contracting with a corporate food service provider eliminates universities’ accountability to dining service workers and their working conditions, wages and benefits. This trend of corporate consolidation of food service is seen in a variety of institutions including hospitals and grade schools.
 	</br></br>
-Workers often unionize so they can better negotiate with corporate food service contractors (or university administrators, if the food service is not privately contracted). In Rhode Island, of the 10 major institutions we surveyed, we found that 5 had at least partially unionized food service workforces. These workers were unionized though, among others, SEIU (Service Employees' International Union) Local 615, Council 94, AFSCME, USAW RI (United Service Workers of Rhode Island), and UFCW (United Food and Commercial Workers' International Union) Local 328. 
- </p>
-    </div>
+Workers often unionize so they can better negotiate with corporate food service contractors (or university administrators, if the food service is not privately contracted). In Rhode Island, of the 10 major institutions we surveyed, we found that 5 had at least partially unionized food service workforces. These workers were unionized though, among others, SEIU (Service Employees' International Union) Local 615, Council 94, AFSCME, USAW RI (United Service Workers of Rhode Island), and UFCW (United Food and Commercial Workers' International Union) Local 328.</p>
   </div>
+</div>
  
   <div class="site-map">
     <p>Site map</p>
   </div>
-</div>
 
 
 
@@ -130,7 +125,7 @@ Workers often unionize so they can better negotiate with corporate food service 
         window.onscroll = function (oEvent) {
           if ($(window).scrollTop() < 340) {
               elem.style.position = "absolute";
-              elem.style.top = "180px";
+              elem.style.top = "340px";
           } else {
               elem.style.position = "fixed";
               elem.style.top = "0";

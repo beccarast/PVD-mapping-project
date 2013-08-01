@@ -70,8 +70,8 @@
 <!-- Page body
 ================================================== -->
 <div class="page-body" href="#">
-  <div class="row-fluid" style="margin-top:180px; background-color:#f3f3f3;">
-    <div id="scroll" class="span3" style="position:fixed; background-color: #f3f3f3;">
+  <div style="margin-top:50px; background-color: #f3f3f3;">
+    <div id="scroll" style="position:absolute; background-color: #f3f3f3; width:260px;">    
       <ul class="nav nav-tabs nav-stacked" style="margin-bottom: 0px;">
         <li ><a class="active body-text breadcrumb-text" href="./corporatization.html">Consolidation in Food Service</a></li>
         <li ><a class="body-text breadcrumb-text" href="./job-training.html">Violations in the Food Sector</a></li>
@@ -83,20 +83,15 @@
 	</div>    
   </div>
  
-  <div class="row-fluid">
-	<div class="span3"> </div>
- 	<div class="span8" style="margin-left:0px; background-color:#3399cc;">
-      	<img src="../infographic/food_processing.png" style="width: 100%; height: auto;"> 
-
-      	<p class="body-text description-text block-padding block-text">The above infographic demonstrates the importance of including the stories and experiences of food manufacturing workers when striving to create a more equitable food system. It also highlights both opportunities for and obstacles to food justice. Food manufacturing and processing represents an opportunity for employment and the potential to earn a living wage. Many workers in the state are already unionized which provides a vehicle for improving working conditions in these facilities. However, there are significant disparities among those who work in this sector. Education, race, and gender all impact a worker’s experience. Women, people of color, and those with less education have lower incomes than other groups of people who work in the sector. 
-</p>
-	</div>
+  <div style="margin-left:260px; width:780px;">
+  	<img src="../infographic/food_processing.png" style="width: 100%; height: auto;"> 
+	<p class="body-text description-text block-padding block-text blue">The above infographic demonstrates the importance of including the stories and experiences of food manufacturing workers when striving to create a more equitable food system. It also highlights both opportunities for and obstacles to food justice. Food manufacturing and processing represents an opportunity for employment and the potential to earn a living wage. Many workers in the state are already unionized which provides a vehicle for improving working conditions in these facilities. However, there are significant disparities among those who work in this sector. Education, race, and gender all impact a worker’s experience. Women, people of color, and those with less education have lower incomes than other groups of people who work in the sector.</p>
   </div>
+</div>
 
   <div class="site-map">
     <p>Site map</p>
   </div>
-</div>
 
 
 
@@ -131,7 +126,7 @@
         window.onscroll = function (oEvent) {
           if ($(window).scrollTop() < 340) {
               elem.style.position = "absolute";
-              elem.style.top = "180px";
+              elem.style.top = "340px";
           } else {
               elem.style.position = "fixed";
               elem.style.top = "0";
