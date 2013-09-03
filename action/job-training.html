@@ -108,18 +108,17 @@
 			<p class='body-text job-text'>Culinary Arts Collaborative of Northern RI</p>
 		  </div>
 
-        <a target="_blank" href="http://cookieplace.org/">
+       <!-- href="http://cookieplace.org/"> -->
           <div class="training-square blue" style="float:left;" id="cookie">
             <p class='body-text job-title' >The Cookie Place</p>
             <p class='body-text job-text'>Food Service Skill Training</p>
           </div>
-        </a>
-        <a target="_blank" href="http://www.gencenter.org/?p=about-us">
+    
+        <!-- href="http://www.gencenter.org/?p=about-us"> -->
           <div class="training-square orange" style="float:left;" id="genesis">
             <p class='body-text job-title' >The Genesis Center</p>
             <p class='body-text job-text'>Chef and Culinary Arts Training</p>
           </div>
-        </a>
     </div>    
     <div id="row" style="height:250px;">
         <a target="_blank" href="http://www.sesi-schools.com/high_road_school_of_providence/">
@@ -142,13 +141,8 @@
         </a>
     </div>
   </div> 
+
 </div>
-
-    <div class="site-map">
-      <p>Site map</p>
-    </div>
-
-
     <!-- RI Harvest "Hear more" Modal -->
   <div id="harvestModal" class="modal hide fade" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true" style="width: 60%; left: 20%; top: 5%; margin: 0px;">
     <div class="modal-header">
@@ -168,8 +162,10 @@
     </div>
   </div>
 
+
+
   <!-- Connecting for Children and Families  "Learn more" Modal -->
-  <div id="connectingModal" class="modal hide fade" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true" style="width: 80%; left: 10%; top: 1%; margin: 0px;">
+  <div id="connectingModal" class="modal hide fade" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
     <div class="modal-header">
       <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
     </div>
@@ -204,7 +200,11 @@
       </div>
     </div>
   </div>
-</div>
+
+
+  <div class="site-map">
+      <p>Site map</p>
+    </div>
 
 
 
@@ -236,7 +236,7 @@
     <script type="text/javascript">
     			  
     
-    var amosOver = "<div class='training-on'><a target='_blank' href='http://www.amoshouse.com/Training/AmosCulinaryEducationACE/tabid/162/Default.aspx'><p class='body-text' style='font-size: 22px; color: #f3f3f3; font-weight:700;'>Amos Culinary Education (ACE)</p></a><br><p class='body-text' style='font-size: 16px; color: #f3f3f3; font-weight:700;'>Target population</p><p class='body-text' style='font-size: 16px; color: #f3f3f3;'>People who are low-income or at risk of homelessness </p><br><p class='body-text' style='font-size: 16px; color: #f3f3f3; font-weight:700;'>Job Assistance/Placement?</p><p class='body-text' style='font-size: 16px; color: #f3f3f3;'>40 internship/externship positions for program graduates</p><br/><a target='_blank' href='http://www.amoshouse.com/Training/AmosCulinaryEducationACE/tabid/162/Default.aspx'><p class='body-text' style='font-size: 16px; color: #f3f3f3; font-weight:700; text-align: center;'>CLICK TO VISIT THEIR WEBSITE</p></a></div>";
+    var amosOver = "<div class='training-on'><a target='_blank' href='http://www.amoshouse.com/TrainingEducation/AmosCulinaryEducationProgram.aspx'><p class='body-text' style='font-size: 22px; color: #f3f3f3; font-weight:700;'>Amos Culinary Education (ACE)</p></a><br><p class='body-text' style='font-size: 16px; color: #f3f3f3; font-weight:700;'>Target population</p><p class='body-text' style='font-size: 16px; color: #f3f3f3;'>People who are low-income or at risk of homelessness </p><br><p class='body-text' style='font-size: 16px; color: #f3f3f3; font-weight:700;'>Job Assistance/Placement?</p><p class='body-text' style='font-size: 16px; color: #f3f3f3;'>40 internship/externship positions for program graduates</p><br/><a target='_blank' href='http://www.amoshouse.com/TrainingEducation/AmosCulinaryEducationProgram.aspx'><p class='body-text' style='font-size: 16px; color: #f3f3f3; font-weight:700; text-align: center;'>CLICK TO VISIT THEIR WEBSITE</p></a></div>";
 
     var CCRIOver = "<div class='training-on'><a target='_blank' href='http://www.ccri.edu/oftd/culinary.html'><p class='body-text' style='font-size: 22px; color: #f3f3f3; font-weight:700;'>CCRI: Culinary Arts Assistant Certificate</p></a><br><p class='body-text' style='font-size: 16px; color: #f3f3f3;'>Full-time, 16-credit Culinary Arts Assistant program at the Community College of Rhode Island</p><br><p class='body-text' style='font-size: 16px; color: #f3f3f3; font-weight:700;'>Target population</p><p class='body-text' style='font-size: 16px; color: #f3f3f3;'>RI residents with High School Diploma or GED</p><br><p class='body-text' style='font-size: 16px; color: #f3f3f3; font-weight:700;'>Job Assistance/Placement?</p><p class='body-text' style='font-size: 16px; color: #f3f3f3;'>RI residents with High School Diploma or GED</p><br><a target='_blank' href='http://www.ccri.edu/oftd/culinary.html'><p class='body-text' style='font-size: 16px; color: #f3f3f3; font-weight:700; text-align: center;'>CLICK TO VISIT THEIR WEBSITE</p></a></div>";
 	  
@@ -271,13 +271,13 @@
           }
         }
 
-
+/*
         function unHover(imageSource, id) {
           var div = document.getElementById(id);
           div.className = "";
           div.innerHTML = "<img src='../img/" + imageSource + "' style='width: 100%; height: auto;'/>";
         };
-
+*/
 
         // Amos events
         $("#Amos").hover(function() {
@@ -296,7 +296,7 @@
           this.innerHTML = CCRIOver;
         }, function() {
           this.className = "training-square orange";
-          this.innerHTML = "<p class='body-text block-padding job-title' >CCRI</p><p class='body-text block-padding job-text'>Culinary Arts Assistant Certification</p>";
+          this.innerHTML = "<p class='body-text block-padding job-title'>CCRI</p><p class='body-text block-padding job-text'>Culinary Arts Assistant Certification</p>";
         });
 
         // community events
@@ -311,7 +311,7 @@
 
         // connecting events
         $('#connecting').hover(function() {  
-          //$('#connecting').css({'height':h+'px'});
+          $('#connecting').css({'height':h+'px'});
             $(this).addClass(' job-training');
           this.innerHTML = connectingOver;
         }, function() {
